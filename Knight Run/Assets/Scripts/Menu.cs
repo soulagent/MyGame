@@ -26,6 +26,7 @@ public class Menu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        currentState = "anykey";
         #region StartScreen
         startScreen.StartCanvas.SetActive(true);
         startScreen.PressToStart.SetActive(true);
@@ -55,8 +56,10 @@ public class Menu : MonoBehaviour {
         menuScreen.SelectTraining.SetActive(false);
         menuScreen.SelectSettings.SetActive(false);
         menuScreen.SelectQuit.SetActive(false);
+        currentState = "story";
     }
 
+    #region Menu MouseOver
     public void MOStory() {
         menuScreen.MOStory.SetActive(false);
         menuScreen.MOTraining.SetActive(true);
@@ -66,6 +69,7 @@ public class Menu : MonoBehaviour {
         menuScreen.SelectTraining.SetActive(false);
         menuScreen.SelectSettings.SetActive(false);
         menuScreen.SelectQuit.SetActive(false);
+        currentState = "story";
     }
     public void MOTraining() {
         menuScreen.MOStory.SetActive(true);
@@ -76,6 +80,7 @@ public class Menu : MonoBehaviour {
         menuScreen.SelectTraining.SetActive(true);
         menuScreen.SelectSettings.SetActive(false);
         menuScreen.SelectQuit.SetActive(false);
+        currentState = "training";
     }
     public void MOSettings() {
         menuScreen.MOStory.SetActive(true);
@@ -86,6 +91,7 @@ public class Menu : MonoBehaviour {
         menuScreen.SelectTraining.SetActive(false);
         menuScreen.SelectSettings.SetActive(true);
         menuScreen.SelectQuit.SetActive(false);
+        currentState = "settings";
     }
     public void MOQuit() {
         menuScreen.MOStory.SetActive(true);
@@ -96,5 +102,21 @@ public class Menu : MonoBehaviour {
         menuScreen.SelectTraining.SetActive(false);
         menuScreen.SelectSettings.SetActive(false);
         menuScreen.SelectQuit.SetActive(true);
+        currentState = "quit";
     }
+    #endregion
+    #region Menu Select
+    public void SelectStory() {
+
+    }
+    public void SelectTraining() {
+
+    }
+    public void SelectSettings() {
+
+    }
+    public void SelectQuit() {
+        Application.Quit();
+    }
+    #endregion
 }

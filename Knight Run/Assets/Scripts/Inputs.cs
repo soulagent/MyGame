@@ -25,11 +25,10 @@ public class Inputs : MonoBehaviour {
     public string spaceKey;
     #endregion
 
-    private void Awake() {
+    public Menu menu;
 
-    }
-    // Use this for initialization
-    void Start () {
+    void Awake() {
+        menu.GetComponent<Menu>();
         selectK = "SelectK";
         selectJ = "SelectJ";
         wKey = "wKey";
@@ -39,6 +38,10 @@ public class Inputs : MonoBehaviour {
         enterKey = "enterKey";
         escKeyK = "escKeyK";
         spaceKey = "spaceKey";
+    }
+    // Use this for initialization
+    void Start () {
+        
     }
 	
 	// Update is called once per frame
@@ -59,6 +62,58 @@ public class Inputs : MonoBehaviour {
     }
 
     public void MenuLogic() {
-
+        #region anykey
+        if((Input.anyKeyDown)&&(menu.currentState == "anykey")) {
+            menu.pressToStart();
+        }
+        #endregion
+        #region Up
+        if ((keyW)||(keyArrowUp)) {
+            #region Menu
+            if(menu.currentState == "training") {
+                menu.MOStory();
+            }
+            else if (menu.currentState == "settings") {
+                menu.MOTraining();
+            }
+            else if (menu.currentState == "quit") {
+                menu.MOSettings();
+            }
+            #endregion
+        }
+        #endregion
+        #region Down
+        else if((keyS)||(keyArrowDown)) {
+            #region Menu
+            if(menu.currentState == "story") {
+                menu.MOTraining();
+            }
+            else if(menu.currentState == "training") {
+                menu.MOSettings();
+            }
+            else if(menu.currentState == "settings") {
+                menu.MOQuit();
+            }
+            #endregion
+        }
+        #endregion
+        #region Enter
+        else if (keyEnter) {
+            #region Menu
+            if(menu.currentState == "story") {
+                menu.SelectStory();
+            }
+            else if (menu.currentState == "training") {
+                menu.SelectTraining();
+            }
+            else if (menu.currentState == "settings") {
+                menu.SelectSettings();
+            }
+            else if (menu.currentState == "quit") {
+                menu.SelectQuit();
+            }
+            #endregion
+        }
+        #endregion
     }
 }
