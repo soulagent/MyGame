@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5624a716764be4bd2bdc8af54632567b
-timeCreated: 1485844451
+guid: 046925fb598e4eb4e8603c2cc12f66fc
+timeCreated: 1485965697
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -137,7 +137,7 @@ ModelImporter:
     400126: mixamorig:Spine
     400128: mixamorig:Spine1
     400130: mixamorig:Spine2
-    7400000: sword_and_shield_run
+    7400000: sword_and_shield_strafe
     9500000: //RootNode
   materials:
     importMaterials: 0
@@ -164,7 +164,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: sword_and_shield_run
+      name: sword_and_shield_strafe
       takeName: mixamo.com
       firstFrame: 0
       lastFrame: 16
