@@ -5,6 +5,7 @@ using UnityEngine;
 public class UserInput : MonoBehaviour {
 
 	CharacterMovement characterMove;
+	AttackManager attackManager;
 
 	[System.Serializable]
 	public class InputSettings {
@@ -29,6 +30,7 @@ public class UserInput : MonoBehaviour {
 	Camera mainCam;
 	// Use this for initialization
 	void Start () {
+		attackManager = GetComponent<AttackManager> ();
 		characterMove = GetComponent<CharacterMovement> ();
 		mainCam = Camera.main;
 	}
@@ -42,10 +44,10 @@ public class UserInput : MonoBehaviour {
 				//characterMove.Jump();
 			}
 			if (Input.GetButtonDown ("Attack1")) {
-				characterMove.Attack1();
+				attackManager.Attack();
 			}
 			if (Input.GetButtonDown ("Attack2")) {
-				characterMove.Attack2();
+				//characterMove.Attack2();
 			}
 		}
 		if (mainCam) {

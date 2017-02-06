@@ -66,9 +66,10 @@ public class CharacterMovement : MonoBehaviour {
         animator.SetFloat(animations.horizontalVelocityFloat, strafe);
         animator.SetBool(animations.groundedBool, isGrounded);
         //animator.SetBool(animations.jumpBool, jumping);
-		animator.SetBool(animations.attackBool1, attackState1);
-		animator.SetBool (animations.attackBool2, attackState2);
+		//animator.SetBool(animations.attackBool1, attackState1);
+		//animator.SetBool (animations.attackBool2, attackState2);
     }
+    /*
 	public void Attack1() {
 		attackState1 = true;
 		attackState2 = false;
@@ -87,6 +88,7 @@ public class CharacterMovement : MonoBehaviour {
 		yield return new WaitForSeconds (attackTime2);
 		attackState2 = false;
 	}
+    */
     /*
     public void Jump() {
         if (jumping)
