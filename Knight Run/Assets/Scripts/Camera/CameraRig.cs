@@ -61,7 +61,8 @@ public class CameraRig : MonoBehaviour {
 	void Start () {
 		mainCamera = Camera.main;
 		pivot = transform.GetChild(0);
-	}
+        Cursor.lockState = cursorLocked;
+    }
 	
 	// Update is called once per frame
 	void Update () {
