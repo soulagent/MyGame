@@ -42,11 +42,7 @@ public class CharacterMovement : MonoBehaviour {
     bool resetGravity;
     float gravity;
 */
-	float attackTime1 = 0.8f;
-	float attackTime2 = 0.8f;
 	bool isGrounded = true;
-	bool attackState1 = false;
-	bool attackState2 = false;
 
     // Use this for initialization
     void Start () {
@@ -66,29 +62,7 @@ public class CharacterMovement : MonoBehaviour {
         animator.SetFloat(animations.horizontalVelocityFloat, strafe);
         animator.SetBool(animations.groundedBool, isGrounded);
         //animator.SetBool(animations.jumpBool, jumping);
-		//animator.SetBool(animations.attackBool1, attackState1);
-		//animator.SetBool (animations.attackBool2, attackState2);
     }
-    /*
-	public void Attack1() {
-		attackState1 = true;
-		attackState2 = false;
-		StartCoroutine (stopAttack1 ());
-	}
-	public void Attack2() {
-		attackState1 = false;
-		attackState2 = true;
-		StartCoroutine (stopAttack2 ());
-	}
-	IEnumerator stopAttack1() {
-		yield return new WaitForSeconds (attackTime1);
-		attackState1 = false;
-	}
-	IEnumerator stopAttack2() {
-		yield return new WaitForSeconds (attackTime2);
-		attackState2 = false;
-	}
-    */
     /*
     public void Jump() {
         if (jumping)

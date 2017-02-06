@@ -14,6 +14,7 @@ public class UserInput : MonoBehaviour {
 		public string jumpButton = "Jump";
 		public string attackButton1 = "Attack1";
 		public string attackButton2 = "Attack2";
+        public string attackButton3 = "Attack3";
 	}
 	[SerializeField]
 	public InputSettings input;
@@ -44,11 +45,14 @@ public class UserInput : MonoBehaviour {
 				//characterMove.Jump();
 			}
 			if (Input.GetButtonDown ("Attack1")) {
-				attackManager.Attack();
+				attackManager.Attack1();
 			}
 			if (Input.GetButtonDown ("Attack2")) {
-				//characterMove.Attack2();
+                attackManager.Attack2();
 			}
+            if(Input.GetButtonDown ("Attack3")) {
+                attackManager.Attack3();
+            }
 		}
 		if (mainCam) {
 			if (other.requireInputForTurn) {

@@ -110,7 +110,7 @@ public class Menu : MonoBehaviour {
 
     }
     public void SelectTraining() {
-
+        SceneManager.LoadScene("KnightTrainingRoom");
     }
     public void SelectSettings() {
 

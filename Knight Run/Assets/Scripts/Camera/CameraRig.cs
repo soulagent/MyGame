@@ -9,7 +9,9 @@ public class CameraRig : MonoBehaviour {
 	public bool autoTargetPlayer;
 	public LayerMask wallLayers;
 
-	public enum Shoulder {
+    public CursorLockMode cursorLocked = CursorLockMode.Locked;
+
+    public enum Shoulder {
 		Right,Left
 	}
 	public Shoulder shoulder;
