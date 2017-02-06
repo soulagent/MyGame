@@ -10,6 +10,7 @@ public class CameraRig : MonoBehaviour {
 	public LayerMask wallLayers;
 
     public CursorLockMode cursorLocked = CursorLockMode.Locked;
+    public CursorLockMode cursorUnlocked = CursorLockMode.None;
 
     public enum Shoulder {
 		Right,Left
@@ -77,6 +78,10 @@ public class CameraRig : MonoBehaviour {
 				}
 			}
 		}
+
+        if(!Application.isPlaying) {
+            Cursor.lockState = cursorUnlocked;
+        }
 	}
 
 	void LateUpdate() {
