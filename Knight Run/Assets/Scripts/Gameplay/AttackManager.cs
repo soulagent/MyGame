@@ -52,9 +52,6 @@ public class AttackManager : MonoBehaviour {
             backWep.SetActive(true);
             //backWep2.SetActive(true);
         }
-		print ("CanAtk: " + canAtk);
-        Debug.Log("AnimTime: " + animTime);
-        Debug.Log("ComboTime: " + comboTime);
 	}
 
 	public void Attack1() {
