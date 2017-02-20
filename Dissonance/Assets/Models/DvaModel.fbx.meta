@@ -196,7 +196,7 @@ ModelImporter:
     13700024: Suit_forClothed_Mdl
     13700026: Teeth_Mdl
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
