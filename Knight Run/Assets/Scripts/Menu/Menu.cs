@@ -24,6 +24,14 @@ public class Menu : MonoBehaviour {
     }
     public MenuScreen menuScreen;
 
+    [System.Serializable]
+    public class SettingsScreen {
+        public GameObject SettingsCanvas;
+        public GameObject MOGame, MOVideo, MOAudio, MOSettingsBack;
+        public GameObject SelectGame, SelectVideo, SelectAudio, SelectSettingsBack;
+    }
+    public SettingsScreen settingsScreen;
+
 	// Use this for initialization
 	void Start () {
         currentState = "anykey";
@@ -42,8 +50,19 @@ public class Menu : MonoBehaviour {
         menuScreen.SelectSettings.SetActive(false);
         menuScreen.SelectQuit.SetActive(false);
         #endregion
+        #region SettingsScreen
+        settingsScreen.SettingsCanvas.SetActive(false);
+        settingsScreen.MOGame.SetActive(false);
+        settingsScreen.MOVideo.SetActive(true);
+        settingsScreen.MOAudio.SetActive(true);
+        settingsScreen.MOSettingsBack.SetActive(true);
+        settingsScreen.SelectGame.SetActive(true);
+        settingsScreen.SelectVideo.SetActive(false);
+        settingsScreen.SelectAudio.SetActive(false);
+        settingsScreen.SelectSettingsBack.SetActive(false);
+        #endregion
     }
-	
+
     public void pressToStart() {
         startScreen.StartCanvas.SetActive(false);
         startScreen.PressToStart.SetActive(false);
@@ -105,6 +124,52 @@ public class Menu : MonoBehaviour {
         currentState = "quit";
     }
     #endregion
+    #region Settings MouseOver
+    public void MOGame() {
+        settingsScreen.MOGame.SetActive(false);
+        settingsScreen.MOVideo.SetActive(true);
+        settingsScreen.MOAudio.SetActive(true);
+        settingsScreen.MOSettingsBack.SetActive(true);
+        settingsScreen.SelectGame.SetActive(true);
+        settingsScreen.SelectVideo.SetActive(false);
+        settingsScreen.SelectAudio.SetActive(false);
+        settingsScreen.SelectSettingsBack.SetActive(false);
+        currentState = "game";
+    }
+    public void MOVideo() {
+        settingsScreen.MOGame.SetActive(true);
+        settingsScreen.MOVideo.SetActive(false);
+        settingsScreen.MOAudio.SetActive(true);
+        settingsScreen.MOSettingsBack.SetActive(true);
+        settingsScreen.SelectGame.SetActive(false);
+        settingsScreen.SelectVideo.SetActive(true);
+        settingsScreen.SelectAudio.SetActive(false);
+        settingsScreen.SelectSettingsBack.SetActive(false);
+        currentState = "video";
+    }
+    public void MOAudio() {
+        settingsScreen.MOGame.SetActive(true);
+        settingsScreen.MOVideo.SetActive(true);
+        settingsScreen.MOAudio.SetActive(false);
+        settingsScreen.MOSettingsBack.SetActive(true);
+        settingsScreen.SelectGame.SetActive(false);
+        settingsScreen.SelectVideo.SetActive(false);
+        settingsScreen.SelectAudio.SetActive(true);
+        settingsScreen.SelectSettingsBack.SetActive(false);
+        currentState = "audio";
+    }
+    public void MOSettingsBack() {
+        settingsScreen.MOGame.SetActive(true);
+        settingsScreen.MOVideo.SetActive(true);
+        settingsScreen.MOAudio.SetActive(true);
+        settingsScreen.MOSettingsBack.SetActive(false);
+        settingsScreen.SelectGame.SetActive(false);
+        settingsScreen.SelectVideo.SetActive(false);
+        settingsScreen.SelectAudio.SetActive(false);
+        settingsScreen.SelectSettingsBack.SetActive(true);
+        currentState = "settingsback";
+    }
+    #endregion
     #region Menu Select
     public void SelectStory() {
 
@@ -113,10 +178,36 @@ public class Menu : MonoBehaviour {
         SceneManager.LoadScene("KnightTrainingRoom");
     }
     public void SelectSettings() {
-
+        menuScreen.MenuCanvas.SetActive(false);
+        settingsScreen.SettingsCanvas.SetActive(true);
+        settingsScreen.MOGame.SetActive(false);
+        settingsScreen.MOVideo.SetActive(true);
+        settingsScreen.MOAudio.SetActive(true);
+        settingsScreen.MOSettingsBack.SetActive(true);
+        settingsScreen.SelectGame.SetActive(true);
+        settingsScreen.SelectVideo.SetActive(false);
+        settingsScreen.SelectAudio.SetActive(false);
+        settingsScreen.SelectSettingsBack.SetActive(false);
+        currentState = "game";
     }
     public void SelectQuit() {
         Application.Quit();
+    }
+    #endregion
+    #region
+    public void SelectSettingsBack() {
+        menuScreen.MenuCanvas.SetActive(true);
+        settingsScreen.SettingsCanvas.SetActive(false);
+        menuScreen.MenuCanvas.SetActive(true);
+        menuScreen.MOStory.SetActive(false);
+        menuScreen.MOTraining.SetActive(true);
+        menuScreen.MOSettings.SetActive(true);
+        menuScreen.MOQuit.SetActive(true);
+        menuScreen.SelectStory.SetActive(true);
+        menuScreen.SelectTraining.SetActive(false);
+        menuScreen.SelectSettings.SetActive(false);
+        menuScreen.SelectQuit.SetActive(false);
+        currentState = "story";
     }
     #endregion
 }

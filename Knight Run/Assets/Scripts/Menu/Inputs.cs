@@ -80,6 +80,17 @@ public class Inputs : MonoBehaviour {
                 menu.MOSettings();
             }
             #endregion
+            #region Settings
+            if(menu.currentState == "video") {
+                menu.MOGame();
+            }
+            else if (menu.currentState == "audio") {
+                menu.MOVideo();
+            }
+            else if (menu.currentState == "settingsback") {
+                menu.MOAudio();
+            }
+            #endregion
         }
         #endregion
         #region Down
@@ -93,6 +104,17 @@ public class Inputs : MonoBehaviour {
             }
             else if(menu.currentState == "settings") {
                 menu.MOQuit();
+            }
+            #endregion
+            #region Settings
+            if(menu.currentState == "game") {
+                menu.MOVideo();
+            }
+            else if(menu.currentState == "video") {
+                menu.MOAudio();
+            }
+            else if(menu.currentState == "audio") {
+                menu.MOSettingsBack();
             }
             #endregion
         }
@@ -111,6 +133,11 @@ public class Inputs : MonoBehaviour {
             }
             else if (menu.currentState == "quit") {
                 menu.SelectQuit();
+            }
+            #endregion
+            #region Settings
+            if(menu.currentState == "settingsback") {
+                menu.SelectSettingsBack();
             }
             #endregion
         }
