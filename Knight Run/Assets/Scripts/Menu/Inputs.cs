@@ -68,79 +68,82 @@ public class Inputs : MonoBehaviour {
         }
         #endregion
         #region Up
-        if ((keyW)||(keyArrowUp)) {
-            #region Menu
-            if(menu.currentState == "training") {
-                menu.MOStory();
-            }
-            else if (menu.currentState == "settings") {
-                menu.MOTraining();
-            }
-            else if (menu.currentState == "quit") {
-                menu.MOSettings();
-            }
-            #endregion
-            #region Settings
-            if(menu.currentState == "video") {
-                menu.MOGame();
-            }
-            else if (menu.currentState == "audio") {
-                menu.MOVideo();
-            }
-            else if (menu.currentState == "settingsback") {
-                menu.MOAudio();
-            }
-            #endregion
-        }
+		if ((keyW) || (keyArrowUp)) {
+			#region Menu
+			if (menu.currentState == "training") {
+				menu.MOStory ();
+			} else if (menu.currentState == "settings") {
+				menu.MOTraining ();
+			} else if (menu.currentState == "quit") {
+				menu.MOSettings ();
+			}
+			#endregion
+			#region Settings
+			if (menu.currentState == "video") {
+				menu.MOGame ();
+			} else if (menu.currentState == "audio") {
+				menu.MOVideo ();
+			} else if (menu.currentState == "settingsback") {
+				menu.MOAudio ();
+			}
+			#endregion
+
+		}
         #endregion
         #region Down
-        else if((keyS)||(keyArrowDown)) {
-            #region Menu
-            if(menu.currentState == "story") {
-                menu.MOTraining();
-            }
-            else if(menu.currentState == "training") {
-                menu.MOSettings();
-            }
-            else if(menu.currentState == "settings") {
-                menu.MOQuit();
-            }
-            #endregion
-            #region Settings
-            if(menu.currentState == "game") {
-                menu.MOVideo();
-            }
-            else if(menu.currentState == "video") {
-                menu.MOAudio();
-            }
-            else if(menu.currentState == "audio") {
-                menu.MOSettingsBack();
-            }
-            #endregion
-        }
+        else if ((keyS) || (keyArrowDown)) {
+			#region Menu
+			if (menu.currentState == "story") {
+				menu.MOTraining ();
+			} else if (menu.currentState == "training") {
+				menu.MOSettings ();
+			} else if (menu.currentState == "settings") {
+				menu.MOQuit ();
+			}
+			#endregion
+			#region Settings
+			if (menu.currentState == "game") {
+				menu.MOVideo ();
+			} else if (menu.currentState == "video") {
+				menu.MOAudio ();
+			} else if (menu.currentState == "audio") {
+				menu.MOSettingsBack ();
+			}
+			#endregion
+		}
         #endregion
         #region Enter
         else if (keyEnter) {
-            #region Menu
-            if(menu.currentState == "story") {
-                menu.SelectStory();
-            }
-            else if (menu.currentState == "training") {
-                menu.SelectTraining();
-            }
-            else if (menu.currentState == "settings") {
-                menu.SelectSettings();
-            }
-            else if (menu.currentState == "quit") {
-                menu.SelectQuit();
-            }
-            #endregion
-            #region Settings
-            if(menu.currentState == "settingsback") {
-                menu.SelectSettingsBack();
-            }
-            #endregion
-        }
+			#region Menu
+			if (menu.currentState == "story") {
+				menu.SelectStory ();
+			} else if (menu.currentState == "training") {
+				menu.SelectTraining ();
+			} else if (menu.currentState == "settings") {
+				menu.SelectSettings ();
+			} else if (menu.currentState == "quit") {
+				menu.SelectQuit ();
+			}
+			#endregion
+			#region Settings
+			if (menu.currentState == "settingsback") {
+				menu.SelectSettingsBack ();
+			}
+			#endregion
+		}
         #endregion
+		#region Esc Key
+		else if (escKey) {
+			if (menu.currentState == "game") {
+				menu.SelectSettingsBack ();
+			} else if (menu.currentState == "video") {
+				menu.SelectSettingsBack ();
+			} else if (menu.currentState == "audio") {
+				menu.SelectSettingsBack ();
+			} else if (menu.currentState == "back") {
+				menu.SelectSettingsBack ();
+			}
+		}
+		#endregion
     }
 }

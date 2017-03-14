@@ -32,24 +32,35 @@ public class Menu : MonoBehaviour {
     }
     public SettingsScreen settingsScreen;
 
+    [System.Serializable]
+    public class VideoScreen {
+        public GameObject VideoCanvas;
+        public GameObject MO1920, MO1280, MOVideoBack;
+        public GameObject Select1920, Select1280, SelectVideoBack;
+    }
+    public VideoScreen videoScreen;
+
 	// Use this for initialization
 	void Start () {
         currentState = "anykey";
+
         #region StartScreen
         startScreen.StartCanvas.SetActive(true);
         startScreen.PressToStart.SetActive(true);
         #endregion
+
         #region MenuScreen
         menuScreen.MenuCanvas.SetActive(false);
         menuScreen.MOStory.SetActive(false);
-        menuScreen.MOTraining.SetActive(false);
-        menuScreen.MOSettings.SetActive(false);
-        menuScreen.MOQuit.SetActive(false);
-        menuScreen.SelectStory.SetActive(false);
+        menuScreen.MOTraining.SetActive(true);
+        menuScreen.MOSettings.SetActive(true);
+        menuScreen.MOQuit.SetActive(true);
+        menuScreen.SelectStory.SetActive(true);
         menuScreen.SelectTraining.SetActive(false);
         menuScreen.SelectSettings.SetActive(false);
         menuScreen.SelectQuit.SetActive(false);
         #endregion
+
         #region SettingsScreen
         settingsScreen.SettingsCanvas.SetActive(false);
         settingsScreen.MOGame.SetActive(false);
@@ -60,6 +71,16 @@ public class Menu : MonoBehaviour {
         settingsScreen.SelectVideo.SetActive(false);
         settingsScreen.SelectAudio.SetActive(false);
         settingsScreen.SelectSettingsBack.SetActive(false);
+        #endregion
+
+        #region VideoScreen
+        videoScreen.VideoCanvas.SetActive(false);
+        videoScreen.MO1920.SetActive(false);
+        videoScreen.MO1280.SetActive(true);
+        videoScreen.MOVideoBack.SetActive(true);
+        videoScreen.Select1920.SetActive(true);
+        videoScreen.Select1280.SetActive(false);
+        videoScreen.SelectVideoBack.SetActive(false);
         #endregion
     }
 
@@ -124,6 +145,7 @@ public class Menu : MonoBehaviour {
         currentState = "quit";
     }
     #endregion
+
     #region Settings MouseOver
     public void MOGame() {
         settingsScreen.MOGame.SetActive(false);
@@ -170,9 +192,37 @@ public class Menu : MonoBehaviour {
         currentState = "settingsback";
     }
     #endregion
+
+    #region Video MouseOver
+    public void MO1920() {
+        videoScreen.MO1920.SetActive(false);
+        videoScreen.MO1280.SetActive(true);
+        videoScreen.MOVideoBack.SetActive(true);
+        videoScreen.Select1920.SetActive(true);
+        videoScreen.Select1280.SetActive(false);
+        videoScreen.SelectVideoBack.SetActive(false);
+    }
+    public void MO1280() {
+        videoScreen.MO1920.SetActive(true);
+        videoScreen.MO1280.SetActive(false);
+        videoScreen.MOVideoBack.SetActive(true);
+        videoScreen.Select1920.SetActive(false);
+        videoScreen.Select1280.SetActive(true);
+        videoScreen.SelectVideoBack.SetActive(false);
+    }
+    public void MOVideoBack() {
+        videoScreen.MO1920.SetActive(true);
+        videoScreen.MO1280.SetActive(true);
+        videoScreen.MOVideoBack.SetActive(false);
+        videoScreen.Select1920.SetActive(false);
+        videoScreen.Select1280.SetActive(false);
+        videoScreen.SelectVideoBack.SetActive(true);
+    }
+    #endregion
+
     #region Menu Select
     public void SelectStory() {
-
+        //SceneManager.LoadScene("Story");
     }
     public void SelectTraining() {
         SceneManager.LoadScene("KnightTrainingRoom");
@@ -194,7 +244,25 @@ public class Menu : MonoBehaviour {
         Application.Quit();
     }
     #endregion
-    #region
+
+    #region Settings Select
+    public void SelectGame() {
+
+    }
+    public void SelectVideo() {
+        settingsScreen.SettingsCanvas.SetActive(false);
+        videoScreen.VideoCanvas.SetActive(true);
+        videoScreen.MO1920.SetActive(false);
+        videoScreen.MO1280.SetActive(true);
+        videoScreen.MOVideoBack.SetActive(true);
+        videoScreen.Select1920.SetActive(true);
+        videoScreen.Select1280.SetActive(false);
+        videoScreen.SelectVideoBack.SetActive(false);
+        currentState = "1920";
+    }
+    public void SelectAudio() {
+
+    }
     public void SelectSettingsBack() {
         menuScreen.MenuCanvas.SetActive(true);
         settingsScreen.SettingsCanvas.SetActive(false);
