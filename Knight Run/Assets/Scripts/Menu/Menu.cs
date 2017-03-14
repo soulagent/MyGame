@@ -201,6 +201,7 @@ public class Menu : MonoBehaviour {
         videoScreen.Select1920.SetActive(true);
         videoScreen.Select1280.SetActive(false);
         videoScreen.SelectVideoBack.SetActive(false);
+        currentState = "1920";
     }
     public void MO1280() {
         videoScreen.MO1920.SetActive(true);
@@ -209,6 +210,7 @@ public class Menu : MonoBehaviour {
         videoScreen.Select1920.SetActive(false);
         videoScreen.Select1280.SetActive(true);
         videoScreen.SelectVideoBack.SetActive(false);
+        currentState = "1280";
     }
     public void MOVideoBack() {
         videoScreen.MO1920.SetActive(true);
@@ -217,6 +219,7 @@ public class Menu : MonoBehaviour {
         videoScreen.Select1920.SetActive(false);
         videoScreen.Select1280.SetActive(false);
         videoScreen.SelectVideoBack.SetActive(true);
+        currentState = "videoback";
     }
     #endregion
 
@@ -252,13 +255,13 @@ public class Menu : MonoBehaviour {
     public void SelectVideo() {
         settingsScreen.SettingsCanvas.SetActive(false);
         videoScreen.VideoCanvas.SetActive(true);
-        videoScreen.MO1920.SetActive(false);
-        videoScreen.MO1280.SetActive(true);
+        videoScreen.MO1920.SetActive(true);
+        videoScreen.MO1280.SetActive(false);
         videoScreen.MOVideoBack.SetActive(true);
-        videoScreen.Select1920.SetActive(true);
-        videoScreen.Select1280.SetActive(false);
+        videoScreen.Select1920.SetActive(false);
+        videoScreen.Select1280.SetActive(true);
         videoScreen.SelectVideoBack.SetActive(false);
-        currentState = "1920";
+        currentState = "1280";
     }
     public void SelectAudio() {
 
@@ -276,6 +279,28 @@ public class Menu : MonoBehaviour {
         menuScreen.SelectSettings.SetActive(false);
         menuScreen.SelectQuit.SetActive(false);
         currentState = "story";
+    }
+    #endregion
+
+    #region Video Select
+    public void Select1920() {
+        Screen.SetResolution(1920, 1080, true);
+    }
+    public void Select1280() {
+        Screen.SetResolution(1280, 720, true);
+    }
+    public void SelectVideoBack() {
+        videoScreen.VideoCanvas.SetActive(false);
+        settingsScreen.SettingsCanvas.SetActive(true);
+        settingsScreen.MOGame.SetActive(false);
+        settingsScreen.MOVideo.SetActive(true);
+        settingsScreen.MOAudio.SetActive(true);
+        settingsScreen.MOSettingsBack.SetActive(true);
+        settingsScreen.SelectGame.SetActive(true);
+        settingsScreen.SelectVideo.SetActive(false);
+        settingsScreen.SelectAudio.SetActive(false);
+        settingsScreen.SelectSettingsBack.SetActive(false);
+        currentState = "game";
     }
     #endregion
 }

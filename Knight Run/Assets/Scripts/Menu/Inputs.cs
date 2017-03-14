@@ -86,9 +86,15 @@ public class Inputs : MonoBehaviour {
 			} else if (menu.currentState == "settingsback") {
 				menu.MOAudio ();
 			}
-			#endregion
-
-		}
+            #endregion
+            #region Video Resolution
+            if(menu.currentState == "1920") {
+                menu.MO1280();
+            } else if (menu.currentState == "videoback") {
+                menu.MO1920();
+            }
+            #endregion
+        }
         #endregion
         #region Down
         else if ((keyS) || (keyArrowDown)) {
@@ -109,8 +115,15 @@ public class Inputs : MonoBehaviour {
 			} else if (menu.currentState == "audio") {
 				menu.MOSettingsBack ();
 			}
-			#endregion
-		}
+            #endregion
+            #region Video Resolution
+            if(menu.currentState == "1280") {
+                menu.MO1920();
+            } else if(menu.currentState == "1920") {
+                menu.MOVideoBack();
+            }
+            #endregion
+        }
         #endregion
         #region Enter
         else if (keyEnter) {
@@ -127,10 +140,21 @@ public class Inputs : MonoBehaviour {
 			#endregion
 			#region Settings
 			if (menu.currentState == "settingsback") {
-				menu.SelectSettingsBack ();
-			}
-			#endregion
-		}
+				menu.SelectSettingsBack();
+			} else if(menu.currentState == "video") {
+                menu.SelectVideo();
+            }
+            #endregion
+            #region Video Resolution
+            if(menu.currentState == "1920") {
+                menu.Select1920();
+            } else if (menu.currentState == "1280") {
+                menu.Select1280();
+            } else if (menu.currentState == "videoback") {
+                menu.SelectVideoBack();
+            }
+            #endregion
+        }
         #endregion
 		#region Esc Key
 		else if (escKey) {
@@ -142,7 +166,13 @@ public class Inputs : MonoBehaviour {
 				menu.SelectSettingsBack ();
 			} else if (menu.currentState == "back") {
 				menu.SelectSettingsBack ();
-			}
+			} else if (menu.currentState == "1920") {
+                menu.SelectVideoBack();
+            } else if (menu.currentState == "1280") {
+                menu.SelectVideoBack();
+            } else if (menu.currentState == "videoback") {
+                menu.SelectVideoBack();
+            }
 		}
 		#endregion
     }
