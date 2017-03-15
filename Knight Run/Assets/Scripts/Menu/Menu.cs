@@ -51,10 +51,10 @@ public class Menu : MonoBehaviour {
 
         #region MenuScreen
         menuScreen.MenuCanvas.SetActive(false);
-        menuScreen.MOStory.SetActive(false);
-        menuScreen.MOTraining.SetActive(true);
-        menuScreen.MOSettings.SetActive(true);
-        menuScreen.MOQuit.SetActive(true);
+        //menuScreen.MOStory.SetActive(false);
+        //menuScreen.MOTraining.SetActive(true);
+        //menuScreen.MOSettings.SetActive(true);
+        //menuScreen.MOQuit.SetActive(true);
         menuScreen.SelectStory.SetActive(true);
         menuScreen.SelectTraining.SetActive(false);
         menuScreen.SelectSettings.SetActive(false);
@@ -63,10 +63,10 @@ public class Menu : MonoBehaviour {
 
         #region SettingsScreen
         settingsScreen.SettingsCanvas.SetActive(false);
-        settingsScreen.MOGame.SetActive(false);
-        settingsScreen.MOVideo.SetActive(true);
-        settingsScreen.MOAudio.SetActive(true);
-        settingsScreen.MOSettingsBack.SetActive(true);
+        //settingsScreen.MOGame.SetActive(false);
+        //settingsScreen.MOVideo.SetActive(true);
+        //settingsScreen.MOAudio.SetActive(true);
+        //settingsScreen.MOSettingsBack.SetActive(true);
         settingsScreen.SelectGame.SetActive(true);
         settingsScreen.SelectVideo.SetActive(false);
         settingsScreen.SelectAudio.SetActive(false);
@@ -75,9 +75,9 @@ public class Menu : MonoBehaviour {
 
         #region VideoScreen
         videoScreen.VideoCanvas.SetActive(false);
-        videoScreen.MO1920.SetActive(false);
-        videoScreen.MO1280.SetActive(true);
-        videoScreen.MOVideoBack.SetActive(true);
+        //videoScreen.MO1920.SetActive(false);
+        //videoScreen.MO1280.SetActive(true);
+        //videoScreen.MOVideoBack.SetActive(true);
         videoScreen.Select1920.SetActive(true);
         videoScreen.Select1280.SetActive(false);
         videoScreen.SelectVideoBack.SetActive(false);
@@ -88,10 +88,10 @@ public class Menu : MonoBehaviour {
         startScreen.StartCanvas.SetActive(false);
         startScreen.PressToStart.SetActive(false);
         menuScreen.MenuCanvas.SetActive(true);
-        menuScreen.MOStory.SetActive(false);
-        menuScreen.MOTraining.SetActive(true);
-        menuScreen.MOSettings.SetActive(true);
-        menuScreen.MOQuit.SetActive(true);
+        //menuScreen.MOStory.SetActive(false);
+        //menuScreen.MOTraining.SetActive(true);
+        //menuScreen.MOSettings.SetActive(true);
+        //menuScreen.MOQuit.SetActive(true);
         menuScreen.SelectStory.SetActive(true);
         menuScreen.SelectTraining.SetActive(false);
         menuScreen.SelectSettings.SetActive(false);
@@ -101,10 +101,10 @@ public class Menu : MonoBehaviour {
 
     #region Menu MouseOver
     public void MOStory() {
-        menuScreen.MOStory.SetActive(false);
-        menuScreen.MOTraining.SetActive(true);
-        menuScreen.MOSettings.SetActive(true);
-        menuScreen.MOQuit.SetActive(true);
+        //menuScreen.MOStory.SetActive(false);
+        //menuScreen.MOTraining.SetActive(true);
+        //menuScreen.MOSettings.SetActive(true);
+        //menuScreen.MOQuit.SetActive(true);
         menuScreen.SelectStory.SetActive(true);
         menuScreen.SelectTraining.SetActive(false);
         menuScreen.SelectSettings.SetActive(false);
@@ -112,10 +112,10 @@ public class Menu : MonoBehaviour {
         currentState = "story";
     }
     public void MOTraining() {
-        menuScreen.MOStory.SetActive(true);
-        menuScreen.MOTraining.SetActive(false);
-        menuScreen.MOSettings.SetActive(true);
-        menuScreen.MOQuit.SetActive(true);
+        //menuScreen.MOStory.SetActive(true);
+        //menuScreen.MOTraining.SetActive(false);
+        //menuScreen.MOSettings.SetActive(true);
+        //menuScreen.MOQuit.SetActive(true);
         menuScreen.SelectStory.SetActive(false);
         menuScreen.SelectTraining.SetActive(true);
         menuScreen.SelectSettings.SetActive(false);
@@ -123,10 +123,10 @@ public class Menu : MonoBehaviour {
         currentState = "training";
     }
     public void MOSettings() {
-        menuScreen.MOStory.SetActive(true);
-        menuScreen.MOTraining.SetActive(true);
-        menuScreen.MOSettings.SetActive(false);
-        menuScreen.MOQuit.SetActive(true);
+        //menuScreen.MOStory.SetActive(true);
+        //menuScreen.MOTraining.SetActive(true);
+        //menuScreen.MOSettings.SetActive(false);
+        //menuScreen.MOQuit.SetActive(true);
         menuScreen.SelectStory.SetActive(false);
         menuScreen.SelectTraining.SetActive(false);
         menuScreen.SelectSettings.SetActive(true);
@@ -134,10 +134,10 @@ public class Menu : MonoBehaviour {
         currentState = "settings";
     }
     public void MOQuit() {
-        menuScreen.MOStory.SetActive(true);
-        menuScreen.MOTraining.SetActive(true);
-        menuScreen.MOSettings.SetActive(true);
-        menuScreen.MOQuit.SetActive(false);
+        //menuScreen.MOStory.SetActive(true);
+        //menuScreen.MOTraining.SetActive(true);
+        //menuScreen.MOSettings.SetActive(true);
+        //menuScreen.MOQuit.SetActive(false);
         menuScreen.SelectStory.SetActive(false);
         menuScreen.SelectTraining.SetActive(false);
         menuScreen.SelectSettings.SetActive(false);
@@ -148,10 +148,10 @@ public class Menu : MonoBehaviour {
 
     #region Settings MouseOver
     public void MOGame() {
-        settingsScreen.MOGame.SetActive(false);
-        settingsScreen.MOVideo.SetActive(true);
-        settingsScreen.MOAudio.SetActive(true);
-        settingsScreen.MOSettingsBack.SetActive(true);
+        //settingsScreen.MOGame.SetActive(false);
+        //settingsScreen.MOVideo.SetActive(true);
+        //settingsScreen.MOAudio.SetActive(true);
+        //settingsScreen.MOSettingsBack.SetActive(true);
         settingsScreen.SelectGame.SetActive(true);
         settingsScreen.SelectVideo.SetActive(false);
         settingsScreen.SelectAudio.SetActive(false);
@@ -159,10 +159,10 @@ public class Menu : MonoBehaviour {
         currentState = "game";
     }
     public void MOVideo() {
-        settingsScreen.MOGame.SetActive(true);
-        settingsScreen.MOVideo.SetActive(false);
-        settingsScreen.MOAudio.SetActive(true);
-        settingsScreen.MOSettingsBack.SetActive(true);
+        //settingsScreen.MOGame.SetActive(true);
+        //settingsScreen.MOVideo.SetActive(false);
+        //settingsScreen.MOAudio.SetActive(true);
+        //settingsScreen.MOSettingsBack.SetActive(true);
         settingsScreen.SelectGame.SetActive(false);
         settingsScreen.SelectVideo.SetActive(true);
         settingsScreen.SelectAudio.SetActive(false);
@@ -170,10 +170,10 @@ public class Menu : MonoBehaviour {
         currentState = "video";
     }
     public void MOAudio() {
-        settingsScreen.MOGame.SetActive(true);
-        settingsScreen.MOVideo.SetActive(true);
-        settingsScreen.MOAudio.SetActive(false);
-        settingsScreen.MOSettingsBack.SetActive(true);
+        //settingsScreen.MOGame.SetActive(true);
+        //settingsScreen.MOVideo.SetActive(true);
+        //settingsScreen.MOAudio.SetActive(false);
+        //settingsScreen.MOSettingsBack.SetActive(true);
         settingsScreen.SelectGame.SetActive(false);
         settingsScreen.SelectVideo.SetActive(false);
         settingsScreen.SelectAudio.SetActive(true);
@@ -181,10 +181,10 @@ public class Menu : MonoBehaviour {
         currentState = "audio";
     }
     public void MOSettingsBack() {
-        settingsScreen.MOGame.SetActive(true);
-        settingsScreen.MOVideo.SetActive(true);
-        settingsScreen.MOAudio.SetActive(true);
-        settingsScreen.MOSettingsBack.SetActive(false);
+        //settingsScreen.MOGame.SetActive(true);
+        //settingsScreen.MOVideo.SetActive(true);
+        //settingsScreen.MOAudio.SetActive(true);
+        //settingsScreen.MOSettingsBack.SetActive(false);
         settingsScreen.SelectGame.SetActive(false);
         settingsScreen.SelectVideo.SetActive(false);
         settingsScreen.SelectAudio.SetActive(false);
@@ -195,27 +195,27 @@ public class Menu : MonoBehaviour {
 
     #region Video MouseOver
     public void MO1920() {
-        videoScreen.MO1920.SetActive(false);
-        videoScreen.MO1280.SetActive(true);
-        videoScreen.MOVideoBack.SetActive(true);
+        //videoScreen.MO1920.SetActive(false);
+        //videoScreen.MO1280.SetActive(true);
+        //videoScreen.MOVideoBack.SetActive(true);
         videoScreen.Select1920.SetActive(true);
         videoScreen.Select1280.SetActive(false);
         videoScreen.SelectVideoBack.SetActive(false);
         currentState = "1920";
     }
     public void MO1280() {
-        videoScreen.MO1920.SetActive(true);
-        videoScreen.MO1280.SetActive(false);
-        videoScreen.MOVideoBack.SetActive(true);
+        //videoScreen.MO1920.SetActive(true);
+        //videoScreen.MO1280.SetActive(false);
+        //.MOVideoBack.SetActive(true);
         videoScreen.Select1920.SetActive(false);
         videoScreen.Select1280.SetActive(true);
         videoScreen.SelectVideoBack.SetActive(false);
         currentState = "1280";
     }
     public void MOVideoBack() {
-        videoScreen.MO1920.SetActive(true);
-        videoScreen.MO1280.SetActive(true);
-        videoScreen.MOVideoBack.SetActive(false);
+        //videoScreen.MO1920.SetActive(true);
+        //videoScreen.MO1280.SetActive(true);
+        //videoScreen.MOVideoBack.SetActive(false);
         videoScreen.Select1920.SetActive(false);
         videoScreen.Select1280.SetActive(false);
         videoScreen.SelectVideoBack.SetActive(true);
@@ -233,10 +233,10 @@ public class Menu : MonoBehaviour {
     public void SelectSettings() {
         menuScreen.MenuCanvas.SetActive(false);
         settingsScreen.SettingsCanvas.SetActive(true);
-        settingsScreen.MOGame.SetActive(false);
-        settingsScreen.MOVideo.SetActive(true);
-        settingsScreen.MOAudio.SetActive(true);
-        settingsScreen.MOSettingsBack.SetActive(true);
+        //settingsScreen.MOGame.SetActive(false);
+        //settingsScreen.MOVideo.SetActive(true);
+        //settingsScreen.MOAudio.SetActive(true);
+        //settingsScreen.MOSettingsBack.SetActive(true);
         settingsScreen.SelectGame.SetActive(true);
         settingsScreen.SelectVideo.SetActive(false);
         settingsScreen.SelectAudio.SetActive(false);
@@ -255,9 +255,9 @@ public class Menu : MonoBehaviour {
     public void SelectVideo() {
         settingsScreen.SettingsCanvas.SetActive(false);
         videoScreen.VideoCanvas.SetActive(true);
-        videoScreen.MO1920.SetActive(true);
-        videoScreen.MO1280.SetActive(false);
-        videoScreen.MOVideoBack.SetActive(true);
+        //videoScreen.MO1920.SetActive(true);
+        //videoScreen.MO1280.SetActive(false);
+        //videoScreen.MOVideoBack.SetActive(true);
         videoScreen.Select1920.SetActive(false);
         videoScreen.Select1280.SetActive(true);
         videoScreen.SelectVideoBack.SetActive(false);
@@ -270,10 +270,10 @@ public class Menu : MonoBehaviour {
         menuScreen.MenuCanvas.SetActive(true);
         settingsScreen.SettingsCanvas.SetActive(false);
         menuScreen.MenuCanvas.SetActive(true);
-        menuScreen.MOStory.SetActive(false);
-        menuScreen.MOTraining.SetActive(true);
-        menuScreen.MOSettings.SetActive(true);
-        menuScreen.MOQuit.SetActive(true);
+        //menuScreen.MOStory.SetActive(false);
+        //menuScreen.MOTraining.SetActive(true);
+        //menuScreen.MOSettings.SetActive(true);
+        //menuScreen.MOQuit.SetActive(true);
         menuScreen.SelectStory.SetActive(true);
         menuScreen.SelectTraining.SetActive(false);
         menuScreen.SelectSettings.SetActive(false);
@@ -292,10 +292,10 @@ public class Menu : MonoBehaviour {
     public void SelectVideoBack() {
         videoScreen.VideoCanvas.SetActive(false);
         settingsScreen.SettingsCanvas.SetActive(true);
-        settingsScreen.MOGame.SetActive(false);
-        settingsScreen.MOVideo.SetActive(true);
-        settingsScreen.MOAudio.SetActive(true);
-        settingsScreen.MOSettingsBack.SetActive(true);
+        //settingsScreen.MOGame.SetActive(false);
+        //settingsScreen.MOVideo.SetActive(true);
+        //settingsScreen.MOAudio.SetActive(true);
+        //settingsScreen.MOSettingsBack.SetActive(true);
         settingsScreen.SelectGame.SetActive(true);
         settingsScreen.SelectVideo.SetActive(false);
         settingsScreen.SelectAudio.SetActive(false);
