@@ -63,35 +63,48 @@ public class Inputs : MonoBehaviour {
 
     public void MenuLogic() {
         #region anykey
-        if((Input.anyKeyDown)&&(menu.currentState == "anykey")) {
-            menu.pressToStart();
+        if(menu.currentMenuState == "TitleScreen") {
+            if ((Input.anyKeyDown) && (menu.currentState == "anykey")) {
+                menu.pressToStart();
+            }
         }
         #endregion
         #region Up
 		if ((keyW) || (keyArrowUp)) {
-			#region Menu
-			if (menu.currentState == "training") {
-				menu.MOStory ();
-			} else if (menu.currentState == "settings") {
-				menu.MOTraining ();
-			} else if (menu.currentState == "quit") {
-				menu.MOSettings ();
-			}
+            #region Menu
+            if (menu.currentMenuState == "MenuScreen") {
+                if (menu.currentState == "training") {
+                    menu.MOStory();
+                }
+                else if (menu.currentState == "settings") {
+                    menu.MOTraining();
+                }
+                else if (menu.currentState == "quit") {
+                    menu.MOSettings();
+                }
+            }
 			#endregion
 			#region Settings
-			if (menu.currentState == "video") {
-				menu.MOGame ();
-			} else if (menu.currentState == "audio") {
-				menu.MOVideo ();
-			} else if (menu.currentState == "settingsback") {
-				menu.MOAudio ();
-			}
+            if(menu.currentMenuState == "SettingsScreen") {
+                if (menu.currentState == "video") {
+                    menu.MOGame();
+                }
+                else if (menu.currentState == "audio") {
+                    menu.MOVideo();
+                }
+                else if (menu.currentState == "settingsback") {
+                    menu.MOAudio();
+                }
+            }
             #endregion
             #region Video Resolution
-            if(menu.currentState == "1920") {
-                menu.MO1280();
-            } else if (menu.currentState == "videoback") {
-                menu.MO1920();
+            if(menu.currentMenuState == "SettingsVideoScreen") {
+                if (menu.currentState == "1920") {
+                    menu.MO1280();
+                }
+                else if (menu.currentState == "videoback") {
+                    menu.MO1920();
+                }
             }
             #endregion
         }
@@ -99,79 +112,112 @@ public class Inputs : MonoBehaviour {
         #region Down
         else if ((keyS) || (keyArrowDown)) {
 			#region Menu
-			if (menu.currentState == "story") {
-				menu.MOTraining ();
-			} else if (menu.currentState == "training") {
-				menu.MOSettings ();
-			} else if (menu.currentState == "settings") {
-				menu.MOQuit ();
-			}
+            if (menu.currentMenuState == "MenuScreen") {
+                if (menu.currentState == "story") {
+                    menu.MOTraining();
+                }
+                else if (menu.currentState == "training") {
+                    menu.MOSettings();
+                }
+                else if (menu.currentState == "settings") {
+                    menu.MOQuit();
+                }
+            }
 			#endregion
 			#region Settings
-			if (menu.currentState == "game") {
-				menu.MOVideo ();
-			} else if (menu.currentState == "video") {
-				menu.MOAudio ();
-			} else if (menu.currentState == "audio") {
-				menu.MOSettingsBack ();
-			}
+            if(menu.currentMenuState == "SettingsScreen") {
+                if (menu.currentState == "game") {
+                    menu.MOVideo();
+                }
+                else if (menu.currentState == "video") {
+                    menu.MOAudio();
+                }
+                else if (menu.currentState == "audio") {
+                    menu.MOSettingsBack();
+                }
+            }
             #endregion
             #region Video Resolution
-            if(menu.currentState == "1280") {
-                menu.MO1920();
-            } else if(menu.currentState == "1920") {
-                menu.MOVideoBack();
+            if(menu.currentMenuState == "SettingsVideoScreen") {
+                if (menu.currentState == "1280") {
+                    menu.MO1920();
+                }
+                else if (menu.currentState == "1920") {
+                    menu.MOVideoBack();
+                }
             }
             #endregion
         }
         #endregion
         #region Enter
         else if (keyEnter) {
-			#region Menu
-			if (menu.currentState == "story") {
-				menu.SelectStory ();
-			} else if (menu.currentState == "training") {
-				menu.SelectTraining ();
-			} else if (menu.currentState == "settings") {
-				menu.SelectSettings ();
-			} else if (menu.currentState == "quit") {
-				menu.SelectQuit ();
-			}
+            #region Menu
+            if (menu.currentMenuState == "MenuScreen") {
+                if (menu.currentState == "story") {
+                    menu.SelectStory();
+                }
+                else if (menu.currentState == "training") {
+                    menu.SelectTraining();
+                }
+                else if (menu.currentState == "settings") {
+                    menu.SelectSettings();
+                }
+                else if (menu.currentState == "quit") {
+                    menu.SelectQuit();
+                }
+            }
 			#endregion
 			#region Settings
-			if (menu.currentState == "settingsback") {
-				menu.SelectSettingsBack();
-			} else if(menu.currentState == "video") {
-                menu.SelectVideo();
+            if (menu.currentMenuState == "SettingsScreen") {
+                if (menu.currentState == "settingsback") {
+                    menu.SelectSettingsBack();
+                }
+                else if (menu.currentState == "video") {
+                    menu.SelectVideo();
+                }
             }
             #endregion
             #region Video Resolution
-            if(menu.currentState == "1920") {
-                menu.Select1920();
-            } else if (menu.currentState == "1280") {
-                menu.Select1280();
-            } else if (menu.currentState == "videoback") {
-                menu.SelectVideoBack();
+            if (menu.currentMenuState == "SettingsVideoScreen") {
+                if (menu.currentState == "1920") {
+                    menu.Select1920();
+                }
+                else if (menu.currentState == "1280") {
+                    menu.Select1280();
+                }
+                else if (menu.currentState == "videoback") {
+                    menu.SelectVideoBack();
+                }
             }
             #endregion
         }
         #endregion
 		#region Esc Key
 		else if (escKey) {
-			if (menu.currentState == "game") {
-				menu.SelectSettingsBack ();
-			} else if (menu.currentState == "video") {
-				menu.SelectSettingsBack ();
-			} else if (menu.currentState == "audio") {
-				menu.SelectSettingsBack ();
-			} else if (menu.currentState == "back") {
-				menu.SelectSettingsBack ();
-			} else if (menu.currentState == "1920") {
-                menu.SelectVideoBack();
-            } else if (menu.currentState == "1280") {
-                menu.SelectVideoBack();
-            } else if (menu.currentState == "videoback") {
-                menu.SelectVideoBack();
+            if(menu.currentMenuState == "SettingsScreen") {
+                if (menu.currentState == "game") {
+                    menu.SelectSettingsBack();
+                }
+                else if (menu.currentState == "video") {
+                    menu.SelectSettingsBack();
+                }
+                else if (menu.currentState == "audio") {
+                    menu.SelectSettingsBack();
+                }
+                else if (menu.currentState == "back") {
+                    menu.SelectSettingsBack();
+                }
+            }
+            if(menu.currentMenuState == "SettingsVideoScreen") {
+                if (menu.currentState == "1920") {
+                    menu.SelectVideoBack();
+                }
+                else if (menu.currentState == "1280") {
+                    menu.SelectVideoBack();
+                }
+                else if (menu.currentState == "videoback") {
+                    menu.SelectVideoBack();
+                }
             }
 		}
 		#endregion
