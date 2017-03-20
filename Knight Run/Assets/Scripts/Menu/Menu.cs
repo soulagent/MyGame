@@ -39,7 +39,7 @@ public class Menu : MonoBehaviour {
     [System.Serializable]
     public class QuitScreen {
         public GameObject QuitCanvas;
-        public GameObject SelectQuitYes, SelectQuitNo;
+        public GameObject SelectQuitNo, SelectQuitYes;
     }
     public QuitScreen quitScreen;
 
@@ -68,7 +68,9 @@ public class Menu : MonoBehaviour {
         #endregion
 
         #region QuitScreen
-
+        quitScreen.QuitCanvas.SetActive(false);
+        quitScreen.SelectQuitNo.SetActive(true);
+        quitScreen.SelectQuitYes.SetActive(false);
         #endregion
 
         #region SettingsScreen
@@ -161,6 +163,19 @@ public class Menu : MonoBehaviour {
     }
     #endregion
 
+    #region Quit MouseOver
+    public void MOQuitNo() {
+        quitScreen.SelectQuitNo.SetActive(true);
+        quitScreen.SelectQuitYes.SetActive(false);
+        currentState = "no";
+    }
+    public void MOQuitYes() {
+        quitScreen.SelectQuitNo.SetActive(false);
+        quitScreen.SelectQuitYes.SetActive(true);
+        currentState = "yes";
+    }
+    #endregion 
+
     #region Video MouseOver
     public void MO1920() {
         videoScreen.Select1920.SetActive(true);
@@ -201,7 +216,13 @@ public class Menu : MonoBehaviour {
         StartCoroutine(settingsSelect());
     }
     public void SelectQuit() {
-        Application.Quit();
+        menuScreen.MenuCanvas.SetActive(false);
+        quitScreen.QuitCanvas.SetActive(true);
+        quitScreen.SelectQuitNo.SetActive(true);
+        quitScreen.SelectQuitYes.SetActive(false);
+        currentState = "no";
+
+        StartCoroutine(quitSelect());
     }
     #endregion
 
@@ -236,6 +257,36 @@ public class Menu : MonoBehaviour {
     }
     #endregion
 
+    #region Quit Select
+    public void SelectNo() {
+        menuScreen.MenuCanvas.SetActive(true);
+        quitScreen.QuitCanvas.SetActive(false);
+        menuScreen.MenuCanvas.SetActive(true);
+        menuScreen.SelectStory.SetActive(true);
+        menuScreen.SelectTraining.SetActive(false);
+        menuScreen.SelectSettings.SetActive(false);
+        menuScreen.SelectQuit.SetActive(false);
+        currentState = "story";
+
+        StartCoroutine(menuSelect());
+    }
+    public void SelectYes() {
+        Application.Quit();
+    }
+    public void SelectQuitBack() {
+        menuScreen.MenuCanvas.SetActive(true);
+        quitScreen.QuitCanvas.SetActive(false);
+        menuScreen.MenuCanvas.SetActive(true);
+        menuScreen.SelectStory.SetActive(true);
+        menuScreen.SelectTraining.SetActive(false);
+        menuScreen.SelectSettings.SetActive(false);
+        menuScreen.SelectQuit.SetActive(false);
+        currentState = "story";
+
+        StartCoroutine(menuSelect());
+    }
+    #endregion
+
     #region Video Select
     public void Select1920() {
         Screen.SetResolution(1920, 1080, true);
@@ -257,17 +308,21 @@ public class Menu : MonoBehaviour {
     #endregion
 
     #region iEnumerators
+    IEnumerator menuSelect() {
+        yield return new WaitForSeconds(0.1f);
+        currentMenuState = "MenuScreen";
+    }
     IEnumerator settingsSelect() {
         yield return new WaitForSeconds(0.1f);
         currentMenuState = "SettingsScreen";
     }
+    IEnumerator quitSelect() {
+        yield return new WaitForSeconds(0.1f);
+        currentMenuState = "QuitScreen";
+    }
     IEnumerator settingsVideoSelect() {
         yield return new WaitForSeconds(0.1f);
         currentMenuState = "SettingsVideoScreen";
-    }
-    IEnumerator menuSelect() {
-        yield return new WaitForSeconds(0.1f);
-        currentMenuState = "MenuScreen";
     }
     #endregion
 }

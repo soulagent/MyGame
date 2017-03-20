@@ -107,6 +107,13 @@ public class Inputs : MonoBehaviour {
                 }
             }
             #endregion
+            #region Quit
+            if(menu.currentMenuState == "QuitScreen") {
+                if(menu.currentState == "yes") {
+                    menu.MOQuitNo();
+                }
+            }
+            #endregion
         }
         #endregion
         #region Down
@@ -144,6 +151,13 @@ public class Inputs : MonoBehaviour {
                 }
                 else if (menu.currentState == "1920") {
                     menu.MOVideoBack();
+                }
+            }
+            #endregion
+            #region Quit
+            if(menu.currentMenuState == "QuitScreen") {
+                if(menu.currentState == "no") {
+                    menu.MOQuitYes();
                 }
             }
             #endregion
@@ -190,10 +204,20 @@ public class Inputs : MonoBehaviour {
                 }
             }
             #endregion
+            #region Quit
+            if(menu.currentMenuState == "QuitScreen") {
+                if(menu.currentState == "no") {
+                    menu.SelectNo();
+                }
+                else if (menu.currentState == "yes") {
+                    menu.SelectYes();
+                }
+            }
+            #endregion
         }
         #endregion
-		#region Esc Key
-		else if (escKey) {
+        #region Esc Key
+        else if (escKey) {
             if(menu.currentMenuState == "SettingsScreen") {
                 if (menu.currentState == "game") {
                     menu.SelectSettingsBack();
@@ -204,7 +228,7 @@ public class Inputs : MonoBehaviour {
                 else if (menu.currentState == "audio") {
                     menu.SelectSettingsBack();
                 }
-                else if (menu.currentState == "back") {
+                else if (menu.currentState == "settingsback") {
                     menu.SelectSettingsBack();
                 }
             }
@@ -217,6 +241,14 @@ public class Inputs : MonoBehaviour {
                 }
                 else if (menu.currentState == "videoback") {
                     menu.SelectVideoBack();
+                }
+            }
+            if(menu.currentMenuState == "QuitScreen") {
+                if(menu.currentState == "no") {
+                    menu.SelectQuitBack();
+                }
+                else if (menu.currentState == "yes") {
+                    menu.SelectQuitBack();
                 }
             }
 		}
