@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 94bee112d5b0ad24e95bf0cd5993cf4f
+timeCreated: 1491067601
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Rational Text DEMO
+  fontNames:
+  - Rational Text DEMO
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

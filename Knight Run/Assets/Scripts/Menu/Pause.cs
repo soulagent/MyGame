@@ -68,9 +68,9 @@ public class Pause : MonoBehaviour {
         pauseCanvas.resume.SetActive(false);
         pauseCanvas.quitTitle.SetActive(true);
         pauseCanvas.quitGame.SetActive(true);
-        pauseCanvas.MOresume.SetActive(true);
-        pauseCanvas.MOquitTitle.SetActive(false);
-        pauseCanvas.MOquitGame.SetActive(false);
+        //pauseCanvas.MOresume.SetActive(true);
+        //pauseCanvas.MOquitTitle.SetActive(false);
+        //pauseCanvas.MOquitGame.SetActive(false);
         #endregion
         currentState = "MOResume";
     }
@@ -86,27 +86,27 @@ public class Pause : MonoBehaviour {
         pauseCanvas.resume.SetActive(false);
         pauseCanvas.quitTitle.SetActive(true);
         pauseCanvas.quitGame.SetActive(true);
-        pauseCanvas.MOresume.SetActive(true);
-        pauseCanvas.MOquitTitle.SetActive(false);
-        pauseCanvas.MOquitGame.SetActive(false);
+        //pauseCanvas.MOresume.SetActive(true);
+        //pauseCanvas.MOquitTitle.SetActive(false);
+        //pauseCanvas.MOquitGame.SetActive(false);
     }
     public void MOQuitTitle() {
         currentState = "MOQuitTitle";
         pauseCanvas.resume.SetActive(true);
         pauseCanvas.quitTitle.SetActive(false);
         pauseCanvas.quitGame.SetActive(true);
-        pauseCanvas.MOresume.SetActive(false);
-        pauseCanvas.MOquitTitle.SetActive(true);
-        pauseCanvas.MOquitGame.SetActive(false);
+        //pauseCanvas.MOresume.SetActive(false);
+        //pauseCanvas.MOquitTitle.SetActive(true);
+        //pauseCanvas.MOquitGame.SetActive(false);
     }
     public void MOQuitGame() {
         currentState = "MOQuitGame";
         pauseCanvas.resume.SetActive(true);
         pauseCanvas.quitTitle.SetActive(true);
         pauseCanvas.quitGame.SetActive(false);
-        pauseCanvas.MOresume.SetActive(false);
-        pauseCanvas.MOquitTitle.SetActive(false);
-        pauseCanvas.MOquitGame.SetActive(true);
+        //pauseCanvas.MOresume.SetActive(false);
+        //pauseCanvas.MOquitTitle.SetActive(false);
+        //pauseCanvas.MOquitGame.SetActive(true);
     }
     #endregion
     #region Select Button handler
