@@ -15,7 +15,6 @@ public class Inputs : MonoBehaviour {
     #endregion
     #region Keyboard Inputs Initialization
     public string selectK;
-    public string selectJ;
     public string wKey;
     public string sKey;
     public string arrowKeyDown;
@@ -25,12 +24,26 @@ public class Inputs : MonoBehaviour {
     public string spaceKey;
     #endregion
 
+    #region Joystick Inputs
+    public bool AButton;
+    public bool JoystickUp;
+    public bool JoystickDown;
+    public bool JoypadUp;
+    public bool JoypadDown;
+    public bool BButton;
+    #endregion
+    #region Joystick Inputs Initialization
+    public string aButton;
+    public string joystickUpDown;
+    public string joypadUpDown;
+    public string bButton;
+    #endregion
+
     public Menu menu;
 
     void Awake() {
         menu.GetComponent<Menu>();
         selectK = "SelectK";
-        selectJ = "SelectJ";
         wKey = "wKey";
         sKey = "sKey";
         arrowKeyDown = "downArrow";
@@ -38,6 +51,12 @@ public class Inputs : MonoBehaviour {
         enterKey = "enterKey";
         escKeyK = "escKeyK";
         spaceKey = "spaceKey";
+
+        aButton = "aButton";
+        joystickUpDown = "JoyUpDown";
+        joypadUpDown = "JoyButtonUpDown";
+        bButton = "bButton";
+
     }
     // Use this for initialization
     void Start () {
@@ -46,11 +65,27 @@ public class Inputs : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        HandleControllerInput();
         HandleKeyboardInput();
         MenuLogic();
-	}
 
-    private void HandleKeyboardInput() {
+        print(Input.GetAxis(joypadUpDown));
+        print(Input.GetAxis(joystickUpDown));
+        print(Input.GetButton(aButton));
+        print(Input.GetButton(bButton));
+        print(Input.GetButton(arrowKeyDown));
+        print(Input.GetButton(arrowKeyUp));
+    }
+    public void HandleControllerInput() {
+        AButton = Input.GetButtonDown(aButton);
+        JoystickUp = Input.GetAxis(joystickUpDown) > 0;
+        JoystickDown = Input.GetAxis(joystickUpDown) < 0;
+        JoypadUp = Input.GetAxis(joypadUpDown) > 0;
+        JoypadDown = Input.GetAxis(joypadUpDown) < 0;
+        BButton = Input.GetButtonDown(bButton);
+    }
+
+    public void HandleKeyboardInput() {
         LMB = Input.GetButtonDown(selectK);
         keyW = Input.GetButtonDown(wKey);
         keyS = Input.GetButtonDown(sKey);
@@ -70,7 +105,7 @@ public class Inputs : MonoBehaviour {
         }
         #endregion
         #region Up
-		if ((keyW) || (keyArrowUp)) {
+		if ((keyW) || (keyArrowUp) || (JoystickUp) || (JoypadUp)) {
             #region Menu
             if (menu.currentMenuState == "MenuScreen") {
                 if (menu.currentState == "training") {
@@ -117,7 +152,7 @@ public class Inputs : MonoBehaviour {
         }
         #endregion
         #region Down
-        else if ((keyS) || (keyArrowDown)) {
+        else if ((keyS) || (keyArrowDown) || (JoystickDown) || (JoypadDown)) {
 			#region Menu
             if (menu.currentMenuState == "MenuScreen") {
                 if (menu.currentState == "story") {
