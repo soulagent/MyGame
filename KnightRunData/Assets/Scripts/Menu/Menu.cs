@@ -89,6 +89,9 @@ public class Menu : MonoBehaviour {
         #endregion
     }
 
+    public void Update() {
+        print(currentState);
+    }
     public void pressToStart() {
         startScreen.StartCanvas.SetActive(false);
         startScreen.PressToStart.SetActive(false);

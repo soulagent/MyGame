@@ -39,6 +39,7 @@ public class Inputs : MonoBehaviour {
     public string bButton;
     #endregion
 
+    private bool joypadUpDownInUse;
     public Menu menu;
 
     void Awake() {
@@ -70,18 +71,16 @@ public class Inputs : MonoBehaviour {
         MenuLogic();
 
         print(Input.GetAxis(joypadUpDown));
-        print(Input.GetAxis(joystickUpDown));
-        print(Input.GetButton(aButton));
-        print(Input.GetButton(bButton));
-        print(Input.GetButton(arrowKeyDown));
-        print(Input.GetButton(arrowKeyUp));
+        //print(Input.GetButton(aButton));
+        //print(Input.GetButton(bButton));
+        print(joypadUpDownInUse);
     }
     public void HandleControllerInput() {
         AButton = Input.GetButtonDown(aButton);
-        JoystickUp = Input.GetAxis(joystickUpDown) > 0;
-        JoystickDown = Input.GetAxis(joystickUpDown) < 0;
-        JoypadUp = Input.GetAxis(joypadUpDown) > 0;
-        JoypadDown = Input.GetAxis(joypadUpDown) < 0;
+        //JoystickUp = Input.GetAxis(joystickUpDown) < 0.5;
+        //JoystickDown = Input.GetAxis(joystickUpDown) > 0.5;
+        JoypadUp = Input.GetAxis(joypadUpDown) < -0.999;
+        JoypadDown = Input.GetAxis(joypadUpDown) > 0.999;
         BButton = Input.GetButtonDown(bButton);
     }
 
@@ -104,18 +103,21 @@ public class Inputs : MonoBehaviour {
             }
         }
         #endregion
-        #region Up
-		if ((keyW) || (keyArrowUp) || (JoystickUp) || (JoypadUp)) {
+        #region Up Keyboard
+		if ((keyW) || (keyArrowUp)) {
             #region Menu
             if (menu.currentMenuState == "MenuScreen") {
                 if (menu.currentState == "training") {
                     menu.MOStory();
+                    return;
                 }
                 else if (menu.currentState == "settings") {
                     menu.MOTraining();
+                    return;
                 }
                 else if (menu.currentState == "quit") {
                     menu.MOSettings();
+                    return;
                 }
             }
 			#endregion
@@ -123,12 +125,15 @@ public class Inputs : MonoBehaviour {
             if(menu.currentMenuState == "SettingsScreen") {
                 if (menu.currentState == "video") {
                     menu.MOGame();
+                    return;
                 }
                 else if (menu.currentState == "audio") {
                     menu.MOVideo();
+                    return;
                 }
                 else if (menu.currentState == "settingsback") {
                     menu.MOAudio();
+                    return;
                 }
             }
             #endregion
@@ -136,9 +141,11 @@ public class Inputs : MonoBehaviour {
             if(menu.currentMenuState == "SettingsVideoScreen") {
                 if (menu.currentState == "1920") {
                     menu.MO1280();
+                    return;
                 }
                 else if (menu.currentState == "videoback") {
                     menu.MO1920();
+                    return;
                 }
             }
             #endregion
@@ -146,23 +153,27 @@ public class Inputs : MonoBehaviour {
             if(menu.currentMenuState == "QuitScreen") {
                 if(menu.currentState == "yes") {
                     menu.MOQuitNo();
+                    return;
                 }
             }
             #endregion
         }
         #endregion
         #region Down
-        else if ((keyS) || (keyArrowDown) || (JoystickDown) || (JoypadDown)) {
+        else if ((keyS) || (keyArrowDown)) {
 			#region Menu
             if (menu.currentMenuState == "MenuScreen") {
                 if (menu.currentState == "story") {
                     menu.MOTraining();
+                    return;
                 }
                 else if (menu.currentState == "training") {
                     menu.MOSettings();
+                    return;
                 }
                 else if (menu.currentState == "settings") {
                     menu.MOQuit();
+                    return;
                 }
             }
 			#endregion
@@ -170,12 +181,15 @@ public class Inputs : MonoBehaviour {
             if(menu.currentMenuState == "SettingsScreen") {
                 if (menu.currentState == "game") {
                     menu.MOVideo();
+                    return;
                 }
                 else if (menu.currentState == "video") {
                     menu.MOAudio();
+                    return;
                 }
                 else if (menu.currentState == "audio") {
                     menu.MOSettingsBack();
+                    return;
                 }
             }
             #endregion
@@ -183,9 +197,11 @@ public class Inputs : MonoBehaviour {
             if(menu.currentMenuState == "SettingsVideoScreen") {
                 if (menu.currentState == "1280") {
                     menu.MO1920();
+                    return;
                 }
                 else if (menu.currentState == "1920") {
                     menu.MOVideoBack();
+                    return;
                 }
             }
             #endregion
@@ -193,6 +209,7 @@ public class Inputs : MonoBehaviour {
             if(menu.currentMenuState == "QuitScreen") {
                 if(menu.currentState == "no") {
                     menu.MOQuitYes();
+                    return;
                 }
             }
             #endregion
@@ -287,6 +304,113 @@ public class Inputs : MonoBehaviour {
                 }
             }
 		}
-		#endregion
+        #endregion
+        //*
+        #region Up Controller
+        if ((Input.GetAxisRaw(joypadUpDown) >= 0)) {
+            if(joypadUpDownInUse == false) {
+                #region Menu
+                if (menu.currentMenuState == "MenuScreen") {
+                    if (menu.currentState == "training") {
+                        menu.MOStory();
+                    }
+                    else if (menu.currentState == "settings") {
+                        menu.MOTraining();
+                    }
+                    else if (menu.currentState == "quit") {
+                        menu.MOSettings();
+                    }
+                }
+                #endregion
+                #region Settings
+                if (menu.currentMenuState == "SettingsScreen") {
+                    if (menu.currentState == "video") {
+                        menu.MOGame();
+                    }
+                    else if (menu.currentState == "audio") {
+                        menu.MOVideo();
+                    }
+                    else if (menu.currentState == "settingsback") {
+                        menu.MOAudio();
+                    }
+                }
+                #endregion
+                #region Video Resolution
+                if (menu.currentMenuState == "SettingsVideoScreen") {
+                    if (menu.currentState == "1920") {
+                        menu.MO1280();
+                    }
+                    else if (menu.currentState == "videoback") {
+                        menu.MO1920();
+                    }
+                }
+                #endregion
+                #region Quit
+                if (menu.currentMenuState == "QuitScreen") {
+                    if (menu.currentState == "yes") {
+                        menu.MOQuitNo();
+                    }
+                }
+                #endregion
+            }
+        }
+        if ((Input.GetAxisRaw(joypadUpDown) == 0)) {
+            joypadUpDownInUse = false;
+        }
+        #endregion
+        #region Down
+        if ((Input.GetAxisRaw(joypadUpDown) <= 0)) {
+            if (joypadUpDownInUse == false) {
+                joypadUpDownInUse = true;
+                #region Menu
+                if (menu.currentMenuState == "MenuScreen") {
+                    if (menu.currentState == "story") {
+                        menu.MOTraining();
+                    }
+                    else if (menu.currentState == "training") {
+                        menu.MOSettings();
+                    }
+                    else if (menu.currentState == "settings") {
+                        menu.MOQuit();
+                    }
+                }
+                #endregion
+                #region Settings
+                if (menu.currentMenuState == "SettingsScreen") {
+                    if (menu.currentState == "game") {
+                        menu.MOVideo();
+                    }
+                    else if (menu.currentState == "video") {
+                        menu.MOAudio();
+                    }
+                    else if (menu.currentState == "audio") {
+                        menu.MOSettingsBack();
+                    }
+                }
+                #endregion
+                #region Video Resolution
+                if (menu.currentMenuState == "SettingsVideoScreen") {
+                    if (menu.currentState == "1280") {
+                        menu.MO1920();
+                    }
+                    else if (menu.currentState == "1920") {
+                        menu.MOVideoBack();
+                    }
+                }
+                #endregion
+                #region Quit
+                if (menu.currentMenuState == "QuitScreen") {
+                    if (menu.currentState == "no") {
+                        menu.MOQuitYes();
+                    }
+                }
+                #endregion
+            }
+        }
+        if ((Input.GetAxisRaw(joypadUpDown) == 0)) {
+            joypadUpDownInUse = false;
+        }
+        #endregion
+        //*/
     }
 }
