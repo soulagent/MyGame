@@ -26,15 +26,12 @@ public class Inputs : MonoBehaviour {
 
     #region Joystick Inputs
     public bool AButton;
-    public bool JoystickUp;
-    public bool JoystickDown;
     public bool JoypadUp;
     public bool JoypadDown;
     public bool BButton;
     #endregion
     #region Joystick Inputs Initialization
     public string aButton;
-    public string joystickUpDown;
     public string joypadUpDown;
     public string bButton;
     #endregion
@@ -54,7 +51,6 @@ public class Inputs : MonoBehaviour {
         spaceKey = "spaceKey";
 
         aButton = "aButton";
-        joystickUpDown = "JoyUpDown";
         joypadUpDown = "JoyButtonUpDown";
         bButton = "bButton";
 
@@ -71,16 +67,12 @@ public class Inputs : MonoBehaviour {
         MenuLogic();
 
         print(Input.GetAxis(joypadUpDown));
-        //print(Input.GetButton(aButton));
-        //print(Input.GetButton(bButton));
         print(joypadUpDownInUse);
     }
     public void HandleControllerInput() {
         AButton = Input.GetButtonDown(aButton);
-        //JoystickUp = Input.GetAxis(joystickUpDown) < 0.5;
-        //JoystickDown = Input.GetAxis(joystickUpDown) > 0.5;
-        JoypadUp = Input.GetAxis(joypadUpDown) < -0.999;
-        JoypadDown = Input.GetAxis(joypadUpDown) > 0.999;
+        JoypadUp = Input.GetAxis(joypadUpDown) == 1;
+        JoypadDown = Input.GetAxis(joypadUpDown) == -1;
         BButton = Input.GetButtonDown(bButton);
     }
 
@@ -309,16 +301,20 @@ public class Inputs : MonoBehaviour {
         #region Up Controller
         if ((Input.GetAxisRaw(joypadUpDown) >= 0)) {
             if(joypadUpDownInUse == false) {
+                joypadUpDownInUse = true;
                 #region Menu
-                if (menu.currentMenuState == "MenuScreen") {
+                if ((menu.currentMenuState == "MenuScreen") && (joypadUpDownInUse == true)) {
                     if (menu.currentState == "training") {
                         menu.MOStory();
+                        joypadUpDownInUse = false;
                     }
                     else if (menu.currentState == "settings") {
                         menu.MOTraining();
+                        joypadUpDownInUse = false;
                     }
                     else if (menu.currentState == "quit") {
                         menu.MOSettings();
+                        joypadUpDownInUse = false;
                     }
                 }
                 #endregion
@@ -363,15 +359,18 @@ public class Inputs : MonoBehaviour {
             if (joypadUpDownInUse == false) {
                 joypadUpDownInUse = true;
                 #region Menu
-                if (menu.currentMenuState == "MenuScreen") {
+                if ((menu.currentMenuState == "MenuScreen") && (joypadUpDownInUse == true)) {
                     if (menu.currentState == "story") {
                         menu.MOTraining();
+                        joypadUpDownInUse = false;
                     }
                     else if (menu.currentState == "training") {
                         menu.MOSettings();
+                        joypadUpDownInUse = false;
                     }
                     else if (menu.currentState == "settings") {
                         menu.MOQuit();
+                        joypadUpDownInUse = false;
                     }
                 }
                 #endregion
