@@ -36,7 +36,7 @@ public class Inputs : MonoBehaviour {
             }
         }
         #endregion
-        #region Up Keyboard
+        #region Up
 		if (Input.GetButtonDown(wKey) || Input.GetButtonDown(arrowKeyUp)) {
             #region Menu
             if (menu.currentMenuState == "MenuScreen") {
