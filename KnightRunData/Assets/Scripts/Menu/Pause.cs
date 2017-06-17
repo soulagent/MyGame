@@ -13,159 +13,210 @@ public class Pause : MonoBehaviour {
     [System.Serializable]
     public class PauseCanvas {
         public GameObject pauseCanvas;
-        public GameObject resume,MOresume;
-        public GameObject quitTitle,MOquitTitle;
-        public GameObject quitGame,MOquitGame;
+        public GameObject selectResume, selectReload, selectQuitGame;
         public GameObject PausePrefab;
     }
     [SerializeField]
     public PauseCanvas pauseCanvas;
 
-    [System.Serializable]
-    public class Inputs {
-        public bool LMB;
-        public bool escKey;
-        public bool keyW;
-        public bool keyS;
-        public bool keyEnter;
-        public bool keyArrowUp;
-        public bool keyArrowDown;
-    }
-    [SerializeField]
-    public Inputs inputs;
+    #region Keyboard Inputs Initialization
+    private string wKey;
+    private string sKey;
+    private string enterKey;
+    private string downArrow;
+    private string upArrow;
+    private string escKeyK;
+    #endregion
 
-    [System.Serializable]
-    public class InputStrings {
-        public string selectK;
-        public string escKey;
-        public string wKey;
-        public string sKey;
-        public string enterKey;
-        public string arrowKeyDown;
-        public string arrowKeyUp;
-    }
-    [SerializeField]
-    public InputStrings inputStrings;
+    #region Controller Inputs Initialization
+    private string aButton;
+    private string bButton;
+    private string dpadUpDown;
+    private string joystickUpDown;
+    private string startButton;
+    #endregion
+
+    private bool dpadAxisInUse;
+    private bool joystickAxisInUse;
 
     void Awake() {
-        #region input
-        inputStrings.selectK = "SelectK";
-        inputStrings.escKey = "escKeyK";
-        inputStrings.wKey = "wKey";
-        inputStrings.sKey = "sKey";
-        inputStrings.enterKey = "enterKey";
-        inputStrings.arrowKeyDown = "downArrow";
-        inputStrings.arrowKeyUp = "upArrow";
-        #endregion
+
+        wKey = "wKey";
+        sKey = "sKey";
+        enterKey = "enterKey";
+        downArrow = "downArrow";
+        upArrow = "upArrow";
+        escKeyK = "escKeyK";
+
+        aButton = "aButton";
+        bButton = "bButton";
+        dpadUpDown = "JoyButtonUpDown";
+        joystickUpDown = "JoyUpDown";
+        startButton = "startButton";
+
     }
-    // Use this for initialization
+
     void Start () {
         PauseTrigger.SetActive(true);
         Cursor.lockState = cursorUnlocked;
         #region Pause Canvas
         pauseCanvas.pauseCanvas.SetActive(true);
 
-        pauseCanvas.resume.SetActive(false);
-        pauseCanvas.quitTitle.SetActive(true);
-        pauseCanvas.quitGame.SetActive(true);
-        //pauseCanvas.MOresume.SetActive(true);
-        //pauseCanvas.MOquitTitle.SetActive(false);
-        //pauseCanvas.MOquitGame.SetActive(false);
+        pauseCanvas.selectResume.SetActive(true);
+        pauseCanvas.selectReload.SetActive(false);
+        pauseCanvas.selectQuitGame.SetActive(false);
         #endregion
-        currentState = "MOResume";
+        currentState = "resume";
     }
 
-    // Update is called once per frame
     void Update () {
         PauseMenuLogic();
-        HandleInput();
 	}
     #region MO Handlers
     public void MOResume() {
-        currentState = "MOResume";
-        pauseCanvas.resume.SetActive(false);
-        pauseCanvas.quitTitle.SetActive(true);
-        pauseCanvas.quitGame.SetActive(true);
-        //pauseCanvas.MOresume.SetActive(true);
-        //pauseCanvas.MOquitTitle.SetActive(false);
-        //pauseCanvas.MOquitGame.SetActive(false);
+        currentState = "resume";
+        pauseCanvas.selectResume.SetActive(true);
+        pauseCanvas.selectReload.SetActive(false);
+        pauseCanvas.selectQuitGame.SetActive(false);
     }
-    public void MOQuitTitle() {
-        currentState = "MOQuitTitle";
-        pauseCanvas.resume.SetActive(true);
-        pauseCanvas.quitTitle.SetActive(false);
-        pauseCanvas.quitGame.SetActive(true);
-        //pauseCanvas.MOresume.SetActive(false);
-        //pauseCanvas.MOquitTitle.SetActive(true);
-        //pauseCanvas.MOquitGame.SetActive(false);
+    public void MOReload() {
+        currentState = "reload";
+        pauseCanvas.selectResume.SetActive(false);
+        pauseCanvas.selectReload.SetActive(true);
+        pauseCanvas.selectQuitGame.SetActive(false);
     }
     public void MOQuitGame() {
-        currentState = "MOQuitGame";
-        pauseCanvas.resume.SetActive(true);
-        pauseCanvas.quitTitle.SetActive(true);
-        pauseCanvas.quitGame.SetActive(false);
-        //pauseCanvas.MOresume.SetActive(false);
-        //pauseCanvas.MOquitTitle.SetActive(false);
-        //pauseCanvas.MOquitGame.SetActive(true);
+        currentState = "quit";
+        pauseCanvas.selectResume.SetActive(false);
+        pauseCanvas.selectReload.SetActive(false);
+        pauseCanvas.selectQuitGame.SetActive(true);
     }
     #endregion
     #region Select Button handler
     public void SelectResume() {
         Time.timeScale = 1;
+
+        pauseCanvas.selectResume.SetActive(true);
+        pauseCanvas.selectReload.SetActive(false);
+        pauseCanvas.selectQuitGame.SetActive(false);
+
+        currentState = "resume";
+
         pauseCanvas.pauseCanvas.SetActive(true);
         pauseCanvas.PausePrefab.SetActive(false);
         PauseTrigger.SetActive(true);
         Cursor.lockState = cursorLocked;
     }
-    public void SelectQuitTitle() {
-        SceneManager.LoadScene("Menu");
+    public void SelectReload() {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("KnightTrainingRoom");
     }
     public void SelectQuitGame() {
-        Application.Quit();
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Menu");
     }
     #endregion
+
     private void PauseMenuLogic() {
         #region W Key Handler
-        if((inputs.keyW)||(inputs.keyArrowUp)) {
-            if(currentState == "MOQuitTitle") {
+        if ( (Input.GetButtonDown(wKey)) || (Input.GetButtonDown(upArrow)) ) {
+            if(currentState == "reload") {
                 MOResume();
             }
-            else if (currentState == "MOQuitGame") {
-                MOQuitTitle();
+            else if (currentState == "quit") {
+                MOReload();
             }
         }
         #endregion
         #region S Key Handler
-        if((inputs.keyS)||(inputs.keyArrowDown)) {
-            if(currentState == "MOResume") {
-                MOQuitTitle();
+        if ( (Input.GetButtonDown(sKey)) || (Input.GetButtonDown(downArrow)) ) {
+            if(currentState == "resume") {
+                MOReload();
             }
-            else if(currentState == "MOQuitTitle") {
+            else if(currentState == "reload") {
                 MOQuitGame();
             }
         }
         #endregion
         #region Enter Key Handler
-        if(inputs.keyEnter) {
-            if(currentState == "MOResume") {
+        if ( Input.GetButtonDown(enterKey) || Input.GetButtonDown(aButton) ) {
+            if(currentState == "resume") {
                 SelectResume();
             }
-            else if(currentState == "MOQuitTitle") {
-                SelectQuitTitle();
+            else if(currentState == "reload") {
+                SelectReload();
             }
-            else if (currentState == "MOQuitGame") {
+            else if (currentState == "quit") {
                 SelectQuitGame();
             }
         }
         #endregion
-    }
-    private void HandleInput() {
-        inputs.LMB = Input.GetButtonDown(inputStrings.selectK);
-        inputs.keyW = Input.GetButtonDown(inputStrings.wKey);
-        inputs.keyS = Input.GetButtonDown(inputStrings.sKey);
-        inputs.keyEnter = Input.GetButtonDown(inputStrings.enterKey);
-        inputs.keyArrowDown = Input.GetButtonDown(inputStrings.arrowKeyDown);
-        inputs.keyArrowUp = Input.GetButtonDown(inputStrings.arrowKeyUp);
-        inputs.escKey = Input.GetButtonDown(inputStrings.escKey);
+        #region Dpad Up and Down
+        if (Input.GetAxisRaw(dpadUpDown) != 0) {
+            if (dpadAxisInUse == false) {
+                #region Up 
+                if ((Input.GetAxisRaw(dpadUpDown) > 0)) {
+                    if (currentState == "reload") {
+                        MOResume();
+                    }
+                    else if (currentState == "quit") {
+                        MOReload();
+                    }
+                }
+                #endregion
+                #region Down
+                if ((Input.GetAxisRaw(dpadUpDown) < 0)) {
+                    if (currentState == "resume") {
+                        MOReload();
+                    }
+                    else if (currentState == "reload") {
+                        MOQuitGame();
+                    }
+                }
+                #endregion
+                dpadAxisInUse = true;
+            }
+        }
+        if (Input.GetAxisRaw(dpadUpDown) == 0) {
+            dpadAxisInUse = false;
+        }
+        #endregion
+        #region JoyStick Up and Down
+        if (Input.GetAxisRaw(joystickUpDown) != 0) {
+            if (joystickAxisInUse == false) {
+                #region Up 
+                if ((Input.GetAxisRaw(joystickUpDown) < 0)) {
+                    if (currentState == "reload") {
+                        MOResume();
+                    }
+                    else if (currentState == "quit") {
+                        MOReload();
+                    }
+                }
+                #endregion
+                #region Down
+                if ((Input.GetAxisRaw(joystickUpDown) > 0)) {
+                    if (currentState == "resume") {
+                        MOReload();
+                    }
+                    else if (currentState == "reload") {
+                        MOQuitGame();
+                    }
+                }
+                #endregion
+                joystickAxisInUse = true;
+            }
+        }
+        if (Input.GetAxisRaw(joystickUpDown) == 0) {
+            joystickAxisInUse = false;
+        }
+        #endregion
+        #region Esc Key Handler
+        if ( Input.GetButtonDown(escKeyK) || Input.GetButtonDown(bButton) || Input.GetButtonDown(startButton) ) {
+            if ( currentState == "resume" || currentState == "reload" ||  currentState == "quit") {
+                SelectResume();
+            }
+        }
+        #endregion
     }
 }

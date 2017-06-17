@@ -112,6 +112,7 @@ public class ControllerInputs : MonoBehaviour {
             }
         }
         #endregion
+        #region Dpad Up and Down
         if (Input.GetAxisRaw(dpadUpDown) != 0) {
             if (dpadAxisInUse == false) {
                 #region Up 
@@ -214,7 +215,8 @@ public class ControllerInputs : MonoBehaviour {
         if(Input.GetAxisRaw(dpadUpDown) == 0) {
             dpadAxisInUse = false;
         }
-
+        #endregion
+        #region JoyStick Up and Down
         if(Input.GetAxisRaw(joystickUpDown) != 0) {
             if(joystickAxisInUse == false) {
                 #region Up 
@@ -317,5 +319,6 @@ public class ControllerInputs : MonoBehaviour {
         if(Input.GetAxisRaw(joystickUpDown) == 0) {
             joystickAxisInUse = false;
         }
+        #endregion
     }
 }

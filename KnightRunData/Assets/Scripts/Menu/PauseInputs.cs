@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PauseInputs : MonoBehaviour {
-    public bool escKey;
-    public string escKeyString;
+    private string escKeyK;
+    private string startButton;
 
     public GameObject PausePrefab;
     public GameObject PauseTrigger;
 
 
     void Awake() {
-        escKeyString = "escKeyK";
+        escKeyK = "escKeyK";
+        startButton = "startButton";
     }
     // Use this for initialization
     void Start() {
@@ -21,16 +22,11 @@ public class PauseInputs : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        HandleInput();
         PauseMenuTrigger();
     }
 
-    private void HandleInput() {
-        escKey = Input.GetButtonDown(escKeyString);
-    }
-
     private void PauseMenuTrigger() {
-        if (escKey) {
+        if ( (Input.GetButtonDown(escKeyK)) || (Input.GetButtonDown(startButton)) ) {
             Time.timeScale = 0;
             PausePrefab.SetActive(true);
             PauseTrigger.SetActive(false);

@@ -6,15 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
 
-    // Things to note for tagged States that I've assigned.
-    // In currentState, it referes to the buttons that are being selected.
-    // In currentMenuState, it refers to the Menu Screen that it is currently on. ( TitleScreen, MenuScreen, SettingsScreen, SettingsVideoScreen )
-    // Switching of the menu will trigger a short time delay to prevent immediate switching.
-    // Checking for button presses will require pressing the button to activate it again.
+    #region Keyboard Inputs Initialization
+    private string wKey;
+    private string sKey;
+    private string arrowKeyDown;
+    private string arrowKeyUp;
+    private string enterKey;
+    private string escKeyK;
+    #endregion
+
+    #region Controller Inputs Initialization
+    private string aButton;
+    private string bButton;
+    private string dpadUpDown;
+    private string joystickUpDown;
+    #endregion
 
     public string currentState, currentMenuState;
-    public Inputs inputs;
+    private bool dpadAxisInUse;
+    private bool joystickAxisInUse;
 
+    #region System.Serializables for Screen Handlers
     [System.Serializable]
     public class StartScreen {
         public GameObject StartCanvas;
@@ -49,16 +61,30 @@ public class Menu : MonoBehaviour {
         public GameObject Select1920, Select1280, SelectVideoBack;
     }
     public VideoScreen videoScreen;
+    #endregion
 
-	// Use this for initialization
-	void Start () {
+    void Awake() {
+        wKey = "wKey";
+        sKey = "sKey";
+        arrowKeyDown = "downArrow";
+        arrowKeyUp = "upArrow";
+        enterKey = "enterKey";
+        escKeyK = "escKeyK";
+
+        aButton = "aButton";
+        bButton = "bButton";
+        dpadUpDown = "JoyButtonUpDown";
+        joystickUpDown = "JoyUpDown";
+    }
+
+    void Start () {
         currentState = "anykey";
         currentMenuState = "TitleScreen";
+
         #region StartScreen
         startScreen.StartCanvas.SetActive(true);
         startScreen.PressToStart.SetActive(true);
         #endregion
-
         #region MenuScreen
         menuScreen.MenuCanvas.SetActive(false);
         menuScreen.SelectStory.SetActive(true);
@@ -66,13 +92,11 @@ public class Menu : MonoBehaviour {
         menuScreen.SelectSettings.SetActive(false);
         menuScreen.SelectQuit.SetActive(false);
         #endregion
-
         #region QuitScreen
         quitScreen.QuitCanvas.SetActive(false);
         quitScreen.SelectQuitNo.SetActive(true);
         quitScreen.SelectQuitYes.SetActive(false);
         #endregion
-
         #region SettingsScreen
         settingsScreen.SettingsCanvas.SetActive(false);
         settingsScreen.SelectGame.SetActive(true);
@@ -80,18 +104,405 @@ public class Menu : MonoBehaviour {
         settingsScreen.SelectAudio.SetActive(false);
         settingsScreen.SelectSettingsBack.SetActive(false);
         #endregion
-
         #region VideoScreen
         videoScreen.VideoCanvas.SetActive(false);
         videoScreen.Select1920.SetActive(true);
         videoScreen.Select1280.SetActive(false);
         videoScreen.SelectVideoBack.SetActive(false);
         #endregion
+
     }
 
     void Update() {
+        MenuLogic();
+    }
+
+    public void MenuLogic() {
+
+        #region anykey
+        if (currentMenuState == "TitleScreen") {
+            if ((Input.anyKeyDown) && (currentState == "anykey")) {
+                pressToStart();
+            }
+        }
+        #endregion
+        #region Up
+        if (Input.GetButtonDown(wKey) || Input.GetButtonDown(arrowKeyUp)) {
+            #region Menu
+            if (currentMenuState == "MenuScreen") {
+                if (currentState == "training") {
+                    MOStory();
+                }
+                else if (currentState == "settings") {
+                    MOTraining();
+                }
+                else if (currentState == "quit") {
+                    MOSettings();
+                }
+            }
+            #endregion
+            #region Settings
+            if (currentMenuState == "SettingsScreen") {
+                if (currentState == "video") {
+                    MOGame();
+                }
+                else if (currentState == "audio") {
+                    MOVideo();
+                }
+                else if (currentState == "settingsback") {
+                    MOAudio();
+                }
+            }
+            #endregion
+            #region Video Resolution
+            if (currentMenuState == "SettingsVideoScreen") {
+                if (currentState == "1920") {
+                    MO1280();
+                }
+                else if (currentState == "videoback") {
+                    MO1920();
+                }
+            }
+            #endregion
+            #region Quit
+            if (currentMenuState == "QuitScreen") {
+                if (currentState == "yes") {
+                    MOQuitNo();
+                }
+            }
+            #endregion
+        }
+        #endregion
+        #region Down
+        else if (Input.GetButtonDown(sKey) || Input.GetButtonDown(arrowKeyDown)) {
+            #region Menu
+            if (currentMenuState == "MenuScreen") {
+                if (currentState == "story") {
+                    MOTraining();
+                }
+                else if (currentState == "training") {
+                    MOSettings();
+                }
+                else if (currentState == "settings") {
+                    MOQuit();
+                }
+            }
+            #endregion
+            #region Settings
+            if (currentMenuState == "SettingsScreen") {
+                if (currentState == "game") {
+                    MOVideo();
+                }
+                else if (currentState == "video") {
+                    MOAudio();
+                }
+                else if (currentState == "audio") {
+                    MOSettingsBack();
+                }
+            }
+            #endregion
+            #region Video Resolution
+            if (currentMenuState == "SettingsVideoScreen") {
+                if (currentState == "1280") {
+                    MO1920();
+                }
+                else if (currentState == "1920") {
+                    MOVideoBack();
+                }
+            }
+            #endregion
+            #region Quit
+            if (currentMenuState == "QuitScreen") {
+                if (currentState == "no") {
+                    MOQuitYes();
+                }
+            }
+            #endregion
+        }
+        #endregion
+        #region Enter & A Button
+        else if (Input.GetButtonDown(enterKey) || Input.GetButtonDown(aButton)) {
+            #region Menu
+            if (currentMenuState == "MenuScreen") {
+                if (currentState == "story") {
+                    SelectStory();
+                }
+                else if (currentState == "training") {
+                    SelectTraining();
+                }
+                else if (currentState == "settings") {
+                    SelectSettings();
+                }
+                else if (currentState == "quit") {
+                    SelectQuit();
+                }
+            }
+            #endregion
+            #region Settings
+            if (currentMenuState == "SettingsScreen") {
+                if (currentState == "settingsback") {
+                    SelectSettingsBack();
+                }
+                else if (currentState == "video") {
+                    SelectVideo();
+                }
+            }
+            #endregion
+            #region Video Resolution
+            if (currentMenuState == "SettingsVideoScreen") {
+                if (currentState == "1920") {
+                    Select1920();
+                }
+                else if (currentState == "1280") {
+                    Select1280();
+                }
+                else if (currentState == "videoback") {
+                    SelectVideoBack();
+                }
+            }
+            #endregion
+            #region Quit
+            if (currentMenuState == "QuitScreen") {
+                if (currentState == "no") {
+                    SelectNo();
+                }
+                else if (currentState == "yes") {
+                    SelectYes();
+                }
+            }
+            #endregion
+        }
+        #endregion
+        #region Esc Key
+        else if (Input.GetButtonDown(escKeyK) || Input.GetButtonDown(bButton)) {
+            if (currentMenuState == "SettingsScreen") {
+                if ((currentState == "game") || (currentState == "video") || (currentState == "audio") || (currentState == "settingsback")) {
+                    SelectSettingsBack();
+                }
+            }
+            if (currentMenuState == "SettingsVideoScreen") {
+                if ((currentState == "1920") || (currentState == "1280") || (currentState == "videoback")) {
+                    SelectVideoBack();
+                }
+            }
+            if (currentMenuState == "QuitScreen") {
+                if ((currentState == "no") || (currentState == "yes")) {
+                    SelectQuitBack();
+                }
+            }
+        }
+        #endregion
+        #region Dpad Up and Down
+        if (Input.GetAxisRaw(dpadUpDown) != 0) {
+            if (dpadAxisInUse == false) {
+                #region Up 
+                if ((Input.GetAxisRaw(dpadUpDown) > 0)) {
+                    #region Menu
+                    if (currentMenuState == "MenuScreen") {
+                        if (currentState == "training") {
+                            MOStory();
+                        }
+                        else if (currentState == "settings") {
+                            MOTraining();
+                        }
+                        else if (currentState == "quit") {
+                            MOSettings();
+                        }
+                    }
+                    #endregion
+                    #region Settings
+                    if (currentMenuState == "SettingsScreen") {
+                        if (currentState == "video") {
+                            MOGame();
+                        }
+                        else if (currentState == "audio") {
+                            MOVideo();
+                        }
+                        else if (currentState == "settingsback") {
+                            MOAudio();
+                        }
+                    }
+                    #endregion
+                    #region Video Resolution
+                    if (currentMenuState == "SettingsVideoScreen") {
+                        if (currentState == "1920") {
+                            MO1280();
+                        }
+                        else if (currentState == "videoback") {
+                            MO1920();
+                        }
+                    }
+                    #endregion
+                    #region Quit
+                    if (currentMenuState == "QuitScreen") {
+                        if (currentState == "yes") {
+                            MOQuitNo();
+                        }
+                    }
+                    #endregion
+                }
+                #endregion
+                #region Down
+                if ((Input.GetAxisRaw(dpadUpDown) < 0)) {
+                    #region Menu
+                    if (currentMenuState == "MenuScreen") {
+                        if (currentState == "story") {
+                            MOTraining();
+                        }
+                        else if (currentState == "training") {
+                            MOSettings();
+                        }
+                        else if (currentState == "settings") {
+                            MOQuit();
+                        }
+                    }
+                    #endregion
+                    #region Settings
+                    if (currentMenuState == "SettingsScreen") {
+                        if (currentState == "game") {
+                            MOVideo();
+                        }
+                        else if (currentState == "video") {
+                            MOAudio();
+                        }
+                        else if (currentState == "audio") {
+                            MOSettingsBack();
+                        }
+                    }
+                    #endregion
+                    #region Video Resolution
+                    if (currentMenuState == "SettingsVideoScreen") {
+                        if (currentState == "1280") {
+                            MO1920();
+                        }
+                        else if (currentState == "1920") {
+                            MOVideoBack();
+                        }
+                    }
+                    #endregion
+                    #region Quit
+                    if (currentMenuState == "QuitScreen") {
+                        if (currentState == "no") {
+                            MOQuitYes();
+                        }
+                    }
+                    #endregion
+                }
+                #endregion
+                dpadAxisInUse = true;
+            }
+        }
+        if (Input.GetAxisRaw(dpadUpDown) == 0) {
+            dpadAxisInUse = false;
+        }
+        #endregion
+        #region JoyStick Up and Down
+        if (Input.GetAxisRaw(joystickUpDown) != 0) {
+            if (joystickAxisInUse == false) {
+                #region Up 
+                if ((Input.GetAxisRaw(joystickUpDown) < 0)) {
+                    #region Menu
+                    if (currentMenuState == "MenuScreen") {
+                        if (currentState == "training") {
+                            MOStory();
+                        }
+                        else if (currentState == "settings") {
+                            MOTraining();
+                        }
+                        else if (currentState == "quit") {
+                            MOSettings();
+                        }
+                    }
+                    #endregion
+                    #region Settings
+                    if (currentMenuState == "SettingsScreen") {
+                        if (currentState == "video") {
+                            MOGame();
+                        }
+                        else if (currentState == "audio") {
+                            MOVideo();
+                        }
+                        else if (currentState == "settingsback") {
+                            MOAudio();
+                        }
+                    }
+                    #endregion
+                    #region Video Resolution
+                    if (currentMenuState == "SettingsVideoScreen") {
+                        if (currentState == "1920") {
+                            MO1280();
+                        }
+                        else if (currentState == "videoback") {
+                            MO1920();
+                        }
+                    }
+                    #endregion
+                    #region Quit
+                    if (currentMenuState == "QuitScreen") {
+                        if (currentState == "yes") {
+                            MOQuitNo();
+                        }
+                    }
+                    #endregion
+                }
+                #endregion
+                #region Down
+                if ((Input.GetAxisRaw(joystickUpDown) > 0)) {
+                    #region Menu
+                    if (currentMenuState == "MenuScreen") {
+                        if (currentState == "story") {
+                            MOTraining();
+                        }
+                        else if (currentState == "training") {
+                            MOSettings();
+                        }
+                        else if (currentState == "settings") {
+                            MOQuit();
+                        }
+                    }
+                    #endregion
+                    #region Settings
+                    if (currentMenuState == "SettingsScreen") {
+                        if (currentState == "game") {
+                            MOVideo();
+                        }
+                        else if (currentState == "video") {
+                            MOAudio();
+                        }
+                        else if (currentState == "audio") {
+                            MOSettingsBack();
+                        }
+                    }
+                    #endregion
+                    #region Video Resolution
+                    if (currentMenuState == "SettingsVideoScreen") {
+                        if (currentState == "1280") {
+                            MO1920();
+                        }
+                        else if (currentState == "1920") {
+                            MOVideoBack();
+                        }
+                    }
+                    #endregion
+                    #region Quit
+                    if (currentMenuState == "QuitScreen") {
+                        if (currentState == "no") {
+                            MOQuitYes();
+                        }
+                    }
+                    #endregion
+                }
+                #endregion
+                joystickAxisInUse = true;
+            }
+        }
+        if (Input.GetAxisRaw(joystickUpDown) == 0) {
+            joystickAxisInUse = false;
+        }
+        #endregion
 
     }
+
     public void pressToStart() {
         startScreen.StartCanvas.SetActive(false);
         startScreen.PressToStart.SetActive(false);
@@ -134,7 +545,6 @@ public class Menu : MonoBehaviour {
         currentState = "quit";
     }
     #endregion
-
     #region Settings MouseOver
     public void MOGame() {
         settingsScreen.SelectGame.SetActive(true);
@@ -165,7 +575,6 @@ public class Menu : MonoBehaviour {
         currentState = "settingsback";
     }
     #endregion
-
     #region Quit MouseOver
     public void MOQuitNo() {
         quitScreen.SelectQuitNo.SetActive(true);
@@ -178,7 +587,6 @@ public class Menu : MonoBehaviour {
         currentState = "yes";
     }
     #endregion 
-
     #region Video MouseOver
     public void MO1920() {
         videoScreen.Select1920.SetActive(true);
@@ -199,7 +607,6 @@ public class Menu : MonoBehaviour {
         currentState = "videoback";
     }
     #endregion
-
     #region Menu Select
     public void SelectStory() {
         //SceneManager.LoadScene("Story");
@@ -228,7 +635,6 @@ public class Menu : MonoBehaviour {
         StartCoroutine(quitSelect());
     }
     #endregion
-
     #region Settings Select
     public void SelectGame() {
 
@@ -259,7 +665,6 @@ public class Menu : MonoBehaviour {
         StartCoroutine(menuSelect());
     }
     #endregion
-
     #region Quit Select
     public void SelectNo() {
         menuScreen.MenuCanvas.SetActive(true);
@@ -289,7 +694,6 @@ public class Menu : MonoBehaviour {
         StartCoroutine(menuSelect());
     }
     #endregion
-
     #region Video Select
     public void Select1920() {
         Screen.SetResolution(1920, 1080, true);
@@ -309,7 +713,6 @@ public class Menu : MonoBehaviour {
         StartCoroutine(settingsSelect());
     }
     #endregion
-
     #region iEnumerators
     IEnumerator menuSelect() {
         yield return new WaitForSeconds(0.1f);
@@ -328,4 +731,5 @@ public class Menu : MonoBehaviour {
         currentMenuState = "SettingsVideoScreen";
     }
     #endregion
+
 }
