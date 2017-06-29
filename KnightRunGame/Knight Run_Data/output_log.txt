@@ -1,7 +1,7 @@
-Initialize engine version: 5.5.0f3 (38b4efef76f0)
+Initialize engine version: 5.5.4f1 (8ffd0efd98b1)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
+    Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
     Vendor:   NVIDIA
     VRAM:     3072 MB
@@ -19,14 +19,26 @@ Platform assembly: D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\Unity
 Loading D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.024 seconds
+- Completed reload, in  0.022 seconds
 Platform assembly: D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.441952 ms
+UnloadTime: 1.060957 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 4434 -> priority: 1 
-  Thread -> id: 309c -> priority: 1 
+  Thread -> id: 3bb8 -> priority: 1 
+  Thread -> id: 2bc8 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.607811 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 621.
+Total: 0.758384 ms (FindLiveObjects: 0.122891 ms CreateObjectMapping: 0.036957 ms MarkObjects: 0.359661 ms  DeleteObjects: 0.238272 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.707304 ms
+
+Unloading 56 unused Assets to reduce memory usage. Loaded Objects now: 661.
+Total: 0.505089 ms (FindLiveObjects: 0.060394 ms CreateObjectMapping: 0.018929 ms MarkObjects: 0.266816 ms  DeleteObjects: 0.158647 ms)
+
