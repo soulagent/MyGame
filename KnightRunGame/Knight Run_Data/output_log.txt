@@ -19,14 +19,26 @@ Platform assembly: D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\Unity
 Loading D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.018 seconds
+- Completed reload, in  0.023 seconds
 Platform assembly: D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Desktop\MyGame\KnightRunGame\Knight Run_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.145691 ms
+UnloadTime: 1.593990 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 724c -> priority: 1 
-  Thread -> id: 1f8 -> priority: 1 
+  Thread -> id: 4f90 -> priority: 1 
+  Thread -> id: 3014 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.076244 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 621.
+Total: 0.557671 ms (FindLiveObjects: 0.117483 ms CreateObjectMapping: 0.014422 ms MarkObjects: 0.286948 ms  DeleteObjects: 0.137915 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.692582 ms
+
+Unloading 56 unused Assets to reduce memory usage. Loaded Objects now: 639.
+Total: 0.891492 ms (FindLiveObjects: 0.089840 ms CreateObjectMapping: 0.030948 ms MarkObjects: 0.536037 ms  DeleteObjects: 0.233464 ms)
+
