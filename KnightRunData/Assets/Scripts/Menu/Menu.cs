@@ -609,7 +609,7 @@ public class Menu : MonoBehaviour {
     #endregion
     #region Menu Select
     public void SelectStory() {
-        //SceneManager.LoadScene("Story");
+       SceneManager.LoadScene("QueenChambers");
     }
     public void SelectTraining() {
         SceneManager.LoadScene("KnightTrainingRoom");
