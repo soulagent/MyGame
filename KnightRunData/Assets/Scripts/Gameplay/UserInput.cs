@@ -58,14 +58,12 @@ public class UserInput : MonoBehaviour {
 			if (other.requireInputForTurn) {
 				if (Input.GetAxis (input.horizontalAxis) != 0 || Input.GetAxis (input.verticalAxis) != 0) {
 					CharacterLook ();
-				} else {
-					CharacterLook ();
 				}
 			}
 		}
 
 	}
-	//make the character look at a forward point from the camera
+	//make the character look at a forward point from the camera when moving
 	void CharacterLook() {
 		Transform mainCamT = mainCam.transform;
 		Transform pivotT = mainCamT.parent;

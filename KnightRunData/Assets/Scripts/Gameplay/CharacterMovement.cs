@@ -8,6 +8,7 @@ public class CharacterMovement : MonoBehaviour {
 
     Animator animator;
     CharacterController characterController;
+    UserInput userInput;
 
     [System.Serializable]
     public class AnimationSettings {
@@ -16,32 +17,15 @@ public class CharacterMovement : MonoBehaviour {
         public string groundedBool = "isGrounded";
 		public string attackBool1 = "attackState1";
 		public string attackBool2 = "attackState2";
+        public string isRunning = "isRunning";
         //public string jumpBool = "isJumping";
     }
     [SerializeField]
     public AnimationSettings animations;
-/*
-    [System.Serializable]
-    public class PhysicsSettings {
-        public float gravityModifier = 9.81f;
-        public float baseGravity = 50.0f;
-        public float resetGravityValue = 1.2f;
-    }
-    [SerializeField]
-    public PhysicsSettings physics;
 
-    [System.Serializable]
-    public class MovementSettings {
-        public float jumpSpeed = 6;
-        public float jumpTime = 0.1f;
-    }
-    [SerializeField]
-    public MovementSettings movement;
+    private float gravity = -9.81f;
+    private float velocityY;
 
-    //bool jumping;
-    bool resetGravity;
-    float gravity;
-*/
 	bool isGrounded = true;
 
     // Use this for initialization
@@ -49,13 +33,20 @@ public class CharacterMovement : MonoBehaviour {
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
         SetupAnimator();
+        animator.SetFloat(animations.isRunning, -1);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        //ApplyGravity();
 		isGrounded = characterController.isGrounded;
-	}
+        if (Input.GetButton("LeftShift")) {
+            animator.SetFloat(animations.isRunning, 1);
+        }
+        else {
+            animator.SetFloat(animations.isRunning, -1);
+        }
+    }
+
     //Animate Character and root motion handles the movement
     public void Animate(float forward, float strafe) {
         animator.SetFloat(animations.verticalVelocityFloat, forward);
@@ -63,47 +54,7 @@ public class CharacterMovement : MonoBehaviour {
         animator.SetBool(animations.groundedBool, isGrounded);
         //animator.SetBool(animations.jumpBool, jumping);
     }
-    /*
-    public void Jump() {
-        if (jumping)
-            return;
 
-        if(isGrounded) {
-            jumping = true;
-            StartCoroutine(StopJump());
-        }
-    }
-
-    IEnumerator StopJump() {
-        yield return new WaitForSeconds(movement.jumpTime);
-        jumping = false;
-    }
-
-    void ApplyGravity() {
-        if(!characterController.isGrounded) {
-            if(!resetGravity) {
-                gravity = physics.resetGravityValue;
-                resetGravity = true;
-            }
-            gravity += Time.deltaTime * physics.gravityModifier;
-        }
-        else {
-            gravity = physics.baseGravity;
-            resetGravity = false;
-        }
-
-        Vector3 gravityVector = new Vector3();
-
-        if(!jumping) {
-            gravityVector.y -= gravity;
-        }
-        else {
-            gravityVector.y = movement.jumpSpeed;
-        }
-
-        characterController.Move(gravityVector * Time.deltaTime);
-    }
-    */
     //Setup animator with child avatar
     void SetupAnimator() {
         Animator[] animators = GetComponentsInChildren<Animator>();
