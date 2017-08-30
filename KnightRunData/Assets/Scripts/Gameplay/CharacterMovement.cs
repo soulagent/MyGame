@@ -23,7 +23,7 @@ public class CharacterMovement : MonoBehaviour {
     [SerializeField]
     public AnimationSettings animations;
 
-    private float gravity = -9.81f;
+    //private float gravity = -9.81f;
     private float velocityY;
 
 	bool isGrounded = true;

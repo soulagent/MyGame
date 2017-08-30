@@ -72,7 +72,7 @@ public class CameraRig : MonoBehaviour {
 				RotateCamera();
 				CheckWall();
 				CheckMeshRenderer();
-
+                
 				if(Input.GetButtonDown(input.switchShouldersButton)) {
 					SwitchShoulders();
 				}
@@ -210,7 +210,6 @@ public class CameraRig : MonoBehaviour {
 			}
 		}
 	}
-
 	//Switches camera shoulder view
 	public void SwitchShoulders() {
 		switch(shoulder) {
