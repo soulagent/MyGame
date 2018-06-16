@@ -5,7 +5,7 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
     Vendor:   NVIDIA
     VRAM:     3072 MB
-    Driver:   23.21.13.9077
+    Driver:   23.21.13.9101
 Begin MonoManager ReloadAssembly
 Platform assembly: D:\Desktop\MyGame\KnightRunGame\Queen Anne_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading D:\Desktop\MyGame\KnightRunGame\Queen Anne_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -19,9 +19,27 @@ Platform assembly: D:\Desktop\MyGame\KnightRunGame\Queen Anne_Data\Managed\Unity
 Loading D:\Desktop\MyGame\KnightRunGame\Queen Anne_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\Desktop\MyGame\KnightRunGame\Queen Anne_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading D:\Desktop\MyGame\KnightRunGame\Queen Anne_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.206 seconds
+- Completed reload, in  0.173 seconds
 Platform assembly: D:\Desktop\MyGame\KnightRunGame\Queen Anne_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Desktop\MyGame\KnightRunGame\Queen Anne_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 5760x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 5760x1080 at -1920,0
+<RI> Initialized touch support.
+UnloadTime: 1.069671 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 4d8 -> priority: 1 
+  Thread -> id: 4714 -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.499041 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 757.
+Total: 0.480751 ms (FindLiveObjects: 0.078722 ms CreateObjectMapping: 0.013220 ms MarkObjects: 0.300769 ms  DeleteObjects: 0.087737 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.735549 ms
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 640.
+Total: 0.414647 ms (FindLiveObjects: 0.039361 ms CreateObjectMapping: 0.018028 ms MarkObjects: 0.268018 ms  DeleteObjects: 0.088938 ms)
+
