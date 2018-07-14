@@ -10,11 +10,12 @@ public class Menu : MonoBehaviour {
     private string sKey;
     private string arrowKeyUp;
     private string arrowKeyDown;
-    private string enterKey;
-    private string escKey;
+    //private string enterKey;
+    //private string escKey;
     #endregion
 
     public string currentState, currentMenuState;
+    public Text descriptionText;
 
     [System.Serializable]
     public class StartScreen {
@@ -26,8 +27,8 @@ public class Menu : MonoBehaviour {
     [System.Serializable]
     public class MenuScreen {
         public GameObject MenuCanvas;
-        public GameObject PlayBtn, OptionsBtn, ExitBtn;
-        public GameObject SelectPlay, SelectOptions, SelectExit;
+        public GameObject PlayBtn, OptionsBtn, CreditsBtn, ExitBtn;
+        public GameObject SelectPlay, SelectOptions, SelectCredits, SelectExit;
     }
     public MenuScreen menuScreen;
 
@@ -36,8 +37,10 @@ public class Menu : MonoBehaviour {
         sKey = "sKey";
         arrowKeyUp = "arrowKeyUp";
         arrowKeyDown = "arrowKeyDown";
-        enterKey = "enterKey";
-        escKey = "escKey";
+        //enterKey = "enterKey";
+        //escKey = "escKey";
+
+        descriptionText.text = "Play the game";
     }
 
     void Start() {
@@ -75,8 +78,11 @@ public class Menu : MonoBehaviour {
                 if(currentState == "options") {
                     MOPlay();
                 }
-                if (currentState == "exit") {
+                if (currentState == "credits") {
                     MOOptions();
+                }
+                if (currentState == "exit") {
+                    MOCredits();
                 }
             }
         }
@@ -88,6 +94,9 @@ public class Menu : MonoBehaviour {
                     MOOptions();
                 }
                 if(currentState == "options") {
+                    MOCredits();
+                }
+                if(currentState == "credits") {
                     MOExit();
                 }
             }
@@ -97,31 +106,74 @@ public class Menu : MonoBehaviour {
 
     public void MOPlay() {
         menuScreen.SelectPlay.SetActive(true);
+        menuScreen.PlayBtn.SetActive(false);
         if (currentState == "options") {
             menuScreen.SelectOptions.SetActive(false);
-            currentState = "play";
+            menuScreen.OptionsBtn.SetActive(true);
         }
+        if(currentState == "credits") {
+            menuScreen.SelectCredits.SetActive(false);
+            menuScreen.CreditsBtn.SetActive(true);
+        }
+        if(currentState == "exit") {
+            menuScreen.SelectExit.SetActive(false);
+            menuScreen.ExitBtn.SetActive(true);
+        }
+        currentState = "play";
+        descriptionText.text = "Play the game";
     }
     public void MOOptions() {
         menuScreen.SelectOptions.SetActive(true);
+        menuScreen.OptionsBtn.SetActive(false);
         if (currentState == "play") {
             menuScreen.SelectPlay.SetActive(false);
-            currentState = "options";
+            menuScreen.PlayBtn.SetActive(true);
+        }
+        if(currentState == "credits") {
+            menuScreen.SelectCredits.SetActive(false);
+            menuScreen.CreditsBtn.SetActive(true);
         }
         if (currentState == "exit") {
             menuScreen.SelectExit.SetActive(false);
-            currentState = "options";
+            menuScreen.ExitBtn.SetActive(true);
         }
+        currentState = "options";
+        descriptionText.text = "Adjust the gameplay, video and audio settings";
+    }
+    public void MOCredits() {
+        menuScreen.SelectCredits.SetActive(true);
+        menuScreen.CreditsBtn.SetActive(false);
+        if (currentState == "play") {
+            menuScreen.SelectPlay.SetActive(false);
+            menuScreen.PlayBtn.SetActive(true);
+        }
+        if (currentState == "options") {
+            menuScreen.SelectOptions.SetActive(false);
+            menuScreen.OptionsBtn.SetActive(true);
+        }
+        if (currentState == "exit") {
+            menuScreen.SelectExit.SetActive(false);
+            menuScreen.ExitBtn.SetActive(true);
+        }
+        currentState = "credits";
+        descriptionText.text = "Shows the credits";
     }
     public void MOExit() {
         menuScreen.SelectExit.SetActive(true);
-        if (currentState == "options") {
-            menuScreen.SelectOptions.SetActive(false);
-            currentState = "exit";
-        }
+        menuScreen.ExitBtn.SetActive(false);
         if (currentState == "play") {
             menuScreen.SelectPlay.SetActive(false);
-            currentState = "exit";
+            menuScreen.PlayBtn.SetActive(true);
         }
+        if (currentState == "options") {
+            menuScreen.SelectOptions.SetActive(false);
+            menuScreen.OptionsBtn.SetActive(true);
+        }
+        if(currentState == "credits") {
+            menuScreen.SelectCredits.SetActive(false);
+            menuScreen.CreditsBtn.SetActive(true);
+        }
+        currentState = "exit";
+        descriptionText.text = "Exit the game";
     }
 }
