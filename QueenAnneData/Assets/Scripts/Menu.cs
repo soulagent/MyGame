@@ -32,6 +32,14 @@ public class Menu : MonoBehaviour {
     }
     public MenuScreen menuScreen;
 
+    [System.Serializable]
+    public class QuitScreen {
+        public GameObject QuitCanvas;
+        public GameObject NoBtn, YesBtn;
+        public GameObject SelectNo, SelectYes;
+    }
+    public QuitScreen quitScreen;
+
     void Awake() {
         wKey = "wKey";
         sKey = "sKey";
@@ -40,7 +48,7 @@ public class Menu : MonoBehaviour {
         //enterKey = "enterKey";
         //escKey = "escKey";
 
-        descriptionText.text = "Play the game";
+        descriptionText.text = "";
     }
 
     void Start() {
@@ -53,15 +61,7 @@ public class Menu : MonoBehaviour {
         #endregion
 
         menuScreen.MenuCanvas.SetActive(false);
-    }
-
-    public void pressToStart() {
-        startScreen.StartCanvas.SetActive(false);
-        menuScreen.MenuCanvas.SetActive(true);
-        menuScreen.SelectPlay.SetActive(true);
-
-        currentState = "play";
-        currentMenuState = "MenuScreen";
+        quitScreen.QuitCanvas.SetActive(false);
     }
 
     public void MenuLogic() {
@@ -104,6 +104,16 @@ public class Menu : MonoBehaviour {
         #endregion
     }
 
+    public void pressToStart() {
+        startScreen.StartCanvas.SetActive(false);
+        menuScreen.MenuCanvas.SetActive(true);
+        menuScreen.SelectPlay.SetActive(true);
+
+        currentState = "play";
+        currentMenuState = "MenuScreen";
+    }
+
+    #region Menu MouseOvers
     public void MOPlay() {
         menuScreen.SelectPlay.SetActive(true);
         menuScreen.PlayBtn.SetActive(false);
@@ -176,4 +186,46 @@ public class Menu : MonoBehaviour {
         currentState = "exit";
         descriptionText.text = "Exit the game";
     }
+    #endregion
+
+    #region Quit MouseOvers
+    public void MONo() {
+        if(currentMenuState == "QuitScreen") {
+            quitScreen.SelectNo.SetActive(true);
+            quitScreen.NoBtn.SetActive(false);
+            if (currentState == "yes") {
+                quitScreen.SelectYes.SetActive(false);
+                quitScreen.YesBtn.SetActive(true);
+            }
+            currentState = "no";
+        }
+    }
+    public void MOYes() {
+        if(currentMenuState == "QuitScreen") {
+            quitScreen.SelectYes.SetActive(true);
+            quitScreen.YesBtn.SetActive(false);
+            if (currentState == "no") {
+                quitScreen.SelectNo.SetActive(false);
+                quitScreen.NoBtn.SetActive(true);
+            }
+            currentState = "yes";
+        }
+    }
+    #endregion
+
+    #region Menu Selects
+    public void SelectQuit() {
+        currentMenuState = "QuitScreen";
+        currentState = "no";
+        menuScreen.MenuCanvas.SetActive(false);
+        quitScreen.QuitCanvas.SetActive(true);
+        /*
+        quitScreen.SelectNo.SetActive(true);
+        quitScreen.SelectYes.SetActive(false);
+        quitScreen.YesBtn.SetActive(true);
+        quitScreen.NoBtn.SetActive(false);
+        */
+        descriptionText.text = "";
+    }
+    #endregion
 }
