@@ -5,14 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
-    #region Keyboard Input Initialization
-    private string wKey;
-    private string sKey;
-    private string arrowKeyUp;
-    private string arrowKeyDown;
-    //private string enterKey;
-    //private string escKey;
-    #endregion
 
     public string currentState, currentMenuState;
     public Text descriptionText;
@@ -41,13 +33,6 @@ public class Menu : MonoBehaviour {
     public QuitScreen quitScreen;
 
     void Awake() {
-        wKey = "wKey";
-        sKey = "sKey";
-        arrowKeyUp = "arrowKeyUp";
-        arrowKeyDown = "arrowKeyDown";
-        //enterKey = "enterKey";
-        //escKey = "escKey";
-
         descriptionText.text = "";
     }
 
@@ -64,46 +49,6 @@ public class Menu : MonoBehaviour {
         quitScreen.QuitCanvas.SetActive(false);
     }
 
-    public void MenuLogic() {
-        #region StartScreen
-        if (currentMenuState == "StartScreen") {
-            if((Input.anyKeyDown) && (currentState == "anykey")) {
-                pressToStart();
-            }
-        }
-        #endregion
-        #region Up
-        if ((Input.GetButtonDown(wKey)) || (Input.GetButtonDown(arrowKeyUp))) {
-            if (currentMenuState == "MenuScreen") {
-                if(currentState == "options") {
-                    MOPlay();
-                }
-                if (currentState == "credits") {
-                    MOOptions();
-                }
-                if (currentState == "exit") {
-                    MOCredits();
-                }
-            }
-        }
-        #endregion
-        #region Down
-        if ((Input.GetButtonDown(sKey)) || ((Input.GetButtonDown(arrowKeyDown)))) {
-            if(currentMenuState == "MenuScreen") {
-                if(currentState == "play") {
-                    MOOptions();
-                }
-                if(currentState == "options") {
-                    MOCredits();
-                }
-                if(currentState == "credits") {
-                    MOExit();
-                }
-            }
-        }
-        #endregion
-    }
-
     public void pressToStart() {
         startScreen.StartCanvas.SetActive(false);
         menuScreen.MenuCanvas.SetActive(true);
@@ -111,6 +56,7 @@ public class Menu : MonoBehaviour {
 
         currentState = "play";
         currentMenuState = "MenuScreen";
+        descriptionText.text = "Play the game";
     }
 
     #region Menu MouseOvers
@@ -125,7 +71,7 @@ public class Menu : MonoBehaviour {
             menuScreen.SelectCredits.SetActive(false);
             menuScreen.CreditsBtn.SetActive(true);
         }
-        if(currentState == "exit") {
+        if(currentState == "quit") {
             menuScreen.SelectExit.SetActive(false);
             menuScreen.ExitBtn.SetActive(true);
         }
@@ -143,7 +89,7 @@ public class Menu : MonoBehaviour {
             menuScreen.SelectCredits.SetActive(false);
             menuScreen.CreditsBtn.SetActive(true);
         }
-        if (currentState == "exit") {
+        if (currentState == "quit") {
             menuScreen.SelectExit.SetActive(false);
             menuScreen.ExitBtn.SetActive(true);
         }
@@ -161,14 +107,14 @@ public class Menu : MonoBehaviour {
             menuScreen.SelectOptions.SetActive(false);
             menuScreen.OptionsBtn.SetActive(true);
         }
-        if (currentState == "exit") {
+        if (currentState == "quit") {
             menuScreen.SelectExit.SetActive(false);
             menuScreen.ExitBtn.SetActive(true);
         }
         currentState = "credits";
         descriptionText.text = "Shows the credits";
     }
-    public void MOExit() {
+    public void MOQuit() {
         menuScreen.SelectExit.SetActive(true);
         menuScreen.ExitBtn.SetActive(false);
         if (currentState == "play") {
@@ -183,7 +129,7 @@ public class Menu : MonoBehaviour {
             menuScreen.SelectCredits.SetActive(false);
             menuScreen.CreditsBtn.SetActive(true);
         }
-        currentState = "exit";
+        currentState = "quit";
         descriptionText.text = "Exit the game";
     }
     #endregion
@@ -215,17 +161,33 @@ public class Menu : MonoBehaviour {
 
     #region Menu Selects
     public void SelectQuit() {
-        currentMenuState = "QuitScreen";
-        currentState = "no";
         menuScreen.MenuCanvas.SetActive(false);
         quitScreen.QuitCanvas.SetActive(true);
-        /*
+        
         quitScreen.SelectNo.SetActive(true);
         quitScreen.SelectYes.SetActive(false);
         quitScreen.YesBtn.SetActive(true);
         quitScreen.NoBtn.SetActive(false);
-        */
+
+        currentMenuState = "QuitScreen";
+        currentState = "no";
+
         descriptionText.text = "";
+    }
+    #endregion
+
+    #region Quit Selects
+    public void SelectQuitNo() {
+        currentMenuState = "MenuScreen";
+        currentState = "quit";
+        menuScreen.MenuCanvas.SetActive(true);
+        quitScreen.QuitCanvas.SetActive(false);
+
+        descriptionText.text = "Exit the game";
+    }
+
+    public void SelectQuitYes() {
+        Application.Quit();
     }
     #endregion
 }
