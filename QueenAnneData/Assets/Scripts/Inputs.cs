@@ -7,14 +7,14 @@ public class Inputs : MonoBehaviour {
     public Menu menuScript;
 
     #region KB Input
-    private bool up;
-    private bool down;
-    private bool enter;
+    public bool up;
+    public bool down;
+    public bool enter;
     #endregion
     #region KB Initialization
-    private string upKey;
-    private string downKey;
-    private string enterKey;
+    public string upKey;
+    public string downKey;
+    public string enterKey;
     #endregion
 
     void Awake() {
@@ -32,30 +32,26 @@ public class Inputs : MonoBehaviour {
     private void HandleKBInput() {
         up = Input.GetButtonDown(upKey);
         down = Input.GetButtonDown(downKey);
-        enter = Input.GetButton(enterKey);
+        enter = Input.GetButtonDown(enterKey);
     }
 
     public void MenuLogic() {
         #region up handler
         if (up) {
             #region MenuScreen
-            if(menuScript.currentMenuState == ("MenuScreen")) {
-                if (menuScript.currentState == ("options")) {
-                    menuScript.MOPlay();
-                }
-                else if (menuScript.currentState == ("credits")) {
-                    menuScript.MOOptions();
-                }
-                else if (menuScript.currentState == ("quit")) {
-                    menuScript.MOCredits();
-                }
+            if (menuScript.currentState == ("menu:options")) {
+                menuScript.MOPlay();
+            }
+            else if (menuScript.currentState == ("menu:credits")) {
+                menuScript.MOOptions();
+            }
+            else if (menuScript.currentState == ("menu:quit")) {
+                menuScript.MOCredits();
             }
             #endregion
             #region QuitScreen
-            if (menuScript.currentMenuState == ("QuitScreen")) {
-                if(menuScript.currentState == ("yes")) {
-                    menuScript.MONo();
-                }
+            if (menuScript.currentState == ("quit:yes")) {
+                menuScript.MONo();
             }
             #endregion
         }
@@ -63,57 +59,43 @@ public class Inputs : MonoBehaviour {
         #region down handler
         if (down) {
             #region MenuScreen
-            if(menuScript.currentMenuState == ("MenuScreen")) {
-                if (menuScript.currentState == ("play")) {
-                    menuScript.MOOptions();
-                }
-                else if (menuScript.currentState == ("options")) {
-                    menuScript.MOCredits();
-                }
-                else if (menuScript.currentState == ("credits")) {
-                    menuScript.MOQuit();
-                }
+            if (menuScript.currentState == ("menu:play")) {
+                menuScript.MOOptions();
+            }
+            else if (menuScript.currentState == ("menu:options")) {
+                menuScript.MOCredits();
+            }
+            else if (menuScript.currentState == ("menu:credits")) {
+                menuScript.MOQuit();
             }
             #endregion
             #region QuitScreen
-            if (menuScript.currentMenuState == ("QuitScreen")) {
-                if (menuScript.currentState == ("no")) {
-                    menuScript.MOYes();
-                }
+            if (menuScript.currentState == ("quit:no")) {
+                menuScript.MOYes();
             }
             #endregion
         }
         #endregion
         #region enter handler
-        if(enter) {
+        if(enter)  {
             #region MenuScreen
-            if (menuScript.currentMenuState == ("MenuScreen")) {
-                if(menuScript.currentState == ("options")) {
-                    menuScript.SelectQuit();
-                }
-                if(menuScript.currentState == ("credits")) {
-                    menuScript.SelectQuit();
-                }
-                else if(menuScript.currentState == ("quit")) {
-                    menuScript.SelectQuit();
-                }
+            if (menuScript.currentState == ("menu:quit")) {
+                menuScript.SelectQuit();
             }
             #endregion
             #region QuitScreen
-            if(menuScript.currentMenuState == ("QuitScreen")) {
-                if(menuScript.currentState == ("no")) {
-                    menuScript.SelectQuitNo();
-                }
-                else if(menuScript.currentState == ("yes")) {
-                    menuScript.SelectQuitYes();
-                }
+            if (menuScript.currentState == ("quit:no")) {
+                menuScript.SelectQuitNo();
+            }
+            else if (menuScript.currentState == ("quit:yes")) {
+                menuScript.SelectQuitYes();
             }
             #endregion
         }
         #endregion
         #region misc handler
-        if ((Input.anyKeyDown) && (menuScript.currentState == "anykey")) {
-            menuScript.pressToStart();
+        if ((menuScript.currentState == "anykey")&& (Input.anyKeyDown)) {
+            menuScript.PressToStart();
             menuScript.descriptionText.text = "Play the game";
         }
         #endregion
