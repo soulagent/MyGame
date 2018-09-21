@@ -33,6 +33,14 @@ public class Menu : MonoBehaviour {
     public QuitScreen quitScreen;
 
     [System.Serializable]
+    public class OptionsScreen {
+        public GameObject OptionsCanvas;
+        public GameObject GameplayBtn, AudioBtn, VideoBtn, OptionsBackBtn;
+        public GameObject SelectGameplay, SelectAudio, SelectVideo, SelectOptionsBack;
+    }
+    public OptionsScreen optionsScreen;
+
+    [System.Serializable]
     public class InputManager {
         public bool up, down, enter;
         public string upKey, downKey, enterKey;
@@ -58,12 +66,14 @@ public class Menu : MonoBehaviour {
 
         menuScreen.MenuCanvas.SetActive(false);
         quitScreen.QuitCanvas.SetActive(false);
+        optionsScreen.OptionsCanvas.SetActive(false);
     }
 
     void Update() {
         HandleKBInput();
         MenuLogic();
-        print(currentState);
+        print("CurrentState: " + currentState);
+        print("CurrentMenuState: " + currentMenuState);
     }
 
     private void HandleKBInput() {
@@ -102,6 +112,19 @@ public class Menu : MonoBehaviour {
                 }
             }
             #endregion
+            #region OptionScreen
+            if (currentMenuState == ("OptionsScreen")) {
+                if (currentState == ("options:video")) {
+                    MOGameplay();
+                }
+                else if (currentState == ("options:audio")) {
+                    MOVideo();
+                }
+                else if (currentState == ("options:back")) {
+                    MOAudio();
+                }
+            }
+            #endregion
         }
         #endregion
         #region Down Handler
@@ -126,6 +149,19 @@ public class Menu : MonoBehaviour {
                 }
             }
             #endregion
+            #region OptionsScreen
+            if (currentMenuState == ("OptionsScreen")) {
+                if (currentState == ("options:gameplay")) {
+                    MOVideo();
+                }
+                else if (currentState == ("options:video")) {
+                    MOAudio();
+                }
+                else if (currentState == ("options:audio")) {
+                    MOOptionsBack();
+                }
+            }
+            #endregion
         }
         #endregion
         #region Enter Handler
@@ -134,6 +170,9 @@ public class Menu : MonoBehaviour {
             if (currentMenuState == ("MenuScreen")) {
                 if (currentState == ("menu:quit")) {
                     SelectQuit();
+                }
+                else if (currentState == ("menu:options")) {
+                    SelectOptions();
                 }
             }
             #endregion
@@ -144,6 +183,13 @@ public class Menu : MonoBehaviour {
                 }
                 else if ((currentState == ("quit:yes"))) {
                     SelectQuitYes();
+                }
+            }
+            #endregion
+            #region OptionsScreen
+            if (currentMenuState == ("OptionsScreen")) {
+                if(currentState == ("options:back")) {
+                    SelectOptionsBack();
                 }
             }
             #endregion
@@ -235,6 +281,81 @@ public class Menu : MonoBehaviour {
     }
     #endregion
 
+    #region Options MouseOvers
+    public void MOGameplay() {
+        optionsScreen.SelectGameplay.SetActive(true);
+        optionsScreen.GameplayBtn.SetActive(false);
+        if (currentState == "options:video") {
+            optionsScreen.SelectVideo.SetActive(false);
+            optionsScreen.VideoBtn.SetActive(true);
+        }
+        if (currentState == "options:audio") {
+            optionsScreen.SelectAudio.SetActive(false);
+            optionsScreen.AudioBtn.SetActive(true);
+        }
+        if (currentState == "options:back") {
+            optionsScreen.SelectOptionsBack.SetActive(false);
+            optionsScreen.OptionsBackBtn.SetActive(true);
+        }
+        currentState = "options:gameplay";
+        descriptionText.text = "Adjusts the Gameplay settings";
+    }
+    public void MOVideo() {
+        optionsScreen.SelectVideo.SetActive(true);
+        optionsScreen.VideoBtn.SetActive(false);
+        if (currentState == "options:gameplay") {
+            optionsScreen.SelectGameplay.SetActive(false);
+            optionsScreen.GameplayBtn.SetActive(true);
+        }
+        if (currentState == "options:audio") {
+            optionsScreen.SelectAudio.SetActive(false);
+            optionsScreen.AudioBtn.SetActive(true);
+        }
+        if (currentState == "options:back") {
+            optionsScreen.SelectOptionsBack.SetActive(false);
+            optionsScreen.OptionsBackBtn.SetActive(true);
+        }
+        currentState = "options:video";
+        descriptionText.text = "Adjusts the Video Settings";
+    }
+    public void MOAudio() {
+        optionsScreen.SelectAudio.SetActive(true);
+        optionsScreen.AudioBtn.SetActive(false);
+        if (currentState == "options:gameplay") {
+            optionsScreen.SelectGameplay.SetActive(false);
+            optionsScreen.GameplayBtn.SetActive(true);
+        }
+        if (currentState == "options:video") {
+            optionsScreen.SelectVideo.SetActive(false);
+            optionsScreen.VideoBtn.SetActive(true);
+        }
+        if (currentState == "options:back") {
+            optionsScreen.SelectOptionsBack.SetActive(false);
+            optionsScreen.OptionsBackBtn.SetActive(true);
+        }
+        currentState = "options:audio";
+        descriptionText.text = "Adjusts the Audio Settings";
+    }
+    public void MOOptionsBack() {
+        optionsScreen.SelectOptionsBack.SetActive(true);
+        optionsScreen.OptionsBackBtn.SetActive(false);
+        if (currentState == "options:gameplay") {
+            optionsScreen.SelectGameplay.SetActive(false);
+            optionsScreen.GameplayBtn.SetActive(true);
+        }
+        if (currentState == "options:video") {
+            optionsScreen.SelectVideo.SetActive(false);
+            optionsScreen.VideoBtn.SetActive(true);
+        }
+        if (currentState == "options:audio") {
+            optionsScreen.SelectAudio.SetActive(false);
+            optionsScreen.AudioBtn.SetActive(true);
+        }
+        currentState = "options:back";
+        descriptionText.text = "Return to Main Menu";
+    }
+    #endregion
+
     #region Quit MouseOvers
     public void MONo() {
         quitScreen.SelectNo.SetActive(true);
@@ -279,12 +400,36 @@ public class Menu : MonoBehaviour {
         //currentState = "quit:no";
         descriptionText.text = "";
     }
+    public void SelectOptions() {
+        menuScreen.MenuCanvas.SetActive(false);
+        optionsScreen.OptionsCanvas.SetActive(true);
+
+        optionsScreen.GameplayBtn.SetActive(false);
+        optionsScreen.AudioBtn.SetActive(true);
+        optionsScreen.VideoBtn.SetActive(true);
+        optionsScreen.OptionsBackBtn.SetActive(true);
+
+        optionsScreen.SelectGameplay.SetActive(true);
+        optionsScreen.SelectAudio.SetActive(false);
+        optionsScreen.SelectVideo.SetActive(false);
+        optionsScreen.SelectOptionsBack.SetActive(false);
+
+        currentMenuState = "OptionsScreen";
+        currentState = "options:gameplay";
+        descriptionText.text = "Adjusts the Gameplay settings";
+    }
     #endregion
 
-    void SetQuit() {
-        currentMenuState = "QuitScreen";
-        currentState = "quit:no";
+    #region Options Selects
+    public void SelectOptionsBack() {
+        optionsScreen.OptionsCanvas.SetActive(false);
+        menuScreen.MenuCanvas.SetActive(true);
+
+        currentMenuState = "MenuScreen";
+        currentState = "menu:options";
+        descriptionText.text = "Adjust the gameplay, video and audio settings";
     }
+    #endregion
 
     #region Quit Selects
     public void SelectQuitNo() {
@@ -301,6 +446,11 @@ public class Menu : MonoBehaviour {
         print("game quited");
     }
     #endregion
+
+    void SetQuit() {
+        currentMenuState = "QuitScreen";
+        currentState = "quit:no";
+    }
 
     IEnumerator BufferTime() {
         yield return new WaitForSeconds(0.1f);

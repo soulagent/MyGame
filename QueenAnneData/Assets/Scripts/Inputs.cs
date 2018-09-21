@@ -54,6 +54,17 @@ public class Inputs : MonoBehaviour {
                 menuScript.MONo();
             }
             #endregion
+            #region Options Screen
+            if (menuScript.currentState == ("options:video")) {
+                menuScript.MOGameplay();
+            }
+            else if (menuScript.currentState == ("options:audio")) {
+                menuScript.MOVideo();
+            }
+            else if (menuScript.currentState == ("options:back")) {
+                menuScript.MOAudio();
+            }
+            #endregion
         }
         #endregion
         #region down handler
@@ -74,6 +85,17 @@ public class Inputs : MonoBehaviour {
                 menuScript.MOYes();
             }
             #endregion
+            #region Options Screen
+            if (menuScript.currentState == ("options:gameplay")) {
+                menuScript.MOVideo();
+            }
+            else if(menuScript.currentState == ("options:video")) {
+                menuScript.MOAudio();
+            }
+            else if (menuScript.currentState == ("options:audio")) {
+                menuScript.MOOptionsBack();
+            }
+            #endregion
         }
         #endregion
         #region enter handler
@@ -82,6 +104,9 @@ public class Inputs : MonoBehaviour {
             if (menuScript.currentState == ("menu:quit")) {
                 menuScript.SelectQuit();
             }
+            if (menuScript.currentState == ("menu:options")) {
+                menuScript.SelectOptions();
+            }
             #endregion
             #region QuitScreen
             if (menuScript.currentState == ("quit:no")) {
@@ -89,6 +114,11 @@ public class Inputs : MonoBehaviour {
             }
             else if (menuScript.currentState == ("quit:yes")) {
                 menuScript.SelectQuitYes();
+            }
+            #endregion
+            #region Options Screen
+            if (menuScript.currentState == ("options:back")) {
+                menuScript.SelectOptionsBack();
             }
             #endregion
         }
