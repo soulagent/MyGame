@@ -361,15 +361,34 @@ ModelImporter:
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
-      loopBlendPositionY: 0
+      loopBlendPositionY: 1
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
-      heightFromFeet: 0
+      heightFromFeet: 1
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
+      curves:
+      - name: RunSpeed
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 2
+            time: 0
+            value: 3.5
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - serializedVersion: 2
+            time: 1
+            value: 3.5
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          preInfinity: 2
+          postInfinity: 2
+          rotationOrder: 0
       events: []
       transformMask:
       - path: 
@@ -1708,17 +1727,17 @@ ModelImporter:
     - name: Anne_R_Shoulder
       parentName: Anne_R_Clavicle
       position: {x: 0.08, y: 0, z: 0}
-      rotation: {x: 0.017805248, y: 0.026587134, z: 0.014590438, w: 0.9993815}
+      rotation: {x: 0, y: 0, z: 0.55643964, w: 0.83088803}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Anne_R_Elbow
       parentName: Anne_R_Shoulder
       position: {x: 0.18384777, y: 0, z: 0.01}
-      rotation: {x: -0.0006055364, y: -0.06784985, z: -0.01789135, w: 0.997535}
+      rotation: {x: 0, y: -0, z: -0.024615282, w: 0.99969697}
       scale: {x: 1, y: 1, z: 1}
     - name: Anne_R_Wrist
       parentName: Anne_R_Elbow
       position: {x: 0.18788293, y: 0, z: -0.03}
-      rotation: {x: 0.0027850352, y: 0.00094221474, z: -0.08377827, w: 0.9964801}
+      rotation: {x: 0, y: -0, z: -0.101653375, w: 0.9948199}
       scale: {x: 1.0000004, y: 1.0000001, z: 1}
     - name: Anne_R_Palm
       parentName: Anne_R_Wrist
@@ -1768,7 +1787,7 @@ ModelImporter:
     - name: Anne_R_Pinky_1
       parentName: Anne_R_Palm
       position: {x: 0.044738784, y: -0.00029415864, z: 0.0256391}
-      rotation: {x: 0.032300342, y: 0.0360546, z: 0.022065947, w: 0.998584}
+      rotation: {x: 0.031786904, y: 0.012738006, z: 0.018612526, w: 0.99924016}
       scale: {x: 1.0000001, y: 1, z: 1}
     - name: Anna_L_Pinky_3
       parentName: Anne_R_Pinky_1
@@ -1778,7 +1797,7 @@ ModelImporter:
     - name: Anne_R_Pinky_3
       parentName: Anna_L_Pinky_3
       position: {x: 0.021443937, y: -0.000049769747, z: 0.00054003403}
-      rotation: {x: -0.012252579, y: -0.0076856087, z: 0.008385063, w: 0.9998602}
+      rotation: {x: -0.011136088, y: -0.0102445735, z: -0.056079756, w: 0.99831164}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Anne_R_Pinky_4
       parentName: Anne_R_Pinky_3
@@ -1788,7 +1807,7 @@ ModelImporter:
     - name: Anne_R_Index_1
       parentName: Anne_R_Palm
       position: {x: 0.0396237, y: 0.0017236759, z: -0.0383963}
-      rotation: {x: 0.056348886, y: 0.14216718, z: 0.011329133, w: 0.98817253}
+      rotation: {x: 0.05601996, y: 0.19366749, z: 0.020834329, w: 0.97924495}
       scale: {x: 1.0000004, y: 1, z: 1}
     - name: Anne_R_Index_2
       parentName: Anne_R_Index_1
@@ -1808,12 +1827,12 @@ ModelImporter:
     - name: Anne_R_Thumb_1
       parentName: Anne_R_Palm
       position: {x: 0.001274548, y: 0.009014676, z: -0.0354916}
-      rotation: {x: 0.40665755, y: 0.41396192, z: -0.16757166, w: 0.7969849}
+      rotation: {x: 0.49901164, y: 0.44235608, z: 0.03205259, w: 0.7445006}
       scale: {x: 1.0000001, y: 1, z: 1.0000001}
     - name: Anne_R_Thumb_2
       parentName: Anne_R_Thumb_1
       position: {x: 0.025281923, y: 0.00013992767, z: -0.0011903577}
-      rotation: {x: 0.09246926, y: -0.018633202, z: -0.014350998, w: 0.99543774}
+      rotation: {x: 0.091788545, y: -0.026238987, z: -0.025912901, w: 0.99509543}
       scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
     - name: Anne_R_Thumb_3
       parentName: Anne_R_Thumb_2
@@ -1848,17 +1867,17 @@ ModelImporter:
     - name: Anne_L_Shoulder
       parentName: Anne_L_Clavicle
       position: {x: -0.08, y: 2.842171e-16, z: -4.440892e-18}
-      rotation: {x: 0.01780518, y: 0.026587063, z: 0.014590496, w: 0.9993814}
+      rotation: {x: 0, y: 0, z: 0.55643964, w: 0.83088803}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Anne_L_Elbow
       parentName: Anne_L_Shoulder
       position: {x: -0.18384777, y: 7.105427e-17, z: -0.01}
-      rotation: {x: -0.0006054972, y: -0.06784972, z: -0.017891528, w: 0.99753493}
+      rotation: {x: 0, y: -0, z: -0.024615282, w: 0.99969697}
       scale: {x: 1, y: 1, z: 1}
     - name: Anne_L_Wrist
       parentName: Anne_L_Elbow
       position: {x: -0.18788293, y: -4.2632563e-16, z: 0.03}
-      rotation: {x: 0.0027847788, y: 0.00094218506, z: -0.083779715, w: 0.99648}
+      rotation: {x: 0, y: -0, z: -0.101653375, w: 0.9948199}
       scale: {x: 1.0000004, y: 1.0000004, z: 1.0000005}
     - name: Anne_L_Palm
       parentName: Anne_L_Wrist
@@ -1908,7 +1927,7 @@ ModelImporter:
     - name: Anne_L_Pinky_1
       parentName: Anne_L_Palm
       position: {x: -0.04473887, y: 0.00029365212, z: -0.025639068}
-      rotation: {x: 0.00058545126, y: 0.02320197, z: 0.023205368, w: 0.9994613}
+      rotation: {x: 1.6128074e-16, y: -8.715505e-17, z: 0.019012323, w: 0.9998193}
       scale: {x: 1, y: 1, z: 1}
     - name: Anna_L_Pinky_2
       parentName: Anne_L_Pinky_1
@@ -1918,7 +1937,7 @@ ModelImporter:
     - name: Anne_L_Pinky_3
       parentName: Anna_L_Pinky_2
       position: {x: -0.021446891, y: -0.00030306418, z: 0.00025969022}
-      rotation: {x: 0.0008277651, y: -0.0008145738, z: 0.023258338, w: 0.9997289}
+      rotation: {x: 2.0339575e-16, y: 5.523876e-16, z: -0.041295297, w: 0.999147}
       scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
     - name: Anne_L_Pinky_4
       parentName: Anne_L_Pinky_3
@@ -1928,7 +1947,7 @@ ModelImporter:
     - name: Anne_L_Index_1
       parentName: Anne_L_Palm
       position: {x: -0.0396239, y: -0.0017233009, z: 0.038396254}
-      rotation: {x: -0.003325946, y: 0.12911327, z: 0.019670112, w: 0.9914292}
+      rotation: {x: -0.0031004632, y: 0.17759453, z: 0.030097768, w: 0.9836385}
       scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
     - name: Anne_L_Index_2
       parentName: Anne_L_Index_1
@@ -1948,12 +1967,12 @@ ModelImporter:
     - name: Anne_L_Thumb_1
       parentName: Anne_L_Palm
       position: {x: -0.0012743816, y: -0.009014396, z: 0.035491623}
-      rotation: {x: 0.2952291, y: 0.4106671, z: -0.123797745, w: 0.85373676}
+      rotation: {x: 0.39894795, y: 0.4144227, z: 0.07528703, w: 0.81450987}
       scale: {x: 1, y: 1, z: 0.99999994}
     - name: Anne_L_Thumb_2
       parentName: Anne_L_Thumb_1
       position: {x: -0.025182558, y: -0.00063691277, z: 0.0024630404}
-      rotation: {x: 0.05199182, y: -0.044156972, z: -0.032400038, w: 0.9971446}
+      rotation: {x: 0.050262563, y: -0.048032835, z: -0.045590296, w: 0.99653804}
       scale: {x: 0.99999994, y: 1, z: 1}
     - name: Anne_L_Thumb_3
       parentName: Anne_L_Thumb_2
@@ -1978,7 +1997,7 @@ ModelImporter:
     - name: Anne_R_Ankle
       parentName: Anne_R_Knee
       position: {x: 0.3501428, y: -0.000000011028119, z: -0.03000006}
-      rotation: {x: 0.9924391, y: 0.01417482, z: 0.0017409605, w: 0.12190508}
+      rotation: {x: 0, y: 0, z: 0.014281344, w: 0.999898}
       scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
     - name: Anne_R_Heel
       parentName: Anne_R_Ankle
@@ -2003,7 +2022,7 @@ ModelImporter:
     - name: Anne_L_Ankle
       parentName: Anne_L_Knee
       position: {x: -0.3501428, y: 0.000000011352033, z: 0.029999977}
-      rotation: {x: 0.992439, y: 0.014174802, z: 0.0017412063, w: 0.12190539}
+      rotation: {x: 0, y: 0, z: 0.014281344, w: 0.999898}
       scale: {x: 1.0000001, y: 1.0000001, z: 1}
     - name: Anne_L_Heel
       parentName: Anne_L_Ankle
