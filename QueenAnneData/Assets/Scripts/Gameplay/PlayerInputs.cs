@@ -16,7 +16,7 @@ public class PlayerInputs : MonoBehaviour {
 
     [System.Serializable]
     public class OtherSettings {
-        public float lookSpeed = 5.0f;
+        public float lookSpeed = 10.0f;
         public float lookDistance = 10.0f;
         public bool requireInputForTurn = true;
     }
@@ -38,22 +38,26 @@ public class PlayerInputs : MonoBehaviour {
 
 		if (mainCam) {
             if (other.requireInputForTurn) {
+                /*
                 if(Input.GetAxis (input.horizontalAxis) != 0 || Input.GetAxis (input.verticalAxis) != 0) {
                     CharacterLook();
                 } 
-            }// if (requireInputForTurn)
-            /*
-            if (other.requireInputForTurn) {
-                if(Input.GetButton("upKey") != true || Input.GetButton("downKey") != true) {
-                    CharacterLook();
+                */
+                if (Input.GetAxis(input.verticalAxis) > 0) {
+                    CharacterLookForward();
                 }
-            }// if(requireInputForTurn)
-            */
+                else if (Input.GetAxis(input.horizontalAxis) < 0) {
+                    CharacterLookLeft();
+                }
+                else if (Input.GetAxis(input.horizontalAxis) > 0) {
+                    CharacterLookRight();
+                }
+            }// if (requireInputForTurn)
         } // if (mainCam)
 	} // update
 
     //make the character look at a forward point from camera when moving
-    void CharacterLook() {
+    void CharacterLookForward() {
         Transform mainCamT = mainCam.transform;
         Transform pivotT = mainCamT.parent;
         Vector3 pivotPos = pivotT.position;
@@ -66,5 +70,35 @@ public class PlayerInputs : MonoBehaviour {
 
         Quaternion newRotation = Quaternion.Lerp(transform.rotation, lookRot, Time.deltaTime * other.lookSpeed);
         transform.rotation = newRotation;
-    }
+    } //void CharacterLookForward
+    // look left when moving
+    void CharacterLookLeft() {
+        Transform mainCamT = mainCam.transform;
+        Transform pivotT = mainCamT.parent;
+        Vector3 pivotPos = pivotT.position;
+        Vector3 lookTarget = pivotPos + (pivotT.right * other.lookDistance);
+        Vector3 thisPos = transform.position;
+        Vector3 lookDir = (lookTarget - thisPos);
+        Quaternion lookRot = Quaternion.LookRotation(lookDir);
+        lookRot.x = 0;
+        lookRot.z = 0;
+
+        Quaternion newRotation = Quaternion.Lerp(transform.rotation, lookRot, Time.deltaTime * other.lookSpeed);
+        transform.rotation = newRotation;
+    } // void CharacterLookLeft
+    // look right when moving
+    void CharacterLookRight() {
+        Transform mainCamT = mainCam.transform;
+        Transform pivotT = mainCamT.parent;
+        Vector3 pivotPos = pivotT.position;
+        Vector3 lookTarget = pivotPos + (pivotT.right * -(other.lookDistance));
+        Vector3 thisPos = transform.position;
+        Vector3 lookDir = (lookTarget - thisPos);
+        Quaternion lookRot = Quaternion.LookRotation(lookDir);
+        lookRot.x = 0;
+        lookRot.z = 0;
+
+        Quaternion newRotation = Quaternion.Lerp(transform.rotation, lookRot, Time.deltaTime * other.lookSpeed);
+        transform.rotation = newRotation;
+    } // void CharacterLookRight
 }

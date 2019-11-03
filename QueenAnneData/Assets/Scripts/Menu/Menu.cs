@@ -86,7 +86,6 @@ public class Menu : MonoBehaviour {
         #region misc handler
         if ((currentState == "anykey") && (Input.anyKeyDown)) {
             PressToStart();
-            currentMenuState = "MenuScreen";
             descriptionText.text = "Play the game";
         }
         #endregion
@@ -174,7 +173,10 @@ public class Menu : MonoBehaviour {
                 else if (currentState == ("menu:options")) {
                     SelectOptions();
                 }
-            }
+                else if (currentState == ("menu:play")) {
+                    SelectPlay();
+                }
+            } // currentMenuState == "MenuScreen"
             #endregion
             #region QuitScreen
             if (currentMenuState == ("QuitScreen")) {
@@ -193,19 +195,23 @@ public class Menu : MonoBehaviour {
                 }
             }
             #endregion
-        }
+        } // if (inputs.enter)
         #endregion
-    }
+    } // MenuLogic()
 
     public void PressToStart() {
         startScreen.StartCanvas.SetActive(false);
         menuScreen.MenuCanvas.SetActive(true);
         menuScreen.SelectPlay.SetActive(true);
 
-        currentState = "menu:play";
+        StartCoroutine(BufferTimeStart());
+
+        //currentMenuState = "MenuScreen";
+        //currentState = "menu:play";
         descriptionText.text = "Play the game";
     }
 
+    #region MouseOver Handlers
     #region Menu MouseOvers
     public void MOPlay() {
         menuScreen.SelectPlay.SetActive(true);
@@ -280,7 +286,6 @@ public class Menu : MonoBehaviour {
         descriptionText.text = "Exit the game";
     }
     #endregion
-
     #region Options MouseOvers
     public void MOGameplay() {
         optionsScreen.SelectGameplay.SetActive(true);
@@ -355,7 +360,6 @@ public class Menu : MonoBehaviour {
         descriptionText.text = "Return to Main Menu";
     }
     #endregion
-
     #region Quit MouseOvers
     public void MONo() {
         quitScreen.SelectNo.SetActive(true);
@@ -376,8 +380,13 @@ public class Menu : MonoBehaviour {
         currentState = "quit:yes";
     }
     #endregion
+    #endregion
 
+    #region Select Handlers
     #region Menu Selects
+    public void SelectPlay() {
+        SceneManager.LoadScene("QueenChambers");
+    }
     public void SelectQuit() {
         menuScreen.MenuCanvas.SetActive(false);
         quitScreen.QuitCanvas.SetActive(true);
@@ -388,7 +397,7 @@ public class Menu : MonoBehaviour {
         quitScreen.YesBtn.SetActive(true);
         quitScreen.NoBtn.SetActive(false);
 
-        StartCoroutine(BufferTime());
+        StartCoroutine(BufferTimeQuit());
         //*/
         /*
         quitScreen.SelectNo.SetActive(false);
@@ -399,7 +408,7 @@ public class Menu : MonoBehaviour {
         //currentMenuState = "QuitScreen";
         //currentState = "quit:no";
         descriptionText.text = "";
-    }
+    } //void SelectQuit
     public void SelectOptions() {
         menuScreen.MenuCanvas.SetActive(false);
         optionsScreen.OptionsCanvas.SetActive(true);
@@ -417,9 +426,8 @@ public class Menu : MonoBehaviour {
         currentMenuState = "OptionsScreen";
         currentState = "options:gameplay";
         descriptionText.text = "Adjusts the Gameplay settings";
-    }
+    } // void SelectOptions
     #endregion
-
     #region Options Selects
     public void SelectOptionsBack() {
         optionsScreen.OptionsCanvas.SetActive(false);
@@ -430,7 +438,6 @@ public class Menu : MonoBehaviour {
         descriptionText.text = "Adjust the gameplay, video and audio settings";
     }
     #endregion
-
     #region Quit Selects
     public void SelectQuitNo() {
         menuScreen.MenuCanvas.SetActive(true);
@@ -446,16 +453,32 @@ public class Menu : MonoBehaviour {
         print("game quited");
     }
     #endregion
+    #endregion
 
-    void SetQuit() {
-        currentMenuState = "QuitScreen";
-        currentState = "quit:no";
-    }
-
-    IEnumerator BufferTime() {
+    #region Quit Buffer
+    IEnumerator BufferTimeQuit() {
         yield return new WaitForSeconds(0.1f);
         if(currentMenuState == ("MenuScreen")) {
             SetQuit();
         }
     }
+    void SetQuit() {
+        currentMenuState = "QuitScreen";
+        currentState = "quit:no";
+    }
+    #endregion
+    //*
+    #region Start Buffer
+    IEnumerator BufferTimeStart() {
+        yield return new WaitForSeconds(0.1f);
+        if(currentMenuState == "anyKeyScreen") {
+            SetStart();
+        }
+    }
+    void SetStart() {
+        currentMenuState = "MenuScreen";
+        currentState = "menu:play";
+    }
+    #endregion
+    //*/
 }
