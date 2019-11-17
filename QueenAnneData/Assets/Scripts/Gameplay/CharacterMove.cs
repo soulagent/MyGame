@@ -68,6 +68,15 @@ public class CharacterMove : MonoBehaviour {
             else
                 animator.SetFloat(animations.isRunning, -1);
         }
+        else if (Input.GetButton("downKey")) {
+            animator.SetFloat(animations.verticalVelocityFloat, -1);
+            transform.Translate(Vector3.forward * animations.WalkSpeed * Time.deltaTime);
+
+            if (Input.GetButton("shiftKey")) {
+                animator.SetFloat(animations.isRunning, 1);
+                transform.Translate(Vector3.forward * animations.RunSpeed * Time.deltaTime);
+            }
+        }
         else {
             animator.SetFloat(animations.verticalVelocityFloat, 0);
         } //if up key

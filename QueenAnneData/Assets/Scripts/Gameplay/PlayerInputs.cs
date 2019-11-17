@@ -52,6 +52,9 @@ public class PlayerInputs : MonoBehaviour {
                 else if (Input.GetAxis(input.horizontalAxis) > 0) {
                     CharacterLookRight();
                 }
+                else if (Input.GetAxis (input.verticalAxis) < 0) {
+                    CharacterLookBack();
+                }
             }// if (requireInputForTurn)
         } // if (mainCam)
 	} // update
@@ -101,4 +104,19 @@ public class PlayerInputs : MonoBehaviour {
         Quaternion newRotation = Quaternion.Lerp(transform.rotation, lookRot, Time.deltaTime * other.lookSpeed);
         transform.rotation = newRotation;
     } // void CharacterLookRight
+    // look back when moving
+    void CharacterLookBack() {
+        Transform mainCamT = mainCam.transform;
+        Transform pivotT = mainCamT.parent;
+        Vector3 pivotPos = pivotT.position;
+        Vector3 lookTarget = pivotPos + (pivotT.forward * -(other.lookDistance));
+        Vector3 thisPos = transform.position;
+        Vector3 lookDir = (lookTarget - thisPos);
+        Quaternion lookRot = Quaternion.LookRotation(lookDir);
+        lookRot.x = 0;
+        lookRot.z = 0;
+
+        Quaternion newRotation = Quaternion.Lerp(transform.rotation, lookRot, Time.deltaTime * other.lookSpeed);
+        transform.rotation = newRotation;
+    } // void CharacterLookBack
 }
