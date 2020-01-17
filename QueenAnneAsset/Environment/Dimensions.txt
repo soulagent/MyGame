@@ -1,0 +1,12 @@
+Table Dimensions:
+table_top (150, 4, 80)
+table_leg (5, 70, 5)
+table_frame (4, x, 4)
+
+Chair Dimensions:
+chair_leg (4, x, 4)
+chair_support (3, x, 3)
+chair_seat (40, 5, 40)
+
+Dining Hall
+Floor (720, 650)
