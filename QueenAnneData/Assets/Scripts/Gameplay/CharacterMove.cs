@@ -15,16 +15,13 @@ public class CharacterMove : MonoBehaviour {
         public string verticalVelocityFloat = "Forward";
         public string horizontalVelocityFloat = "Strafe";
         public string isRunning = "isRunning";
-        public float RunSpeed;
-        public float WalkSpeed;
-        //public string groundedBool = "isGrounded";
+        //public float RunSpeed;
+        //public float WalkSpeed;
     }
     [SerializeField]
     public AnimationSettings animations;
 
-    public GameObject CharacterPivot;
-
-    //bool isGrounded = true;
+    //public GameObject CharacterPivot;
 
 	// Use this for initialization
 	void Start () {
@@ -36,25 +33,21 @@ public class CharacterMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //isGrounded = characterController.isGrounded;
-        CharacterMovementVertical();
-        CharacterMovementHorizontal();
-
+        //CharacterMovementVertical();
+        //CharacterMovementHorizontal();
         if (Input.GetButton("shiftKey")) {
-            animator.SetFloat(animations.isRunning, 1.0f);
+            animator.SetFloat(animations.isRunning, 1);
         }
         else {
             animator.SetFloat(animations.isRunning, -1);
         }
-
 	}
 
-    
     public void Animate(float forward, float strafe) {
         animator.SetFloat(animations.verticalVelocityFloat, forward);
         animator.SetFloat(animations.horizontalVelocityFloat, strafe);
     }
-
+    /*
     void CharacterMovementVertical() {
         #region Up Key
         if (Input.GetButton("upKey")) { //if up is pressed, move character forward with speed of WalkSpeed
@@ -114,13 +107,13 @@ public class CharacterMove : MonoBehaviour {
             animator.SetFloat(animations.horizontalVelocityFloat, 0);
         }
     } // void horizontal movement
-
+    */
     //Setup animator with child avatar
     void SetupAnimator() {
         Animator[] animators = GetComponentsInChildren<Animator>();
 
         if(animators.Length > 0) {
-            for(int i=0; i <animators.Length; i++) {
+            for(int i=0; i < animators.Length; i++) {
                 Animator anim = animators[i];
                 Avatar av = anim.avatar;
 

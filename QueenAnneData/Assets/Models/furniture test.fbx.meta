@@ -1,0 +1,314 @@
+fileFormatVersion: 2
+guid: 42f0cc26eb83bdb4db8c04708f101a15
+timeCreated: 1580809395
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bar_counter
+    100002: bar_counter_pilar
+    100004: bar_counter_pilar1
+    100006: bar_counter_top
+    100008: base
+    100010: Chair
+    100012: Chair 1
+    100014: Chair 2
+    100016: Chair 3
+    100018: Chair 4
+    100020: Chair 5
+    100022: Chair4
+    100024: Chair4 1
+    100026: Chair4 2
+    100028: Chair4 3
+    100030: Chair4 4
+    100032: Chair4 5
+    100034: Chair5
+    100036: Chair5 1
+    100038: Chair5 2
+    100040: Chair5 3
+    100042: Chair5 4
+    100044: Chair5 5
+    100046: Chair6
+    100048: Chair6 1
+    100050: Chair6 2
+    100052: Chair6 3
+    100054: Chair6 4
+    100056: Chair6 5
+    100058: //RootNode
+    100060: ph_floor
+    100062: platform
+    100064: stairs
+    100066: stairs1
+    100068: stool
+    100070: stool1
+    100072: stool2
+    100074: stool3
+    100076: stool4
+    100078: stool5
+    100080: stool_cluster
+    100082: Table
+    100084: Table 1
+    100086: Table 2
+    100088: Table 3
+    100090: Table 4
+    100092: Table 5
+    100094: table_chair_CLUSTER3
+    100096: table_chair_CLUSTER4
+    100098: table_chair_CLUSTER5
+    100100: table_chair_cluster_GRP
+    100102: table_chair_CLUSTER_TOP
+    100104: table_chair_CLUSTER_TOP2
+    100106: table_chair_CLUSTER_TOP3
+    400000: bar_counter
+    400002: bar_counter_pilar
+    400004: bar_counter_pilar1
+    400006: bar_counter_top
+    400008: base
+    400010: Chair
+    400012: Chair 1
+    400014: Chair 2
+    400016: Chair 3
+    400018: Chair 4
+    400020: Chair 5
+    400022: Chair4
+    400024: Chair4 1
+    400026: Chair4 2
+    400028: Chair4 3
+    400030: Chair4 4
+    400032: Chair4 5
+    400034: Chair5
+    400036: Chair5 1
+    400038: Chair5 2
+    400040: Chair5 3
+    400042: Chair5 4
+    400044: Chair5 5
+    400046: Chair6
+    400048: Chair6 1
+    400050: Chair6 2
+    400052: Chair6 3
+    400054: Chair6 4
+    400056: Chair6 5
+    400058: //RootNode
+    400060: ph_floor
+    400062: platform
+    400064: stairs
+    400066: stairs1
+    400068: stool
+    400070: stool1
+    400072: stool2
+    400074: stool3
+    400076: stool4
+    400078: stool5
+    400080: stool_cluster
+    400082: Table
+    400084: Table 1
+    400086: Table 2
+    400088: Table 3
+    400090: Table 4
+    400092: Table 5
+    400094: table_chair_CLUSTER3
+    400096: table_chair_CLUSTER4
+    400098: table_chair_CLUSTER5
+    400100: table_chair_cluster_GRP
+    400102: table_chair_CLUSTER_TOP
+    400104: table_chair_CLUSTER_TOP2
+    400106: table_chair_CLUSTER_TOP3
+    2300000: bar_counter_pilar
+    2300002: bar_counter_pilar1
+    2300004: bar_counter_top
+    2300006: base
+    2300008: Chair
+    2300010: Chair 1
+    2300012: Chair 2
+    2300014: Chair 3
+    2300016: Chair 4
+    2300018: Chair 5
+    2300020: Chair4
+    2300022: Chair4 1
+    2300024: Chair4 2
+    2300026: Chair4 3
+    2300028: Chair4 4
+    2300030: Chair4 5
+    2300032: Chair5
+    2300034: Chair5 1
+    2300036: Chair5 2
+    2300038: Chair5 3
+    2300040: Chair5 4
+    2300042: Chair5 5
+    2300044: Chair6
+    2300046: Chair6 1
+    2300048: Chair6 2
+    2300050: Chair6 3
+    2300052: Chair6 4
+    2300054: Chair6 5
+    2300056: ph_floor
+    2300058: stairs
+    2300060: stairs1
+    2300062: stool
+    2300064: stool1
+    2300066: stool2
+    2300068: stool3
+    2300070: stool4
+    2300072: stool5
+    2300074: Table
+    2300076: Table 1
+    2300078: Table 2
+    2300080: Table 3
+    2300082: Table 4
+    2300084: Table 5
+    3300000: bar_counter_pilar
+    3300002: bar_counter_pilar1
+    3300004: bar_counter_top
+    3300006: base
+    3300008: Chair
+    3300010: Chair 1
+    3300012: Chair 2
+    3300014: Chair 3
+    3300016: Chair 4
+    3300018: Chair 5
+    3300020: Chair4
+    3300022: Chair4 1
+    3300024: Chair4 2
+    3300026: Chair4 3
+    3300028: Chair4 4
+    3300030: Chair4 5
+    3300032: Chair5
+    3300034: Chair5 1
+    3300036: Chair5 2
+    3300038: Chair5 3
+    3300040: Chair5 4
+    3300042: Chair5 5
+    3300044: Chair6
+    3300046: Chair6 1
+    3300048: Chair6 2
+    3300050: Chair6 3
+    3300052: Chair6 4
+    3300054: Chair6 5
+    3300056: ph_floor
+    3300058: stairs
+    3300060: stairs1
+    3300062: stool
+    3300064: stool1
+    3300066: stool2
+    3300068: stool3
+    3300070: stool4
+    3300072: stool5
+    3300074: Table
+    3300076: Table 1
+    3300078: Table 2
+    3300080: Table 3
+    3300082: Table 4
+    3300084: Table 5
+    4300000: Table
+    4300002: Chair
+    4300004: Chair4
+    4300006: Chair5
+    4300008: Chair6
+    4300010: Table
+    4300012: Chair
+    4300014: Chair4
+    4300016: Chair5
+    4300018: Chair6
+    4300020: Table
+    4300022: Chair
+    4300024: Chair4
+    4300026: Chair5
+    4300028: Chair6
+    4300030: Table
+    4300032: Chair
+    4300034: Chair4
+    4300036: Chair5
+    4300038: Chair6
+    4300040: Table
+    4300042: Chair
+    4300044: Chair4
+    4300046: Chair5
+    4300048: Chair6
+    4300050: Table
+    4300052: Chair
+    4300054: Chair4
+    4300056: Chair5
+    4300058: Chair6
+    4300060: base
+    4300062: stairs
+    4300064: stairs1
+    4300066: stool
+    4300068: stool1
+    4300070: stool2
+    4300072: stool3
+    4300074: stool4
+    4300076: stool5
+    4300078: ph_floor
+    4300080: bar_counter_pilar
+    4300082: bar_counter_top
+    4300084: bar_counter_pilar1
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
