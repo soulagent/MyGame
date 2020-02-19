@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: daff0a4db337ebd44b030443dc75ca09
-timeCreated: 1581407735
+guid: 644a8898bbd76de489b471ae8c85e4c2
+timeCreated: 1581497739
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -351,10 +351,10 @@ ModelImporter:
       name: Walk Right
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 24
+      lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
-      level: 0
+      level: 0.1
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0

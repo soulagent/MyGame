@@ -1,0 +1,2717 @@
+fileFormatVersion: 2
+guid: d498ad6960d01c74b80538e639a34507
+timeCreated: 1581930415
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Anna_L_Pinky_2
+    100002: Anna_L_Pinky_3
+    100004: Anna_L_Ring_2
+    100006: Anna_L_Ring_3
+    100008: //RootNode
+    100010: Anne_Head_Base
+    100012: Anne_Head_End
+    100014: Anne_Hips
+    100016: Anne_L_Ankle
+    100018: Anne_L_Clavicle
+    100020: Anne_L_Elbow
+    100022: Anne_L_Foot_End
+    100024: Anne_L_Heel
+    100026: Anne_L_Hips
+    100028: Anne_L_Index_1
+    100030: Anne_L_Index_2
+    100032: Anne_L_Index_3
+    100034: Anne_L_Index_4
+    100036: Anne_L_Knee
+    100038: Anne_L_Middle_1
+    100040: Anne_L_Middle_2
+    100042: Anne_L_Middle_3
+    100044: Anne_L_Middle_4
+    100046: Anne_L_Palm
+    100048: Anne_L_Pinky_1
+    100050: Anne_L_Pinky_3
+    100052: Anne_L_Pinky_4
+    100054: Anne_L_Ring_1
+    100056: Anne_L_Ring_3
+    100058: Anne_L_Ring_4
+    100060: Anne_L_Shoulder
+    100062: Anne_L_Thumb_1
+    100064: Anne_L_Thumb_2
+    100066: Anne_L_Thumb_3
+    100068: Anne_L_Thumb_4
+    100070: Anne_L_Wrist
+    100072: Anne_Neck_Base
+    100074: Anne_R_Ankle
+    100076: Anne_R_Clavicle
+    100078: Anne_R_Elbow
+    100080: Anne_R_Foot_End
+    100082: Anne_R_Heel
+    100084: Anne_R_Hips
+    100086: Anne_R_Index_1
+    100088: Anne_R_Index_2
+    100090: Anne_R_Index_3
+    100092: Anne_R_Index_4
+    100094: Anne_R_Knee
+    100096: Anne_R_Middle_1
+    100098: Anne_R_Middle_2
+    100100: Anne_R_Middle_3
+    100102: Anne_R_Middle_4
+    100104: Anne_R_Palm
+    100106: Anne_R_Pinky_1
+    100108: Anne_R_Pinky_3
+    100110: Anne_R_Pinky_4
+    100112: Anne_R_Ring_1
+    100114: Anne_R_Ring_3
+    100116: Anne_R_Ring_4
+    100118: Anne_R_Shoulder
+    100120: Anne_R_Thumb_1
+    100122: Anne_R_Thumb_2
+    100124: Anne_R_Thumb_3
+    100126: Anne_R_Thumb_4
+    100128: Anne_R_Wrist
+    100130: Anne_Spine
+    100132: Anne_Spine_1
+    100134: Anne_Spine_2
+    100136: Anne_Spine_3
+    100138: ChestEndEffector
+    100140: ChestOriginEffector
+    100142: Head
+    100144: HeadEffector
+    100146: Hips
+    100148: HipsEffector
+    100150: LeftAnkleEffector
+    100152: LeftArm
+    100154: LeftElbowEffector
+    100156: LeftFingerBase
+    100158: LeftFoot
+    100160: LeftFootEffector
+    100162: LeftForeArm
+    100164: LeftHand
+    100166: LeftHandEffector
+    100168: LeftHandIndex1
+    100170: LeftHandIndex2
+    100172: LeftHandIndex3
+    100174: LeftHandIndexEffector
+    100176: LeftHandMiddle1
+    100178: LeftHandMiddle2
+    100180: LeftHandMiddle3
+    100182: LeftHandMiddleEffector
+    100184: LeftHandPinky1
+    100186: LeftHandPinky2
+    100188: LeftHandPinky3
+    100190: LeftHandPinkyEffector
+    100192: LeftHandRing1
+    100194: LeftHandRing2
+    100196: LeftHandRing3
+    100198: LeftHandRingEffector
+    100200: LeftHandThumb1
+    100202: LeftHandThumb2
+    100204: LeftHandThumb3
+    100206: LeftHandThumbEffector
+    100208: LeftHipEffector
+    100210: LeftKneeEffector
+    100212: LeftLeg
+    100214: LeftShoulder
+    100216: LeftShoulderEffector
+    100218: LeftToeBase
+    100220: LeftUpLeg
+    100222: LeftWristEffector
+    100224: Neck
+    100226: Ref
+    100228: Reference
+    100230: RightAnkleEffector
+    100232: RightArm
+    100234: RightElbowEffector
+    100236: RightFingerBase
+    100238: RightFoot
+    100240: RightFootEffector
+    100242: RightForeArm
+    100244: RightHand
+    100246: RightHandEffector
+    100248: RightHandIndex1
+    100250: RightHandIndex2
+    100252: RightHandIndex3
+    100254: RightHandIndexEffector
+    100256: RightHandMiddle1
+    100258: RightHandMiddle2
+    100260: RightHandMiddle3
+    100262: RightHandMiddleEffector
+    100264: RightHandPinky1
+    100266: RightHandPinky2
+    100268: RightHandPinky3
+    100270: RightHandPinkyEffector
+    100272: RightHandRing1
+    100274: RightHandRing2
+    100276: RightHandRing3
+    100278: RightHandRingEffector
+    100280: RightHandThumb1
+    100282: RightHandThumb2
+    100284: RightHandThumb3
+    100286: RightHandThumbEffector
+    100288: RightHipEffector
+    100290: RightKneeEffector
+    100292: RightLeg
+    100294: RightShoulder
+    100296: RightShoulderEffector
+    100298: RightToeBase
+    100300: RightUpLeg
+    100302: RightWristEffector
+    100304: Spine
+    100306: Spine1
+    100308: Spine2
+    100310: Spine3
+    400000: Anna_L_Pinky_2
+    400002: Anna_L_Pinky_3
+    400004: Anna_L_Ring_2
+    400006: Anna_L_Ring_3
+    400008: //RootNode
+    400010: Anne_Head_Base
+    400012: Anne_Head_End
+    400014: Anne_Hips
+    400016: Anne_L_Ankle
+    400018: Anne_L_Clavicle
+    400020: Anne_L_Elbow
+    400022: Anne_L_Foot_End
+    400024: Anne_L_Heel
+    400026: Anne_L_Hips
+    400028: Anne_L_Index_1
+    400030: Anne_L_Index_2
+    400032: Anne_L_Index_3
+    400034: Anne_L_Index_4
+    400036: Anne_L_Knee
+    400038: Anne_L_Middle_1
+    400040: Anne_L_Middle_2
+    400042: Anne_L_Middle_3
+    400044: Anne_L_Middle_4
+    400046: Anne_L_Palm
+    400048: Anne_L_Pinky_1
+    400050: Anne_L_Pinky_3
+    400052: Anne_L_Pinky_4
+    400054: Anne_L_Ring_1
+    400056: Anne_L_Ring_3
+    400058: Anne_L_Ring_4
+    400060: Anne_L_Shoulder
+    400062: Anne_L_Thumb_1
+    400064: Anne_L_Thumb_2
+    400066: Anne_L_Thumb_3
+    400068: Anne_L_Thumb_4
+    400070: Anne_L_Wrist
+    400072: Anne_Neck_Base
+    400074: Anne_R_Ankle
+    400076: Anne_R_Clavicle
+    400078: Anne_R_Elbow
+    400080: Anne_R_Foot_End
+    400082: Anne_R_Heel
+    400084: Anne_R_Hips
+    400086: Anne_R_Index_1
+    400088: Anne_R_Index_2
+    400090: Anne_R_Index_3
+    400092: Anne_R_Index_4
+    400094: Anne_R_Knee
+    400096: Anne_R_Middle_1
+    400098: Anne_R_Middle_2
+    400100: Anne_R_Middle_3
+    400102: Anne_R_Middle_4
+    400104: Anne_R_Palm
+    400106: Anne_R_Pinky_1
+    400108: Anne_R_Pinky_3
+    400110: Anne_R_Pinky_4
+    400112: Anne_R_Ring_1
+    400114: Anne_R_Ring_3
+    400116: Anne_R_Ring_4
+    400118: Anne_R_Shoulder
+    400120: Anne_R_Thumb_1
+    400122: Anne_R_Thumb_2
+    400124: Anne_R_Thumb_3
+    400126: Anne_R_Thumb_4
+    400128: Anne_R_Wrist
+    400130: Anne_Spine
+    400132: Anne_Spine_1
+    400134: Anne_Spine_2
+    400136: Anne_Spine_3
+    400138: ChestEndEffector
+    400140: ChestOriginEffector
+    400142: Head
+    400144: HeadEffector
+    400146: Hips
+    400148: HipsEffector
+    400150: LeftAnkleEffector
+    400152: LeftArm
+    400154: LeftElbowEffector
+    400156: LeftFingerBase
+    400158: LeftFoot
+    400160: LeftFootEffector
+    400162: LeftForeArm
+    400164: LeftHand
+    400166: LeftHandEffector
+    400168: LeftHandIndex1
+    400170: LeftHandIndex2
+    400172: LeftHandIndex3
+    400174: LeftHandIndexEffector
+    400176: LeftHandMiddle1
+    400178: LeftHandMiddle2
+    400180: LeftHandMiddle3
+    400182: LeftHandMiddleEffector
+    400184: LeftHandPinky1
+    400186: LeftHandPinky2
+    400188: LeftHandPinky3
+    400190: LeftHandPinkyEffector
+    400192: LeftHandRing1
+    400194: LeftHandRing2
+    400196: LeftHandRing3
+    400198: LeftHandRingEffector
+    400200: LeftHandThumb1
+    400202: LeftHandThumb2
+    400204: LeftHandThumb3
+    400206: LeftHandThumbEffector
+    400208: LeftHipEffector
+    400210: LeftKneeEffector
+    400212: LeftLeg
+    400214: LeftShoulder
+    400216: LeftShoulderEffector
+    400218: LeftToeBase
+    400220: LeftUpLeg
+    400222: LeftWristEffector
+    400224: Neck
+    400226: Ref
+    400228: Reference
+    400230: RightAnkleEffector
+    400232: RightArm
+    400234: RightElbowEffector
+    400236: RightFingerBase
+    400238: RightFoot
+    400240: RightFootEffector
+    400242: RightForeArm
+    400244: RightHand
+    400246: RightHandEffector
+    400248: RightHandIndex1
+    400250: RightHandIndex2
+    400252: RightHandIndex3
+    400254: RightHandIndexEffector
+    400256: RightHandMiddle1
+    400258: RightHandMiddle2
+    400260: RightHandMiddle3
+    400262: RightHandMiddleEffector
+    400264: RightHandPinky1
+    400266: RightHandPinky2
+    400268: RightHandPinky3
+    400270: RightHandPinkyEffector
+    400272: RightHandRing1
+    400274: RightHandRing2
+    400276: RightHandRing3
+    400278: RightHandRingEffector
+    400280: RightHandThumb1
+    400282: RightHandThumb2
+    400284: RightHandThumb3
+    400286: RightHandThumbEffector
+    400288: RightHipEffector
+    400290: RightKneeEffector
+    400292: RightLeg
+    400294: RightShoulder
+    400296: RightShoulderEffector
+    400298: RightToeBase
+    400300: RightUpLeg
+    400302: RightWristEffector
+    400304: Spine
+    400306: Spine1
+    400308: Spine2
+    400310: Spine3
+    7400000: AttackA_1
+    7400002: AttackA_2
+    7400004: AttackA_Recovery
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Anne_Spine_3' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: AttackA_1
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0.1
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ref
+        weight: 1
+      - path: Ref/Anne_Hips
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee/Anne_L_Ankle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee/Anne_L_Ankle/Anne_L_Heel
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee/Anne_L_Ankle/Anne_L_Heel/Anne_L_Foot_End
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_R_Hips
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee/Anne_R_Ankle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee/Anne_R_Ankle/Anne_R_Heel
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee/Anne_R_Ankle/Anne_R_Heel/Anne_R_Foot_End
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1/Anne_L_Index_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1/Anne_L_Index_2/Anne_L_Index_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1/Anne_L_Index_2/Anne_L_Index_3/Anne_L_Index_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1/Anne_L_Middle_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1/Anne_L_Middle_2/Anne_L_Middle_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1/Anne_L_Middle_2/Anne_L_Middle_3/Anne_L_Middle_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1/Anna_L_Pinky_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1/Anna_L_Pinky_2/Anne_L_Pinky_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1/Anna_L_Pinky_2/Anne_L_Pinky_3/Anne_L_Pinky_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1/Anna_L_Ring_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1/Anna_L_Ring_2/Anne_L_Ring_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1/Anna_L_Ring_2/Anne_L_Ring_3/Anne_L_Ring_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1/Anne_L_Thumb_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1/Anne_L_Thumb_2/Anne_L_Thumb_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1/Anne_L_Thumb_2/Anne_L_Thumb_3/Anne_L_Thumb_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_Neck_Base
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_Neck_Base/Anne_Head_Base
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_Neck_Base/Anne_Head_Base/Anne_Head_End
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1/Anne_R_Index_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1/Anne_R_Index_2/Anne_R_Index_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1/Anne_R_Index_2/Anne_R_Index_3/Anne_R_Index_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1/Anne_R_Middle_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1/Anne_R_Middle_2/Anne_R_Middle_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1/Anne_R_Middle_2/Anne_R_Middle_3/Anne_R_Middle_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1/Anna_L_Pinky_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1/Anna_L_Pinky_3/Anne_R_Pinky_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1/Anna_L_Pinky_3/Anne_R_Pinky_3/Anne_R_Pinky_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1/Anna_L_Ring_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1/Anna_L_Ring_3/Anne_R_Ring_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1/Anna_L_Ring_3/Anne_R_Ring_3/Anne_R_Ring_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1/Anne_R_Thumb_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1/Anne_R_Thumb_2/Anne_R_Thumb_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1/Anne_R_Thumb_2/Anne_R_Thumb_3/Anne_R_Thumb_4
+        weight: 0
+      - path: Reference
+        weight: 0
+      - path: Reference/ChestEndEffector
+        weight: 0
+      - path: Reference/ChestOriginEffector
+        weight: 0
+      - path: Reference/HeadEffector
+        weight: 0
+      - path: Reference/Hips
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg/LeftLeg
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 0
+      - path: Reference/Hips/RightUpLeg
+        weight: 0
+      - path: Reference/Hips/RightUpLeg/RightLeg
+        weight: 0
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 0
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 0
+      - path: Reference/Hips/Spine
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex1/LeftHandIndex2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1/LeftHandMiddle2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky1/LeftHandPinky2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1/LeftHandRing2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex1/RightHandIndex2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1/RightHandMiddle2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky1/RightHandPinky2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1/RightHandRing2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 0
+      - path: Reference/HipsEffector
+        weight: 0
+      - path: Reference/LeftAnkleEffector
+        weight: 0
+      - path: Reference/LeftElbowEffector
+        weight: 0
+      - path: Reference/LeftFootEffector
+        weight: 0
+      - path: Reference/LeftHandEffector
+        weight: 0
+      - path: Reference/LeftHandIndexEffector
+        weight: 0
+      - path: Reference/LeftHandMiddleEffector
+        weight: 0
+      - path: Reference/LeftHandPinkyEffector
+        weight: 0
+      - path: Reference/LeftHandRingEffector
+        weight: 0
+      - path: Reference/LeftHandThumbEffector
+        weight: 0
+      - path: Reference/LeftHipEffector
+        weight: 0
+      - path: Reference/LeftKneeEffector
+        weight: 0
+      - path: Reference/LeftShoulderEffector
+        weight: 0
+      - path: Reference/LeftWristEffector
+        weight: 0
+      - path: Reference/RightAnkleEffector
+        weight: 0
+      - path: Reference/RightElbowEffector
+        weight: 0
+      - path: Reference/RightFootEffector
+        weight: 0
+      - path: Reference/RightHandEffector
+        weight: 0
+      - path: Reference/RightHandIndexEffector
+        weight: 0
+      - path: Reference/RightHandMiddleEffector
+        weight: 0
+      - path: Reference/RightHandPinkyEffector
+        weight: 0
+      - path: Reference/RightHandRingEffector
+        weight: 0
+      - path: Reference/RightHandThumbEffector
+        weight: 0
+      - path: Reference/RightHipEffector
+        weight: 0
+      - path: Reference/RightKneeEffector
+        weight: 0
+      - path: Reference/RightShoulderEffector
+        weight: 0
+      - path: Reference/RightWristEffector
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackA_2
+      takeName: Take 001
+      firstFrame: 20
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0.1
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ref
+        weight: 1
+      - path: Ref/Anne_Hips
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee/Anne_L_Ankle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee/Anne_L_Ankle/Anne_L_Heel
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee/Anne_L_Ankle/Anne_L_Heel/Anne_L_Foot_End
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_R_Hips
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee/Anne_R_Ankle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee/Anne_R_Ankle/Anne_R_Heel
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee/Anne_R_Ankle/Anne_R_Heel/Anne_R_Foot_End
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1/Anne_L_Index_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1/Anne_L_Index_2/Anne_L_Index_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1/Anne_L_Index_2/Anne_L_Index_3/Anne_L_Index_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1/Anne_L_Middle_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1/Anne_L_Middle_2/Anne_L_Middle_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1/Anne_L_Middle_2/Anne_L_Middle_3/Anne_L_Middle_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1/Anna_L_Pinky_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1/Anna_L_Pinky_2/Anne_L_Pinky_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1/Anna_L_Pinky_2/Anne_L_Pinky_3/Anne_L_Pinky_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1/Anna_L_Ring_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1/Anna_L_Ring_2/Anne_L_Ring_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1/Anna_L_Ring_2/Anne_L_Ring_3/Anne_L_Ring_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1/Anne_L_Thumb_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1/Anne_L_Thumb_2/Anne_L_Thumb_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1/Anne_L_Thumb_2/Anne_L_Thumb_3/Anne_L_Thumb_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_Neck_Base
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_Neck_Base/Anne_Head_Base
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_Neck_Base/Anne_Head_Base/Anne_Head_End
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1/Anne_R_Index_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1/Anne_R_Index_2/Anne_R_Index_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1/Anne_R_Index_2/Anne_R_Index_3/Anne_R_Index_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1/Anne_R_Middle_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1/Anne_R_Middle_2/Anne_R_Middle_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1/Anne_R_Middle_2/Anne_R_Middle_3/Anne_R_Middle_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1/Anna_L_Pinky_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1/Anna_L_Pinky_3/Anne_R_Pinky_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1/Anna_L_Pinky_3/Anne_R_Pinky_3/Anne_R_Pinky_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1/Anna_L_Ring_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1/Anna_L_Ring_3/Anne_R_Ring_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1/Anna_L_Ring_3/Anne_R_Ring_3/Anne_R_Ring_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1/Anne_R_Thumb_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1/Anne_R_Thumb_2/Anne_R_Thumb_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1/Anne_R_Thumb_2/Anne_R_Thumb_3/Anne_R_Thumb_4
+        weight: 0
+      - path: Reference
+        weight: 0
+      - path: Reference/ChestEndEffector
+        weight: 0
+      - path: Reference/ChestOriginEffector
+        weight: 0
+      - path: Reference/HeadEffector
+        weight: 0
+      - path: Reference/Hips
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg/LeftLeg
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 0
+      - path: Reference/Hips/RightUpLeg
+        weight: 0
+      - path: Reference/Hips/RightUpLeg/RightLeg
+        weight: 0
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 0
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 0
+      - path: Reference/Hips/Spine
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex1/LeftHandIndex2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1/LeftHandMiddle2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky1/LeftHandPinky2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1/LeftHandRing2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex1/RightHandIndex2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1/RightHandMiddle2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky1/RightHandPinky2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1/RightHandRing2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 0
+      - path: Reference/HipsEffector
+        weight: 0
+      - path: Reference/LeftAnkleEffector
+        weight: 0
+      - path: Reference/LeftElbowEffector
+        weight: 0
+      - path: Reference/LeftFootEffector
+        weight: 0
+      - path: Reference/LeftHandEffector
+        weight: 0
+      - path: Reference/LeftHandIndexEffector
+        weight: 0
+      - path: Reference/LeftHandMiddleEffector
+        weight: 0
+      - path: Reference/LeftHandPinkyEffector
+        weight: 0
+      - path: Reference/LeftHandRingEffector
+        weight: 0
+      - path: Reference/LeftHandThumbEffector
+        weight: 0
+      - path: Reference/LeftHipEffector
+        weight: 0
+      - path: Reference/LeftKneeEffector
+        weight: 0
+      - path: Reference/LeftShoulderEffector
+        weight: 0
+      - path: Reference/LeftWristEffector
+        weight: 0
+      - path: Reference/RightAnkleEffector
+        weight: 0
+      - path: Reference/RightElbowEffector
+        weight: 0
+      - path: Reference/RightFootEffector
+        weight: 0
+      - path: Reference/RightHandEffector
+        weight: 0
+      - path: Reference/RightHandIndexEffector
+        weight: 0
+      - path: Reference/RightHandMiddleEffector
+        weight: 0
+      - path: Reference/RightHandPinkyEffector
+        weight: 0
+      - path: Reference/RightHandRingEffector
+        weight: 0
+      - path: Reference/RightHandThumbEffector
+        weight: 0
+      - path: Reference/RightHipEffector
+        weight: 0
+      - path: Reference/RightKneeEffector
+        weight: 0
+      - path: Reference/RightShoulderEffector
+        weight: 0
+      - path: Reference/RightWristEffector
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackA_Recovery
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0.1
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ref
+        weight: 1
+      - path: Ref/Anne_Hips
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee/Anne_L_Ankle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee/Anne_L_Ankle/Anne_L_Heel
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_L_Hips/Anne_L_Knee/Anne_L_Ankle/Anne_L_Heel/Anne_L_Foot_End
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_R_Hips
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee/Anne_R_Ankle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee/Anne_R_Ankle/Anne_R_Heel
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_R_Hips/Anne_R_Knee/Anne_R_Ankle/Anne_R_Heel/Anne_R_Foot_End
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1/Anne_L_Index_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1/Anne_L_Index_2/Anne_L_Index_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Index_1/Anne_L_Index_2/Anne_L_Index_3/Anne_L_Index_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1/Anne_L_Middle_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1/Anne_L_Middle_2/Anne_L_Middle_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Middle_1/Anne_L_Middle_2/Anne_L_Middle_3/Anne_L_Middle_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1/Anna_L_Pinky_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1/Anna_L_Pinky_2/Anne_L_Pinky_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Pinky_1/Anna_L_Pinky_2/Anne_L_Pinky_3/Anne_L_Pinky_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1/Anna_L_Ring_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1/Anna_L_Ring_2/Anne_L_Ring_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Ring_1/Anna_L_Ring_2/Anne_L_Ring_3/Anne_L_Ring_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1/Anne_L_Thumb_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1/Anne_L_Thumb_2/Anne_L_Thumb_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_L_Clavicle/Anne_L_Shoulder/Anne_L_Elbow/Anne_L_Wrist/Anne_L_Palm/Anne_L_Thumb_1/Anne_L_Thumb_2/Anne_L_Thumb_3/Anne_L_Thumb_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_Neck_Base
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_Neck_Base/Anne_Head_Base
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_Neck_Base/Anne_Head_Base/Anne_Head_End
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1/Anne_R_Index_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1/Anne_R_Index_2/Anne_R_Index_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Index_1/Anne_R_Index_2/Anne_R_Index_3/Anne_R_Index_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1/Anne_R_Middle_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1/Anne_R_Middle_2/Anne_R_Middle_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Middle_1/Anne_R_Middle_2/Anne_R_Middle_3/Anne_R_Middle_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1/Anna_L_Pinky_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1/Anna_L_Pinky_3/Anne_R_Pinky_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Pinky_1/Anna_L_Pinky_3/Anne_R_Pinky_3/Anne_R_Pinky_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1/Anna_L_Ring_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1/Anna_L_Ring_3/Anne_R_Ring_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Ring_1/Anna_L_Ring_3/Anne_R_Ring_3/Anne_R_Ring_4
+        weight: 0
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1/Anne_R_Thumb_2
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1/Anne_R_Thumb_2/Anne_R_Thumb_3
+        weight: 1
+      - path: Ref/Anne_Hips/Anne_Spine/Anne_Spine_1/Anne_Spine_2/Anne_Spine_3/Anne_R_Clavicle/Anne_R_Shoulder/Anne_R_Elbow/Anne_R_Wrist/Anne_R_Palm/Anne_R_Thumb_1/Anne_R_Thumb_2/Anne_R_Thumb_3/Anne_R_Thumb_4
+        weight: 0
+      - path: Reference
+        weight: 0
+      - path: Reference/ChestEndEffector
+        weight: 0
+      - path: Reference/ChestOriginEffector
+        weight: 0
+      - path: Reference/HeadEffector
+        weight: 0
+      - path: Reference/Hips
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg/LeftLeg
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 0
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 0
+      - path: Reference/Hips/RightUpLeg
+        weight: 0
+      - path: Reference/Hips/RightUpLeg/RightLeg
+        weight: 0
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 0
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 0
+      - path: Reference/Hips/Spine
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex1/LeftHandIndex2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1/LeftHandMiddle2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky1/LeftHandPinky2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1/LeftHandRing2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex1/RightHandIndex2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1/RightHandMiddle2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky1/RightHandPinky2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1/RightHandRing2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 0
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 0
+      - path: Reference/HipsEffector
+        weight: 0
+      - path: Reference/LeftAnkleEffector
+        weight: 0
+      - path: Reference/LeftElbowEffector
+        weight: 0
+      - path: Reference/LeftFootEffector
+        weight: 0
+      - path: Reference/LeftHandEffector
+        weight: 0
+      - path: Reference/LeftHandIndexEffector
+        weight: 0
+      - path: Reference/LeftHandMiddleEffector
+        weight: 0
+      - path: Reference/LeftHandPinkyEffector
+        weight: 0
+      - path: Reference/LeftHandRingEffector
+        weight: 0
+      - path: Reference/LeftHandThumbEffector
+        weight: 0
+      - path: Reference/LeftHipEffector
+        weight: 0
+      - path: Reference/LeftKneeEffector
+        weight: 0
+      - path: Reference/LeftShoulderEffector
+        weight: 0
+      - path: Reference/LeftWristEffector
+        weight: 0
+      - path: Reference/RightAnkleEffector
+        weight: 0
+      - path: Reference/RightElbowEffector
+        weight: 0
+      - path: Reference/RightFootEffector
+        weight: 0
+      - path: Reference/RightHandEffector
+        weight: 0
+      - path: Reference/RightHandIndexEffector
+        weight: 0
+      - path: Reference/RightHandMiddleEffector
+        weight: 0
+      - path: Reference/RightHandPinkyEffector
+        weight: 0
+      - path: Reference/RightHandRingEffector
+        weight: 0
+      - path: Reference/RightHandThumbEffector
+        weight: 0
+      - path: Reference/RightHipEffector
+        weight: 0
+      - path: Reference/RightKneeEffector
+        weight: 0
+      - path: Reference/RightShoulderEffector
+        weight: 0
+      - path: Reference/RightWristEffector
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Anne_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Hips
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Hips
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Knee
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Knee
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Ankle
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Ankle
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_Spine_1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_Neck_Base
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_Head_Base
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Shoulder
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Shoulder
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Elbow
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Elbow
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Wrist
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Wrist
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Thumb_1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Thumb_2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Thumb_3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Index_1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Index_2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Index_3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Middle_1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Middle_2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Middle_3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Ring_1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anna_L_Ring_2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Ring_3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Pinky_1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anna_L_Pinky_2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_L_Pinky_3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Thumb_1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Thumb_2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Thumb_3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Index_1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Index_2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Index_3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Middle_1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Middle_2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Middle_3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Ring_1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anna_L_Ring_3
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Ring_3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Pinky_1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anna_L_Pinky_3
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_R_Pinky_3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Anne_Spine_2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Anne(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AnneMesh
+      parentName: Anne(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_Glove
+      parentName: AnneMesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_Head
+      parentName: AnneMesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bottom_Boots
+      parentName: AnneMesh
+      position: {x: -0.0000000012200325, y: 0.3054941, z: 0.038913272}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Boots_L
+      parentName: Bottom_Boots
+      position: {x: 0.0000000012200325, y: -0.3054941, z: -0.038913272}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Boots_R
+      parentName: Bottom_Boots
+      position: {x: 0.0000000012200325, y: -0.3054941, z: -0.038913272}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bottom_Pants
+      parentName: AnneMesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Face_Acc
+      parentName: AnneMesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye
+      parentName: Face_Acc
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye_L
+      parentName: Eye
+      position: {x: -0.03134, y: 1.4786611, z: 0.07248669}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 1.468339, y: 1.468339, z: 1.468339}
+    - name: Eye_R
+      parentName: Eye
+      position: {x: 0.031338997, y: 1.4786611, z: 0.07248669}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 1.468339, y: 1.468339, z: 1.468339}
+    - name: Eyelash_L
+      parentName: Face_Acc
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
+    - name: Face_L_LowerEyelash
+      parentName: Eyelash_L
+      position: {x: 0.03546018, y: 1.4725157, z: 0.0938436}
+      rotation: {x: 0.004407036, y: 0.115325496, z: 0.03793086, w: 0.9925935}
+      scale: {x: 2.6001337, y: 0.1580108, z: 1}
+    - name: Face_L_UpperEyelash_Top
+      parentName: Eyelash_L
+      position: {x: 0.033937313, y: 1.4825159, z: 0.09340311}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 2.6001337, y: 1, z: 1}
+    - name: Eyelash_R
+      parentName: Face_Acc
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Face_R_LowerEyelash
+      parentName: Eyelash_R
+      position: {x: 0.03546018, y: 1.4725157, z: 0.0938436}
+      rotation: {x: 0.004407036, y: 0.115325496, z: 0.03793086, w: 0.9925935}
+      scale: {x: 2.6001337, y: 0.1580108, z: 1}
+    - name: Face_R_UpperEyelash_Top
+      parentName: Eyelash_R
+      position: {x: 0.033937313, y: 1.4825159, z: 0.09340311}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 2.6001337, y: 1, z: 1}
+    - name: Hair_Grp
+      parentName: AnneMesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hair_Base_Grp
+      parentName: Hair_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hair_Back_L
+      parentName: Hair_Base_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hair_Bun_Loop
+      parentName: Hair_Base_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hair_Tips_R
+      parentName: Hair_Base_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Top_Corset
+      parentName: AnneMesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Top_Shirt
+      parentName: AnneMesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:Reference
+      parentName: Anne(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:ChestEndEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -9.325873e-17, y: 1.27, z: -0.03}
+      rotation: {x: 1.4163847e-16, y: 6.162976e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:ChestOriginEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -6.283822e-17, y: 0.97999996, z: -1.7763568e-17}
+      rotation: {x: -8.8481465e-33, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:HeadEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -8.6305716e-17, y: 1.41, z: -0.01}
+      rotation: {x: 1.4163847e-16, y: 6.162976e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:Hips
+      parentName: Character_Ctrl:Reference
+      position: {x: -5.3884458e-17, y: 0.88, z: -0.02}
+      rotation: {x: 1.4163847e-16, y: 6.162976e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftUpLeg
+      parentName: Character_Ctrl:Hips
+      position: {x: -0.089999996, y: -0.04, z: 1.11022296e-17}
+      rotation: {x: -2.5740315e-16, y: -1.4094628e-17, z: 1.1449175e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftLeg
+      parentName: Character_Ctrl:LeftUpLeg
+      position: {x: 0.02, y: -0.37, z: 0.01}
+      rotation: {x: 6.942079e-16, y: 1.994932e-17, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftFoot
+      parentName: Character_Ctrl:LeftLeg
+      position: {x: 0.01, y: -0.35, z: -0.03}
+      rotation: {x: -1.3877788e-16, y: -3.3049492e-16, z: 2.512201e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftToeBase
+      parentName: Character_Ctrl:LeftFoot
+      position: {x: 2.1316282e-16, y: -0.08, z: -0.01}
+      rotation: {x: 0, y: 1.110223e-16, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightUpLeg
+      parentName: Character_Ctrl:Hips
+      position: {x: 0.089999996, y: -0.04, z: -1.3322676e-17}
+      rotation: {x: -1.3728846e-15, y: -3.6862874e-17, z: -5.060847e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightLeg
+      parentName: Character_Ctrl:RightUpLeg
+      position: {x: -0.02, y: -0.37, z: 0.01}
+      rotation: {x: 4.9198994e-15, y: -2.992398e-17, z: -2.1510571e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightFoot
+      parentName: Character_Ctrl:RightLeg
+      position: {x: -0.01, y: -0.35, z: -0.03}
+      rotation: {x: -6.2450045e-17, y: -2.2032995e-16, z: 1.6377933e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightToeBase
+      parentName: Character_Ctrl:RightFoot
+      position: {x: 1.3322676e-16, y: -0.08, z: -0.01}
+      rotation: {x: 0, y: 1.110223e-16, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:Spine
+      parentName: Character_Ctrl:Hips
+      position: {x: -8.953759e-18, y: 0.099999994, z: 0.02}
+      rotation: {x: -8.8481465e-33, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:Spine1
+      parentName: Character_Ctrl:Spine
+      position: {x: -1.3138358e-18, y: 0.07, z: 0.01}
+      rotation: {x: 1.4163847e-16, y: 6.162976e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:Spine2
+      parentName: Character_Ctrl:Spine1
+      position: {x: -6.735557e-18, y: 0.11, z: 0}
+      rotation: {x: -1.0941669e-33, y: -0, z: 3.081488e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:Spine3
+      parentName: Character_Ctrl:Spine2
+      position: {x: -6.3432755e-18, y: 0.099999994, z: -0.04}
+      rotation: {x: 1.4163847e-16, y: 6.162976e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftShoulder
+      parentName: Character_Ctrl:Spine3
+      position: {x: -0.07, y: 0.01, z: -8.0824233e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftArm
+      parentName: Character_Ctrl:LeftShoulder
+      position: {x: -0.08, y: 0, z: -1.1990408e-16}
+      rotation: {x: 2.7755576e-17, y: -2.7755576e-17, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftForeArm
+      parentName: Character_Ctrl:LeftArm
+      position: {x: -0.07, y: -0.17, z: -0.01}
+      rotation: {x: 1.2490009e-16, y: -5.551115e-17, z: -1.3877788e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHand
+      parentName: Character_Ctrl:LeftForeArm
+      position: {x: -0.08, y: -0.17, z: 0.03}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftFingerBase
+      parentName: Character_Ctrl:LeftHand
+      position: {x: -0.03, y: -0.04, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandIndex1
+      parentName: Character_Ctrl:LeftFingerBase
+      position: {x: -0.023465415, y: -0.031974923, z: 0.038396254}
+      rotation: {x: 5.551115e-17, y: 6.938894e-17, z: 6.938894e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandIndex2
+      parentName: Character_Ctrl:LeftHandIndex1
+      position: {x: -0.012576995, y: -0.01894926, z: 0.01110763}
+      rotation: {x: 5.551115e-17, y: -5.551115e-17, z: 5.551115e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandIndex3
+      parentName: Character_Ctrl:LeftHandIndex2
+      position: {x: -0.0134537695, y: -0.015829569, z: 0.011943975}
+      rotation: {x: 5.551115e-17, y: -5.551115e-17, z: 5.551115e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandMiddle1
+      parentName: Character_Ctrl:LeftFingerBase
+      position: {x: -0.027013222, y: -0.035570264, z: 0.019061409}
+      rotation: {x: -2.7755576e-17, y: 2.7755576e-17, z: -3.989864e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandMiddle2
+      parentName: Character_Ctrl:LeftHandMiddle1
+      position: {x: -0.017822508, y: -0.027310695, z: 0.008328554}
+      rotation: {x: -2.7755576e-17, y: 2.7755576e-17, z: -4.1633363e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandMiddle3
+      parentName: Character_Ctrl:LeftHandMiddle2
+      position: {x: -0.017567806, y: -0.020566434, z: 0.0071982914}
+      rotation: {x: -2.7755576e-17, y: 2.7755576e-17, z: -4.1633363e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandPinky1
+      parentName: Character_Ctrl:LeftFingerBase
+      position: {x: -0.02824065, y: -0.034700394, z: -0.025639066}
+      rotation: {x: -2.1250363e-17, y: 1.8214596e-17, z: 3.911937e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandPinky2
+      parentName: Character_Ctrl:LeftHandPinky1
+      position: {x: -0.015656037, y: -0.019186355, z: -0.00022464315}
+      rotation: {x: 1.9081958e-17, y: -1.5612511e-17, z: -6.157591e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandPinky3
+      parentName: Character_Ctrl:LeftHandPinky2
+      position: {x: -0.013630826, y: -0.016560774, z: 0.00025968993}
+      rotation: {x: 1.9081958e-17, y: -1.5612511e-17, z: -6.157591e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandRing1
+      parentName: Character_Ctrl:LeftFingerBase
+      position: {x: -0.02824065, y: -0.034700394, z: -0.0033864405}
+      rotation: {x: 6.2450045e-17, y: -4.510281e-17, z: -2.515349e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandRing2
+      parentName: Character_Ctrl:LeftHandRing1
+      position: {x: -0.01980075, y: -0.026952611, z: 0.0018349452}
+      rotation: {x: -6.2450045e-17, y: 3.469447e-17, z: -1.8735014e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandRing3
+      parentName: Character_Ctrl:LeftHandRing2
+      position: {x: -0.017912256, y: -0.021146413, z: 0.0039245025}
+      rotation: {x: -6.2450045e-17, y: 3.469447e-17, z: -1.8735014e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandThumb1
+      parentName: Character_Ctrl:LeftHand
+      position: {x: -0.023769114, y: -0.046637706, z: 0.03549162}
+      rotation: {x: 5.551115e-17, y: 5.2041704e-17, z: -3.469447e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandThumb2
+      parentName: Character_Ctrl:LeftHandThumb1
+      position: {x: 0.0012404689, y: -0.019680511, z: 0.01586737}
+      rotation: {x: 2.7755576e-17, y: -4.5970172e-17, z: -6.852158e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandThumb3
+      parentName: Character_Ctrl:LeftHandThumb2
+      position: {x: -0.0003779364, y: -0.017253194, z: 0.016625948}
+      rotation: {x: 2.7755576e-17, y: -4.5970172e-17, z: -6.852158e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:Neck
+      parentName: Character_Ctrl:Spine3
+      position: {x: -3.061617e-18, y: 0.049999997, z: 0}
+      rotation: {x: -2.1988134e-33, y: 1.2325952e-32, z: 6.162976e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:Head
+      parentName: Character_Ctrl:Neck
+      position: {x: -6.0132126e-18, y: 0.099999994, z: 0.02}
+      rotation: {x: 1.4163847e-16, y: 6.162976e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightShoulder
+      parentName: Character_Ctrl:Spine3
+      position: {x: 0.07, y: 0.01, z: 2.2204459e-17}
+      rotation: {x: -3.399078e-33, y: 2.7755576e-17, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightArm
+      parentName: Character_Ctrl:RightShoulder
+      position: {x: 0.08, y: 0, z: -4.440892e-18}
+      rotation: {x: 7.2858386e-17, y: 2.7755576e-17, z: 1.3877788e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightForeArm
+      parentName: Character_Ctrl:RightArm
+      position: {x: 0.07, y: -0.17, z: -0.01}
+      rotation: {x: 8.326673e-17, y: -6.933348e-33, z: -8.326673e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHand
+      parentName: Character_Ctrl:RightForeArm
+      position: {x: 0.08, y: -0.17, z: 0.03}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightFingerBase
+      parentName: Character_Ctrl:RightHand
+      position: {x: 0.03, y: -0.04, z: 6.661338e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandIndex1
+      parentName: Character_Ctrl:RightFingerBase
+      position: {x: 0.023464998, y: -0.031974997, z: 0.0383963}
+      rotation: {x: -2.888895e-33, y: -1.3877788e-17, z: -2.0816682e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandIndex2
+      parentName: Character_Ctrl:RightHandIndex1
+      position: {x: 0.012364, y: -0.019042999, z: 0.0111862}
+      rotation: {x: 1.3877788e-16, y: 5.551115e-17, z: 2.0816682e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandIndex3
+      parentName: Character_Ctrl:RightHandIndex2
+      position: {x: 0.013785999, y: -0.016548, z: 0.0105042}
+      rotation: {x: 1.3877788e-16, y: 5.551115e-17, z: 2.0816682e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandMiddle1
+      parentName: Character_Ctrl:RightFingerBase
+      position: {x: 0.027012998, y: -0.03557, z: 0.01906141}
+      rotation: {x: -2.7755576e-17, y: 1.3877788e-17, z: 1.3877788e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandMiddle2
+      parentName: Character_Ctrl:RightHandMiddle1
+      position: {x: 0.017823, y: -0.027311001, z: 0.00832859}
+      rotation: {x: -1.3877788e-17, y: -1.3877788e-17, z: 1.7347235e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandMiddle3
+      parentName: Character_Ctrl:RightHandMiddle2
+      position: {x: 0.017568, y: -0.020566, z: 0.0071982997}
+      rotation: {x: -1.3877788e-17, y: -1.3877788e-17, z: 1.7347235e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandPinky1
+      parentName: Character_Ctrl:RightFingerBase
+      position: {x: 0.028241, y: -0.0347, z: -0.0256391}
+      rotation: {x: -8.6736174e-19, y: 4.3368087e-19, z: -1.817055e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandPinky2
+      parentName: Character_Ctrl:RightHandPinky1
+      position: {x: 0.015656, y: -0.019187, z: -0.00022460001}
+      rotation: {x: -8.6736174e-19, y: -8.6736174e-19, z: 4.7311872e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandPinky3
+      parentName: Character_Ctrl:RightHandPinky2
+      position: {x: 0.013631, y: -0.016561, z: 0.0002597}
+      rotation: {x: -8.6736174e-19, y: -8.6736174e-19, z: 4.7311872e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandRing1
+      parentName: Character_Ctrl:RightFingerBase
+      position: {x: 0.028241, y: -0.0347, z: -0.0033864}
+      rotation: {x: 0, y: -0, z: -1.32272665e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandRing2
+      parentName: Character_Ctrl:RightHandRing1
+      position: {x: 0.0198, y: -0.026953, z: 0.0018348999}
+      rotation: {x: -1.733337e-33, y: -6.938894e-18, z: -2.4980018e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandRing3
+      parentName: Character_Ctrl:RightHandRing2
+      position: {x: 0.017913, y: -0.021146, z: 0.00392451}
+      rotation: {x: -1.733337e-33, y: -6.938894e-18, z: -2.4980018e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandThumb1
+      parentName: Character_Ctrl:RightHand
+      position: {x: 0.023768999, y: -0.046637997, z: 0.0354916}
+      rotation: {x: 1.1314838e-33, y: 3.469447e-18, z: -3.2612801e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandThumb2
+      parentName: Character_Ctrl:RightHandThumb1
+      position: {x: -0.0012399999, y: -0.01968, z: 0.015867399}
+      rotation: {x: -2.7755576e-17, y: 8.6736174e-19, z: 2.4074124e-35, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandThumb3
+      parentName: Character_Ctrl:RightHandThumb2
+      position: {x: 0.000378, y: -0.017252998, z: 0.0166259}
+      rotation: {x: -2.7755576e-17, y: 8.6736174e-19, z: 2.4074124e-35, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:HipsEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -4.4408918e-17, y: 0.84, z: -0.02}
+      rotation: {x: 1.4163847e-16, y: 6.162976e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftAnkleEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.06, y: 0.12, z: -0.04}
+      rotation: {x: -1.3877788e-16, y: -3.3049492e-16, z: 2.512201e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftElbowEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.22, y: 1.1, z: -0.04}
+      rotation: {x: 1.2490009e-16, y: -5.551115e-17, z: -1.3877788e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftFootEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.06, y: 0.04, z: -0.049999997}
+      rotation: {x: 0, y: 1.110223e-16, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.32999998, y: 0.89, z: -0.01}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandIndexEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.3794962, y: 0.82324624, z: 0.051447857}
+      rotation: {x: 8.326673e-17, y: -5.551115e-17, z: -6.2450045e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandMiddleEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.3924035, y: 0.8065526, z: 0.024588255}
+      rotation: {x: -4.1633363e-17, y: 4.1633363e-17, z: 6.938894e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandPinkyEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.3875275, y: 0.8195524, z: -0.035604022}
+      rotation: {x: 1.7347235e-18, y: -2.6020852e-18, z: -8.960253e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandRingEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.39595366, y: 0.80720055, z: -0.007626992}
+      rotation: {x: 0, y: -0, z: -1.8388069e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHandThumbEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.32290655, y: 0.8464286, z: 0.057984937}
+      rotation: {x: 2.7755576e-17, y: -4.5970172e-17, z: -6.852158e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftHipEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.089999996, y: 0.84, z: -0.02}
+      rotation: {x: -2.5740315e-16, y: -1.4094628e-17, z: 1.1449175e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftKneeEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.07, y: 0.47, z: -0.01}
+      rotation: {x: 6.942079e-16, y: 1.994932e-17, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftShoulderEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.14999999, y: 1.27, z: -0.03}
+      rotation: {x: 2.7755576e-17, y: -2.7755576e-17, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:LeftWristEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: -0.29999998, y: 0.93, z: -0.01}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightAnkleEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.06, y: 0.12, z: -0.04}
+      rotation: {x: -6.2450045e-17, y: -2.2032995e-16, z: 1.6377933e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightElbowEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.22, y: 1.1, z: -0.04}
+      rotation: {x: 8.326673e-17, y: -6.933348e-33, z: -8.326673e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightFootEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.06, y: 0.04, z: -0.049999997}
+      rotation: {x: 0, y: 1.110223e-16, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.32999998, y: 0.89, z: -0.01}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandIndexEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.37961498, y: 0.822434, z: 0.050086696}
+      rotation: {x: 1.3877788e-16, y: 5.551115e-17, z: 2.0816682e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandMiddleEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.392404, y: 0.80655295, z: 0.0245883}
+      rotation: {x: -1.3877788e-17, y: -1.3877788e-17, z: 1.7347235e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandPinkyEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.387528, y: 0.819552, z: -0.035604}
+      rotation: {x: -8.6736174e-19, y: -8.6736174e-19, z: 4.7311872e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandRingEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.395954, y: 0.80720097, z: -0.00762699}
+      rotation: {x: -1.733337e-33, y: -6.938894e-18, z: -2.4980018e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHandThumbEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.32290697, y: 0.846429, z: 0.0579849}
+      rotation: {x: 2.4980018e-16, y: 1.1275703e-17, z: -5.2041704e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightHipEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.089999996, y: 0.84, z: -0.02}
+      rotation: {x: -1.3728846e-15, y: -3.6862874e-17, z: -5.060847e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightKneeEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.07, y: 0.47, z: -0.01}
+      rotation: {x: 4.9198994e-15, y: -2.992398e-17, z: -2.1510571e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightShoulderEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.14999999, y: 1.27, z: -0.03}
+      rotation: {x: 7.2858386e-17, y: 2.7755576e-17, z: 1.3877788e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_Ctrl:RightWristEffector
+      parentName: Character_Ctrl:Reference
+      position: {x: 0.29999998, y: 0.93, z: -0.01}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ref
+      parentName: Anne(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_Hips
+      parentName: Ref
+      position: {x: -0.88, y: 1.4654943e-16, z: -0.02}
+      rotation: {x: -0.70366555, y: 0.06967662, z: 0.06967662, w: 0.70366555}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_Spine
+      parentName: Anne_Hips
+      position: {x: -0.10198039, y: 0, z: 1.0225073e-17}
+      rotation: {x: 0.70366555, y: -0.06967662, z: -0.06967662, w: 0.70366555}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Anne_Spine_1
+      parentName: Anne_Spine
+      position: {x: -0.069999985, y: 1.5984352e-17, z: 0.009999997}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Anne_Spine_2
+      parentName: Anne_Spine_1
+      position: {x: -0.109999985, y: 1.3151848e-18, z: -3.330669e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Anne_Spine_3
+      parentName: Anne_Spine_2
+      position: {x: -0.09999999, y: -2.6630138e-17, z: -0.039999988}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Anne_R_Clavicle
+      parentName: Anne_Spine_3
+      position: {x: -0.009999999, y: 0.069999985, z: 8.881784e-18}
+      rotation: {x: 0.7071068, y: 0.7071068, z: -4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_R_Shoulder
+      parentName: Anne_R_Clavicle
+      position: {x: 0.08, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.55643964, w: 0.83088803}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Anne_R_Elbow
+      parentName: Anne_R_Shoulder
+      position: {x: 0.18384777, y: 0, z: 0.01}
+      rotation: {x: 0, y: -0, z: -0.024615282, w: 0.99969697}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_R_Wrist
+      parentName: Anne_R_Elbow
+      position: {x: 0.18788293, y: 0, z: -0.03}
+      rotation: {x: 0, y: -0, z: -0.101653375, w: 0.9948199}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1}
+    - name: Anne_R_Palm
+      parentName: Anne_R_Wrist
+      position: {x: 0.04999998, y: -1.4210854e-16, z: -2.220446e-18}
+      rotation: {x: 0, y: -0, z: -0.016529292, w: 0.9998634}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Anne_R_Ring_1
+      parentName: Anne_R_Palm
+      position: {x: 0.044738784, y: -0.00029415864, z: 0.0033863997}
+      rotation: {x: 0.031786904, y: 0.012738006, z: 0.018612526, w: 0.99924016}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Anna_L_Ring_3
+      parentName: Anne_R_Ring_1
+      position: {x: 0.033478294, y: 0.00009987733, z: -0.0010310779}
+      rotation: {x: 0.065865204, y: 0.07274867, z: 0.014874677, w: 0.99506193}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Anne_R_Ring_3
+      parentName: Anna_L_Ring_3
+      position: {x: 0.027956089, y: -0.0010357376, z: 0.0009032499}
+      rotation: {x: -0.031272303, y: -0.0048777517, z: -0.06175682, w: 0.9975893}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_R_Ring_4
+      parentName: Anne_R_Ring_3
+      position: {x: 0.026385844, y: 0.000030604762, z: 0.00027794458}
+      rotation: {x: -0.00603057, y: 0.0046157385, z: 0.010514985, w: 0.9999159}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_R_Middle_1
+      parentName: Anne_R_Palm
+      position: {x: 0.04464827, y: 0.0012080496, z: -0.01906141}
+      rotation: {x: 0.029803522, y: 0.110893406, z: 0.021646788, w: 0.99314946}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Anne_R_Middle_2
+      parentName: Anne_R_Middle_1
+      position: {x: 0.033608504, y: 0.001480084, z: -0.0010926336}
+      rotation: {x: 0.06384733, y: 0.03649565, z: 0.0399596, w: 0.99649125}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: Anne_R_Middle_3
+      parentName: Anne_R_Middle_2
+      position: {x: 0.027955774, y: -0.0010352912, z: 0.0009030809}
+      rotation: {x: -0.032164894, y: -0.019348815, z: -0.06129667, w: 0.9974136}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1}
+    - name: Anne_R_Middle_4
+      parentName: Anne_R_Middle_3
+      position: {x: 0.026382707, y: 0.000030557887, z: -0.000487686}
+      rotation: {x: -0.005877399, y: 0.019120578, z: 0.010601361, w: 0.9997437}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_R_Pinky_1
+      parentName: Anne_R_Palm
+      position: {x: 0.044738784, y: -0.00029415864, z: 0.0256391}
+      rotation: {x: 0.031786904, y: 0.012738006, z: 0.018612526, w: 0.99924016}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Anna_L_Pinky_3
+      parentName: Anne_R_Pinky_1
+      position: {x: 0.02472514, y: -0.0010803416, z: 0.00089600566}
+      rotation: {x: 0.0013204865, y: 0.005032321, z: -0.021311974, w: 0.9997594}
+      scale: {x: 1.0000004, y: 1, z: 0.99999994}
+    - name: Anne_R_Pinky_3
+      parentName: Anna_L_Pinky_3
+      position: {x: 0.021443937, y: -0.000049769747, z: 0.00054003403}
+      rotation: {x: -0.011136088, y: -0.0102445735, z: -0.056079756, w: 0.99831164}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Anne_R_Pinky_4
+      parentName: Anne_R_Pinky_3
+      position: {x: 0.022023967, y: -0.0021306744, z: 0.00025742673}
+      rotation: {x: 0.009470913, y: -0.009891515, z: 0.008990292, w: 0.99986583}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_R_Index_1
+      parentName: Anne_R_Palm
+      position: {x: 0.0396237, y: 0.0017236759, z: -0.0383963}
+      rotation: {x: 0.05601996, y: 0.19366749, z: 0.020834329, w: 0.97924495}
+      scale: {x: 1.0000004, y: 1, z: 1}
+    - name: Anne_R_Index_2
+      parentName: Anne_R_Index_1
+      position: {x: 0.025234938, y: 0.00051705394, z: -0.0018879705}
+      rotation: {x: -0.016648773, y: 0.035291757, z: 0.03354664, w: 0.9986751}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Anne_R_Index_3
+      parentName: Anne_R_Index_2
+      position: {x: 0.023938809, y: -0.0010767505, z: 0.000055155924}
+      rotation: {x: 0.021002663, y: -0.012457435, z: -0.06305926, w: 0.997711}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Anne_R_Index_4
+      parentName: Anne_R_Index_3
+      position: {x: 0.029797457, y: 0.0014085232, z: 0.0014328562}
+      rotation: {x: -0.019717915, y: -0.023259316, z: 0.009193713, w: 0.99949276}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_R_Thumb_1
+      parentName: Anne_R_Palm
+      position: {x: 0.001274548, y: 0.009014676, z: -0.0354916}
+      rotation: {x: 0.49901164, y: 0.44235608, z: 0.03205259, w: 0.7445006}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Anne_R_Thumb_2
+      parentName: Anne_R_Thumb_1
+      position: {x: 0.025281923, y: 0.00013992767, z: -0.0011903577}
+      rotation: {x: 0.091788545, y: -0.026238987, z: -0.025912901, w: 0.99509543}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: Anne_R_Thumb_3
+      parentName: Anne_R_Thumb_2
+      position: {x: 0.023926497, y: -0.001006798, z: -0.0008599697}
+      rotation: {x: -0.035340454, y: 0.06420731, z: -0.068498574, w: 0.9949555}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_R_Thumb_4
+      parentName: Anne_R_Thumb_3
+      position: {x: 0.029851334, y: 0.0016345948, z: 0.0007584164}
+      rotation: {x: -0.002618002, y: -0.010394107, z: 0.0071332376, w: 0.99991715}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_Neck_Base
+      parentName: Anne_Spine_3
+      position: {x: -0.049999993, y: -2.1777455e-18, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Anne_Head_Base
+      parentName: Anne_Neck_Base
+      position: {x: -0.09999999, y: 1.7884072e-17, z: 0.019999994}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Anne_Head_End
+      parentName: Anne_Head_Base
+      position: {x: -0.17, y: 3.7747583e-17, z: 0}
+      rotation: {x: 1.6537443e-34, y: 1.6537443e-34, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_L_Clavicle
+      parentName: Anne_Spine_3
+      position: {x: -0.009999999, y: -0.069999985, z: 8.881784e-18}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_L_Shoulder
+      parentName: Anne_L_Clavicle
+      position: {x: -0.08, y: 2.842171e-16, z: -4.440892e-18}
+      rotation: {x: 0, y: 0, z: 0.55643964, w: 0.83088803}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Anne_L_Elbow
+      parentName: Anne_L_Shoulder
+      position: {x: -0.18384777, y: 7.105427e-17, z: -0.01}
+      rotation: {x: 0, y: -0, z: -0.024615282, w: 0.99969697}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_L_Wrist
+      parentName: Anne_L_Elbow
+      position: {x: -0.18788293, y: -4.2632563e-16, z: 0.03}
+      rotation: {x: 0, y: -0, z: -0.101653375, w: 0.9948199}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000005}
+    - name: Anne_L_Palm
+      parentName: Anne_L_Wrist
+      position: {x: -0.04999998, y: 2.842171e-16, z: -6.661338e-18}
+      rotation: {x: 0, y: -0, z: -0.016529292, w: 0.9998634}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Anne_L_Ring_1
+      parentName: Anne_L_Palm
+      position: {x: -0.04473887, y: 0.00029365212, z: -0.0033864405}
+      rotation: {x: 1.6825136e-16, y: -8.875754e-17, z: 0.019012323, w: 0.9998193}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anna_L_Ring_2
+      parentName: Anne_L_Ring_1
+      position: {x: -0.033443756, y: -0.00016484057, z: 0.0018349445}
+      rotation: {x: 0.0048567806, y: -0.00015607376, z: 0.0021964582, w: 0.9999858}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: Anne_L_Ring_3
+      parentName: Anna_L_Ring_2
+      position: {x: -0.027713215, y: -0.000000030389906, z: 0.0039245044}
+      rotation: {x: 1.5579619e-16, y: 5.769256e-16, z: -0.041295297, w: 0.999147}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
+    - name: Anne_L_Ring_4
+      parentName: Anne_L_Ring_3
+      position: {x: -0.026035415, y: 1.0158765e-17, z: 0.0042978637}
+      rotation: {x: -1.6374727e-16, y: 3.7290422e-16, z: 0.011109054, w: 0.9999383}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_L_Middle_1
+      parentName: Anne_L_Palm
+      position: {x: -0.04464863, y: -0.001208092, z: 0.01906141}
+      rotation: {x: -0.0017122087, y: 0.0980753, z: 0.025209764, w: 0.99485815}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Anne_L_Middle_2
+      parentName: Anne_L_Middle_1
+      position: {x: -0.033573862, y: -0.0015471444, z: 0.0018112182}
+      rotation: {x: 0.0055242623, y: -0.039294396, z: 0.022623494, w: 0.99895626}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: Anne_L_Middle_3
+      parentName: Anne_L_Middle_2
+      position: {x: -0.0277132, y: -0.00000004077064, z: 0.0039244997}
+      rotation: {x: 1.6668485e-16, y: 8.403786e-16, z: -0.041295297, w: 0.999147}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Anne_L_Middle_4
+      parentName: Anne_L_Middle_3
+      position: {x: -0.026035415, y: 1.0158765e-17, z: 0.0042978637}
+      rotation: {x: -1.9150114e-16, y: 3.7259587e-16, z: 0.011109054, w: 0.9999383}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_L_Pinky_1
+      parentName: Anne_L_Palm
+      position: {x: -0.04473887, y: 0.00029365212, z: -0.025639068}
+      rotation: {x: 1.6128074e-16, y: -8.715505e-17, z: 0.019012323, w: 0.9998193}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anna_L_Pinky_2
+      parentName: Anne_L_Pinky_1
+      position: {x: -0.024737332, y: 0.0011358957, z: -0.00022464275}
+      rotation: {x: 0.000025631716, y: -0.00000046054132, z: -0.030002967, w: 0.99954987}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Anne_L_Pinky_3
+      parentName: Anna_L_Pinky_2
+      position: {x: -0.021446891, y: -0.00030306418, z: 0.00025969022}
+      rotation: {x: 2.0339575e-16, y: 5.523876e-16, z: -0.041295297, w: 0.999147}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: Anne_L_Pinky_4
+      parentName: Anne_L_Pinky_3
+      position: {x: -0.021994527, y: 0.0024147425, z: 0.00032256724}
+      rotation: {x: 7.450682e-17, y: 1.6433552e-16, z: 0.011109054, w: 0.9999383}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_L_Index_1
+      parentName: Anne_L_Palm
+      position: {x: -0.0396239, y: -0.0017233009, z: 0.038396254}
+      rotation: {x: -0.0031004632, y: 0.17759453, z: 0.030097768, w: 0.9836385}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Anne_L_Index_2
+      parentName: Anne_L_Index_1
+      position: {x: -0.02518253, y: -0.0006369125, z: 0.0024630576}
+      rotation: {x: 0.007869083, y: -0.0011529753, z: 0.014154512, w: 0.9998682}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Anne_L_Index_3
+      parentName: Anne_L_Index_2
+      position: {x: -0.02364077, y: 0.00006466703, z: 0.003917778}
+      rotation: {x: 1.2689015e-16, y: 6.336788e-16, z: -0.041295297, w: 0.999147}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Anne_L_Index_4
+      parentName: Anne_L_Index_3
+      position: {x: -0.029704614, y: -0.0012433687, z: 0.0028313}
+      rotation: {x: -3.8026343e-17, y: 2.2163585e-16, z: 0.011109054, w: 0.9999383}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_L_Thumb_1
+      parentName: Anne_L_Palm
+      position: {x: -0.0012743816, y: -0.009014396, z: 0.035491623}
+      rotation: {x: 0.39894795, y: 0.4144227, z: 0.07528703, w: 0.81450987}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Anne_L_Thumb_2
+      parentName: Anne_L_Thumb_1
+      position: {x: -0.025182558, y: -0.00063691277, z: 0.0024630404}
+      rotation: {x: 0.050262563, y: -0.048032835, z: -0.045590296, w: 0.99653804}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Anne_L_Thumb_3
+      parentName: Anne_L_Thumb_2
+      position: {x: -0.02364073, y: 0.00006466721, z: 0.003917806}
+      rotation: {x: 0.03541457, y: 0.045429148, z: -0.04536828, w: 0.99730825}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Anne_L_Thumb_4
+      parentName: Anne_L_Thumb_3
+      position: {x: -0.029520985, y: -0.0016010861, z: 0.0045048404}
+      rotation: {x: 4.506928e-16, y: 6.5730334e-16, z: 0.011109054, w: 0.9999383}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_R_Hips
+      parentName: Anne_Hips
+      position: {x: 0.039223224, y: -0.0078446455, z: 0.089999996}
+      rotation: {x: 0.70528984, y: -0.050658576, z: -0.08865293, w: 0.7015274}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Anne_R_Knee
+      parentName: Anne_R_Hips
+      position: {x: 0.37054023, y: 0.000000006945304, z: 0.009995235}
+      rotation: {x: -0.000000080685, y: 0.0000063433563, z: 0.012718579, w: 0.9999191}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_R_Ankle
+      parentName: Anne_R_Knee
+      position: {x: 0.3501428, y: -0.000000011028119, z: -0.03000006}
+      rotation: {x: 0, y: 0, z: 0.014281344, w: 0.999898}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Anne_R_Heel
+      parentName: Anne_R_Ankle
+      position: {x: 0.07999999, y: -0.0000000036236476, z: -0.010000013}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Anne_R_Foot_End
+      parentName: Anne_R_Heel
+      position: {x: 0.03, y: -1.2434498e-16, z: 0.19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_L_Hips
+      parentName: Anne_Hips
+      position: {x: 0.039223224, y: -0.0078446455, z: -0.089999996}
+      rotation: {x: 0.050658707, y: 0.70528984, z: 0.7015274, w: 0.088653065}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Anne_L_Knee
+      parentName: Anne_L_Hips
+      position: {x: -0.3705403, y: -0.000000007149263, z: -0.009995098}
+      rotation: {x: -0.00000008460413, y: 0.0000066514735, z: 0.012718579, w: 0.9999191}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anne_L_Ankle
+      parentName: Anne_L_Knee
+      position: {x: -0.3501428, y: 0.000000011352033, z: 0.029999977}
+      rotation: {x: 0, y: 0, z: 0.014281344, w: 0.999898}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Anne_L_Heel
+      parentName: Anne_L_Ankle
+      position: {x: -0.07999999, y: 0.0000000037996344, z: 0.009999996}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Anne_L_Foot_End
+      parentName: Anne_L_Heel
+      position: {x: -0.03, y: -5.32907e-16, z: -0.19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 3371484a91e1b1f418593471b353aecd,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

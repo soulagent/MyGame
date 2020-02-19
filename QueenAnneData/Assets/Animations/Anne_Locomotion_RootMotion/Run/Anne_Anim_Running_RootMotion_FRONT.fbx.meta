@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 809787c6975bf974bbbb9775db3b5706
-timeCreated: 1581407730
+guid: c76b2bf86cdd3664db7711e77e92a723
+timeCreated: 1581578483
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -354,7 +354,7 @@ ModelImporter:
       lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
-      level: 0
+      level: 0.1
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0

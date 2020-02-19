@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInputsRM : MonoBehaviour {
 
     CharacterMove characterMove;
+    AttackManager attackManager;
 
     [System.Serializable]
     public class InputSettings {
@@ -27,6 +28,7 @@ public class PlayerInputsRM : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        attackManager = GetComponent<AttackManager>();
         characterMove = GetComponent<CharacterMove>();
         mainCam = Camera.main;
 	}
@@ -45,6 +47,10 @@ public class PlayerInputsRM : MonoBehaviour {
                 
             }// if (requireInputForTurn)
         } // if (mainCam)
+
+        if(Input.GetButtonDown ("AttackA")) {
+            attackManager.AttackA();
+        }
 	} // update
 
     //make the character look at a forward point from camera when moving

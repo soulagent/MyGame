@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c5e93c07a1f659b42b47c8222989cba7
-timeCreated: 1581407735
+guid: db3c9fdae1d81064e84575204712bc95
+timeCreated: 1581497740
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -351,10 +351,10 @@ ModelImporter:
       name: Walk Back
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 24
+      lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
-      level: 0
+      level: 0.1
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
