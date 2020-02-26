@@ -12,7 +12,11 @@ public class Menu : MonoBehaviour {
     [System.Serializable]
     public class StartScreen {
         public GameObject StartCanvas;
+        public GameObject ParticleSystem;
         public GameObject PressToStart;
+        public GameObject MenuBackground;
+        public GameObject StartBackground;
+        public GameObject ButtonBorder;
     }
     public StartScreen startScreen;
 
@@ -49,7 +53,7 @@ public class Menu : MonoBehaviour {
     public InputManager inputs;
 
     void Awake() {
-        descriptionText.text = "";
+        descriptionText.text = "[ QueenAnne_v.1.1.6 Test Version ]";
         inputs.upKey = "upKey";
         inputs.downKey = "downKey";
         inputs.enterKey = "enterKey";
@@ -62,6 +66,10 @@ public class Menu : MonoBehaviour {
         #region StartScreen
         startScreen.StartCanvas.SetActive(true);
         startScreen.PressToStart.SetActive(true);
+        startScreen.MenuBackground.SetActive(false);
+        startScreen.ButtonBorder.SetActive(true);
+        startScreen.StartBackground.SetActive(true);
+        startScreen.ParticleSystem.SetActive(true);
         #endregion
 
         menuScreen.MenuCanvas.SetActive(false);
@@ -201,6 +209,10 @@ public class Menu : MonoBehaviour {
 
     public void PressToStart() {
         startScreen.StartCanvas.SetActive(false);
+        startScreen.ButtonBorder.SetActive(false);
+        startScreen.StartBackground.SetActive(false);
+        startScreen.MenuBackground.SetActive(true);
+        startScreen.ParticleSystem.SetActive(false);
         menuScreen.MenuCanvas.SetActive(true);
         menuScreen.SelectPlay.SetActive(true);
 
