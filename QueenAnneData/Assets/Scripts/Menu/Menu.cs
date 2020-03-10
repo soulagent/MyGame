@@ -12,7 +12,6 @@ public class Menu : MonoBehaviour {
     [System.Serializable]
     public class StartScreen {
         public GameObject StartCanvas;
-        public GameObject ParticleSystem;
         public GameObject PressToStart;
         public GameObject MenuBackground;
         public GameObject StartBackground;
@@ -53,7 +52,7 @@ public class Menu : MonoBehaviour {
     public InputManager inputs;
 
     void Awake() {
-        descriptionText.text = "[ QueenAnne_v.1.1.6 Test Version ]";
+        descriptionText.text = "[ QueenAnne_v.1.1.7 Demo Version ]";
         inputs.upKey = "upKey";
         inputs.downKey = "downKey";
         inputs.enterKey = "enterKey";
@@ -69,7 +68,6 @@ public class Menu : MonoBehaviour {
         startScreen.MenuBackground.SetActive(false);
         startScreen.ButtonBorder.SetActive(true);
         startScreen.StartBackground.SetActive(true);
-        startScreen.ParticleSystem.SetActive(true);
         #endregion
 
         menuScreen.MenuCanvas.SetActive(false);
@@ -212,7 +210,6 @@ public class Menu : MonoBehaviour {
         startScreen.ButtonBorder.SetActive(false);
         startScreen.StartBackground.SetActive(false);
         startScreen.MenuBackground.SetActive(true);
-        startScreen.ParticleSystem.SetActive(false);
         menuScreen.MenuCanvas.SetActive(true);
         menuScreen.SelectPlay.SetActive(true);
 
@@ -397,7 +394,7 @@ public class Menu : MonoBehaviour {
     #region Select Handlers
     #region Menu Selects
     public void SelectPlay() {
-        SceneManager.LoadScene("QueenChambers");
+        SceneManager.LoadScene("Demo");
     }
     public void SelectQuit() {
         menuScreen.MenuCanvas.SetActive(false);

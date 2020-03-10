@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour {
     public GameObject enemy;
     public Transform healthBar;
     public Slider healthFill;
+    public Text healthText;
 
     public float currentHealth;
     public float maxHealth;
@@ -22,6 +23,7 @@ public class EnemyHealth : MonoBehaviour {
 
         KnightFall();
         //KnightRise();
+        healthText.text = currentHealth.ToString();
     }
 
     public void ChangeHealth(int amount) {

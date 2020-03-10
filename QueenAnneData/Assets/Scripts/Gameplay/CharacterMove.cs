@@ -8,6 +8,7 @@ using UnityEngine;
 public class CharacterMove : MonoBehaviour {
 
     Animator animator;
+    public bool canRun = true;
     //CharacterController characterController;
 
     [System.Serializable]
@@ -30,7 +31,9 @@ public class CharacterMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Input.GetButton("shiftKey")) {
-            animator.SetFloat(animations.isRunning, 1);
+            if (canRun) {
+                animator.SetFloat(animations.isRunning, 1);
+            }
         }
         else {
             animator.SetFloat(animations.isRunning, -1);

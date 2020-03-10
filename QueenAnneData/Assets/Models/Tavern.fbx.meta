@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: 16f5a98653974f24e97988b715004f20
+timeCreated: 1583747438
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bar_counter_pilar
+    100002: bar_counter_pilar1
+    100004: bar_counter_top
+    100006: base
+    100008: base 1
+    100010: bedframe
+    100012: bedrest
+    100014: body
+    100016: Chair
+    100018: Chair 1
+    100020: Chair 2
+    100022: Chair 3
+    100024: Chair 4
+    100026: Chair 5
+    100028: Chair4
+    100030: Chair4 1
+    100032: Chair4 2
+    100034: Chair4 3
+    100036: Chair4 4
+    100038: Chair4 5
+    100040: Chair5
+    100042: Chair5 1
+    100044: Chair5 2
+    100046: Chair5 3
+    100048: Chair5 4
+    100050: Chair5 5
+    100052: Chair6
+    100054: Chair6 1
+    100056: Chair6 2
+    100058: Chair6 3
+    100060: Chair6 4
+    100062: Chair6 5
+    100064: groundflooor_ceiling_1
+    100066: groundflooor_ceiling_2
+    100068: groundflooor_ceiling_3
+    100070: groundfloor
+    100072: groundfloor_barcounter
+    100074: groundfloor_ceiling
+    100076: groundfloor_floor
+    100078: groundfloor_kitchen
+    100080: groundfloor_kitchen_floor
+    100082: groundfloor_platform
+    100084: groundfloor_stairs
+    100086: groundfloor_stool_cluster
+    100088: groundfloor_tablechair_cluster
+    100090: groundfloor_walls
+    100092: mattres
+    100094: ph_door_grp
+    100096: ph_doorway
+    100098: ph_doorway1
+    100100: ph_doorway2
+    100102: ph_wall
+    100104: ph_wall1
+    100106: ph_wall10
+    100108: ph_wall11
+    100110: ph_wall12
+    100112: ph_wall13
+    100114: ph_wall15
+    100116: ph_wall16
+    100118: ph_wall17
+    100120: ph_wall18
+    100122: ph_wall19
+    100124: ph_wall2
+    100126: ph_wall20
+    100128: ph_wall21
+    100130: ph_wall3
+    100132: ph_wall4
+    100134: ph_wall5
+    100136: ph_wall6
+    100138: ph_wall7
+    100140: ph_wall8
+    100142: ph_wall9
+    100144: ph_wall_grp
+    100146: stairs
+    100148: stairs1
+    100150: stairs_btm
+    100152: stand
+    100154: staris_landing
+    100156: staris_top
+    100158: stool
+    100160: stool1
+    100162: stool2
+    100164: stool3
+    100166: stool4
+    100168: stool5
+    100170: Table
+    100172: Table 1
+    100174: Table 2
+    100176: Table 3
+    100178: Table 4
+    100180: Table 5
+    100182: Table1
+    100184: Table2
+    100186: table_chair_CLUSTER3
+    100188: table_chair_CLUSTER4
+    100190: table_chair_CLUSTER5
+    100192: table_chair_CLUSTER_TOP
+    100194: table_chair_CLUSTER_TOP2
+    100196: table_chair_CLUSTER_TOP3
+    100198: //RootNode
+    100200: topfloor
+    100202: topfloor_bed
+    100204: topfloor_ceiling
+    100206: topfloor_chest
+    100208: topfloor_dresser
+    100210: topfloor_floor
+    100212: topfloor_mannequin
+    100214: topfloor_props
+    100216: topfloor_walls
+    100218: topfloor_wardrobe
+    100220: groundflooor_ceiling_4
+    100222: ph_wall22
+    100224: ph_wall23
+    100226: ph_wall24
+    100228: topfloor_floor1
+    400000: bar_counter_pilar
+    400002: bar_counter_pilar1
+    400004: bar_counter_top
+    400006: base
+    400008: base 1
+    400010: bedframe
+    400012: bedrest
+    400014: body
+    400016: Chair
+    400018: Chair 1
+    400020: Chair 2
+    400022: Chair 3
+    400024: Chair 4
+    400026: Chair 5
+    400028: Chair4
+    400030: Chair4 1
+    400032: Chair4 2
+    400034: Chair4 3
+    400036: Chair4 4
+    400038: Chair4 5
+    400040: Chair5
+    400042: Chair5 1
+    400044: Chair5 2
+    400046: Chair5 3
+    400048: Chair5 4
+    400050: Chair5 5
+    400052: Chair6
+    400054: Chair6 1
+    400056: Chair6 2
+    400058: Chair6 3
+    400060: Chair6 4
+    400062: Chair6 5
+    400064: groundflooor_ceiling_1
+    400066: groundflooor_ceiling_2
+    400068: groundflooor_ceiling_3
+    400070: groundfloor
+    400072: groundfloor_barcounter
+    400074: groundfloor_ceiling
+    400076: groundfloor_floor
+    400078: groundfloor_kitchen
+    400080: groundfloor_kitchen_floor
+    400082: groundfloor_platform
+    400084: groundfloor_stairs
+    400086: groundfloor_stool_cluster
+    400088: groundfloor_tablechair_cluster
+    400090: groundfloor_walls
+    400092: mattres
+    400094: ph_door_grp
+    400096: ph_doorway
+    400098: ph_doorway1
+    400100: ph_doorway2
+    400102: ph_wall
+    400104: ph_wall1
+    400106: ph_wall10
+    400108: ph_wall11
+    400110: ph_wall12
+    400112: ph_wall13
+    400114: ph_wall15
+    400116: ph_wall16
+    400118: ph_wall17
+    400120: ph_wall18
+    400122: ph_wall19
+    400124: ph_wall2
+    400126: ph_wall20
+    400128: ph_wall21
+    400130: ph_wall3
+    400132: ph_wall4
+    400134: ph_wall5
+    400136: ph_wall6
+    400138: ph_wall7
+    400140: ph_wall8
+    400142: ph_wall9
+    400144: ph_wall_grp
+    400146: stairs
+    400148: stairs1
+    400150: stairs_btm
+    400152: stand
+    400154: staris_landing
+    400156: staris_top
+    400158: stool
+    400160: stool1
+    400162: stool2
+    400164: stool3
+    400166: stool4
+    400168: stool5
+    400170: Table
+    400172: Table 1
+    400174: Table 2
+    400176: Table 3
+    400178: Table 4
+    400180: Table 5
+    400182: Table1
+    400184: Table2
+    400186: table_chair_CLUSTER3
+    400188: table_chair_CLUSTER4
+    400190: table_chair_CLUSTER5
+    400192: table_chair_CLUSTER_TOP
+    400194: table_chair_CLUSTER_TOP2
+    400196: table_chair_CLUSTER_TOP3
+    400198: //RootNode
+    400200: topfloor
+    400202: topfloor_bed
+    400204: topfloor_ceiling
+    400206: topfloor_chest
+    400208: topfloor_dresser
+    400210: topfloor_floor
+    400212: topfloor_mannequin
+    400214: topfloor_props
+    400216: topfloor_walls
+    400218: topfloor_wardrobe
+    400220: groundflooor_ceiling_4
+    400222: ph_wall22
+    400224: ph_wall23
+    400226: ph_wall24
+    400228: topfloor_floor1
+    2300000: bar_counter_pilar
+    2300002: bar_counter_pilar1
+    2300004: bar_counter_top
+    2300006: base
+    2300008: base 1
+    2300010: bedframe
+    2300012: bedrest
+    2300014: body
+    2300016: Chair
+    2300018: Chair 1
+    2300020: Chair 2
+    2300022: Chair 3
+    2300024: Chair 4
+    2300026: Chair 5
+    2300028: Chair4
+    2300030: Chair4 1
+    2300032: Chair4 2
+    2300034: Chair4 3
+    2300036: Chair4 4
+    2300038: Chair4 5
+    2300040: Chair5
+    2300042: Chair5 1
+    2300044: Chair5 2
+    2300046: Chair5 3
+    2300048: Chair5 4
+    2300050: Chair5 5
+    2300052: Chair6
+    2300054: Chair6 1
+    2300056: Chair6 2
+    2300058: Chair6 3
+    2300060: Chair6 4
+    2300062: Chair6 5
+    2300064: groundflooor_ceiling_1
+    2300066: groundflooor_ceiling_2
+    2300068: groundflooor_ceiling_3
+    2300070: groundfloor_floor
+    2300072: groundfloor_kitchen_floor
+    2300074: mattres
+    2300076: ph_doorway
+    2300078: ph_doorway1
+    2300080: ph_doorway2
+    2300082: ph_wall
+    2300084: ph_wall1
+    2300086: ph_wall10
+    2300088: ph_wall11
+    2300090: ph_wall12
+    2300092: ph_wall13
+    2300094: ph_wall15
+    2300096: ph_wall16
+    2300098: ph_wall17
+    2300100: ph_wall18
+    2300102: ph_wall19
+    2300104: ph_wall2
+    2300106: ph_wall20
+    2300108: ph_wall21
+    2300110: ph_wall3
+    2300112: ph_wall4
+    2300114: ph_wall5
+    2300116: ph_wall6
+    2300118: ph_wall7
+    2300120: ph_wall8
+    2300122: ph_wall9
+    2300124: stairs
+    2300126: stairs1
+    2300128: stairs_btm
+    2300130: stand
+    2300132: staris_landing
+    2300134: staris_top
+    2300136: stool
+    2300138: stool1
+    2300140: stool2
+    2300142: stool3
+    2300144: stool4
+    2300146: stool5
+    2300148: Table
+    2300150: Table 1
+    2300152: Table 2
+    2300154: Table 3
+    2300156: Table 4
+    2300158: Table 5
+    2300160: Table1
+    2300162: Table2
+    2300164: topfloor_chest
+    2300166: topfloor_dresser
+    2300168: topfloor_floor
+    2300170: topfloor_wardrobe
+    2300172: groundflooor_ceiling_4
+    2300174: ph_wall22
+    2300176: ph_wall23
+    2300178: ph_wall24
+    2300180: topfloor_floor1
+    3300000: bar_counter_pilar
+    3300002: bar_counter_pilar1
+    3300004: bar_counter_top
+    3300006: base
+    3300008: base 1
+    3300010: bedframe
+    3300012: bedrest
+    3300014: body
+    3300016: Chair
+    3300018: Chair 1
+    3300020: Chair 2
+    3300022: Chair 3
+    3300024: Chair 4
+    3300026: Chair 5
+    3300028: Chair4
+    3300030: Chair4 1
+    3300032: Chair4 2
+    3300034: Chair4 3
+    3300036: Chair4 4
+    3300038: Chair4 5
+    3300040: Chair5
+    3300042: Chair5 1
+    3300044: Chair5 2
+    3300046: Chair5 3
+    3300048: Chair5 4
+    3300050: Chair5 5
+    3300052: Chair6
+    3300054: Chair6 1
+    3300056: Chair6 2
+    3300058: Chair6 3
+    3300060: Chair6 4
+    3300062: Chair6 5
+    3300064: groundflooor_ceiling_1
+    3300066: groundflooor_ceiling_2
+    3300068: groundflooor_ceiling_3
+    3300070: groundfloor_floor
+    3300072: groundfloor_kitchen_floor
+    3300074: mattres
+    3300076: ph_doorway
+    3300078: ph_doorway1
+    3300080: ph_doorway2
+    3300082: ph_wall
+    3300084: ph_wall1
+    3300086: ph_wall10
+    3300088: ph_wall11
+    3300090: ph_wall12
+    3300092: ph_wall13
+    3300094: ph_wall15
+    3300096: ph_wall16
+    3300098: ph_wall17
+    3300100: ph_wall18
+    3300102: ph_wall19
+    3300104: ph_wall2
+    3300106: ph_wall20
+    3300108: ph_wall21
+    3300110: ph_wall3
+    3300112: ph_wall4
+    3300114: ph_wall5
+    3300116: ph_wall6
+    3300118: ph_wall7
+    3300120: ph_wall8
+    3300122: ph_wall9
+    3300124: stairs
+    3300126: stairs1
+    3300128: stairs_btm
+    3300130: stand
+    3300132: staris_landing
+    3300134: staris_top
+    3300136: stool
+    3300138: stool1
+    3300140: stool2
+    3300142: stool3
+    3300144: stool4
+    3300146: stool5
+    3300148: Table
+    3300150: Table 1
+    3300152: Table 2
+    3300154: Table 3
+    3300156: Table 4
+    3300158: Table 5
+    3300160: Table1
+    3300162: Table2
+    3300164: topfloor_chest
+    3300166: topfloor_dresser
+    3300168: topfloor_floor
+    3300170: topfloor_wardrobe
+    3300172: groundflooor_ceiling_4
+    3300174: ph_wall22
+    3300176: ph_wall23
+    3300178: ph_wall24
+    3300180: topfloor_floor1
+    4300000: topfloor_floor
+    4300002: bedrest
+    4300004: bedframe
+    4300006: mattres
+    4300008: ph_wall18
+    4300010: ph_wall17
+    4300012: base
+    4300014: stand
+    4300016: body
+    4300018: ph_wall12
+    4300020: ph_wall13
+    4300022: ph_wall15
+    4300024: ph_wall11
+    4300026: ph_wall19
+    4300028: ph_wall16
+    4300030: ph_wall20
+    4300032: ph_wall21
+    4300034: topfloor_dresser
+    4300036: topfloor_chest
+    4300038: topfloor_wardrobe
+    4300040: groundflooor_ceiling_1
+    4300042: groundflooor_ceiling_2
+    4300044: groundflooor_ceiling_3
+    4300046: Table1
+    4300048: groundfloor_kitchen_floor
+    4300050: Table2
+    4300052: staris_top
+    4300054: staris_landing
+    4300056: stairs_btm
+    4300058: ph_wall10
+    4300060: ph_wall9
+    4300062: ph_wall8
+    4300064: ph_wall7
+    4300066: ph_wall6
+    4300068: ph_wall5
+    4300070: ph_wall4
+    4300072: ph_wall3
+    4300074: ph_wall2
+    4300076: ph_wall1
+    4300078: ph_wall
+    4300080: ph_doorway
+    4300082: ph_doorway2
+    4300084: ph_doorway1
+    4300086: bar_counter_pilar
+    4300088: bar_counter_top
+    4300090: bar_counter_pilar1
+    4300092: groundfloor_floor
+    4300094: stool
+    4300096: stool1
+    4300098: stool2
+    4300100: stool3
+    4300102: stool4
+    4300104: stool5
+    4300106: Table
+    4300108: Chair
+    4300110: Chair4
+    4300112: Chair5
+    4300114: Chair6
+    4300116: Table
+    4300118: Chair
+    4300120: Chair4
+    4300122: Chair5
+    4300124: Chair6
+    4300126: Table
+    4300128: Chair
+    4300130: Chair4
+    4300132: Chair5
+    4300134: Chair6
+    4300136: Table
+    4300138: Chair
+    4300140: Chair4
+    4300142: Chair5
+    4300144: Chair6
+    4300146: Table
+    4300148: Chair
+    4300150: Chair4
+    4300152: Chair5
+    4300154: Chair6
+    4300156: Table
+    4300158: Chair
+    4300160: Chair4
+    4300162: Chair5
+    4300164: Chair6
+    4300166: base
+    4300168: stairs
+    4300170: stairs1
+    4300172: ph_wall22
+    4300174: ph_wall23
+    4300176: ph_wall24
+    4300178: groundflooor_ceiling_4
+    4300180: topfloor_floor1
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

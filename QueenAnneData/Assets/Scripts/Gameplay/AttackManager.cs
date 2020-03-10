@@ -15,9 +15,11 @@ public class AttackManager : MonoBehaviour {
     public int currAtkState = 0;
 
     public bool canAtk = true;
+    public bool canDodge = true;
 
     public float animTime;
     public float comboTime;
+    //public float animTimeDodge = 0f;
 
     // Use this for initialization
     void Start() {
@@ -31,6 +33,7 @@ public class AttackManager : MonoBehaviour {
 	void Update () {
         animTime -= Time.deltaTime; // [ Cooldown timer for buttons to prevent spamming and glitching animations ]
         comboTime -= Time.deltaTime; // [ Time for animation to play out ]
+        //animTimeDodge -= Time.deltaTime; // [ Cooldown timer for Dodge Animations ]
 
         if (animTime < 0) {
             canAtk = true;
@@ -38,6 +41,17 @@ public class AttackManager : MonoBehaviour {
         else {
             canAtk = false;
         }
+        /*
+        if (animTimeDodge < 0) {
+            canDodge = true;
+        }
+        else {
+            canDodge = false;
+        }
+        
+        if (canDodge == false) {
+            animator.SetBool("CanDodge", false);
+        }*/
 
         if (comboTime < 0) {
             animator.SetInteger("AttackState", 0);
@@ -56,9 +70,10 @@ public class AttackManager : MonoBehaviour {
             weaponOnLeftHip.SetActive(true);
         }
 
-        print("Player Can Attack?: " + canAtk);
+        //print("Player Can Attack?: " + canAtk);
         //print("Anim time: " + animTime);
         //print("ComboTime: " + comboTime);
+        //print("Player can dodge?: " + canDodge);
 
 	}// [ Update function End ]
 
@@ -91,4 +106,14 @@ public class AttackManager : MonoBehaviour {
             animator.SetInteger("AttackState", currAtkState); // [ Since it starts from 0, once function is called, it will be 1, so on and so forth ]
         }// [ CanAtk Function End ]
     }// [ Attack A Function End ]
+    /*
+    public void Dodge() {
+        if (canDodge) {
+            // [ If player can Dodge, check for directional input ]
+            // [ once directional input is checked, set Dodge to true ]
+            animTimeDodge = 0.7f;
+            animator.SetBool("CanDodge", true);
+        }
+    } // [ Dodge Function End ]
+    */
 }// [ Class AttackManager End ]

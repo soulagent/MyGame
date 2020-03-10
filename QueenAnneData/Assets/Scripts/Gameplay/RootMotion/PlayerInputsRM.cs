@@ -51,6 +51,11 @@ public class PlayerInputsRM : MonoBehaviour {
         if(Input.GetButtonDown ("AttackA")) {
             attackManager.AttackA();
         }
+        /*
+        if(Input.GetButtonDown("dodgeKey")) {
+            attackManager.Dodge();
+        }
+        */
 	} // update
 
     //make the character look at a forward point from camera when moving

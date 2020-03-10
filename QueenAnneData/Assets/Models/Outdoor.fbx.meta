@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: e39c2d819c1b557499044b988047d025
+timeCreated: 1583855396
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: fence_pole
+    100002: fence_pole1
+    100004: fence_pole10
+    100006: fence_pole11
+    100008: fence_pole12
+    100010: fence_pole13
+    100012: fence_pole14
+    100014: fence_pole15
+    100016: fence_pole16
+    100018: fence_pole17
+    100020: fence_pole18
+    100022: fence_pole19
+    100024: fence_pole2
+    100026: fence_pole20
+    100028: fence_pole21
+    100030: fence_pole22
+    100032: fence_pole3
+    100034: fence_pole4
+    100036: fence_pole5
+    100038: fence_pole6
+    100040: fence_pole7
+    100042: fence_pole8
+    100044: fence_pole9
+    100046: fence_poles
+    100048: fence_sides
+    100050: fence_sides 1
+    100052: fence_sides1
+    100054: fence_sides2
+    100056: fence_sides3
+    100058: fence_sides4
+    100060: fence_sides5
+    100062: fence_sides6
+    100064: fence_sides7
+    100066: fence_sides8
+    100068: //RootNode
+    100070: outdoorFloor
+    400000: fence_pole
+    400002: fence_pole1
+    400004: fence_pole10
+    400006: fence_pole11
+    400008: fence_pole12
+    400010: fence_pole13
+    400012: fence_pole14
+    400014: fence_pole15
+    400016: fence_pole16
+    400018: fence_pole17
+    400020: fence_pole18
+    400022: fence_pole19
+    400024: fence_pole2
+    400026: fence_pole20
+    400028: fence_pole21
+    400030: fence_pole22
+    400032: fence_pole3
+    400034: fence_pole4
+    400036: fence_pole5
+    400038: fence_pole6
+    400040: fence_pole7
+    400042: fence_pole8
+    400044: fence_pole9
+    400046: fence_poles
+    400048: fence_sides
+    400050: fence_sides 1
+    400052: fence_sides1
+    400054: fence_sides2
+    400056: fence_sides3
+    400058: fence_sides4
+    400060: fence_sides5
+    400062: fence_sides6
+    400064: fence_sides7
+    400066: fence_sides8
+    400068: //RootNode
+    400070: outdoorFloor
+    2300000: fence_pole
+    2300002: fence_pole1
+    2300004: fence_pole10
+    2300006: fence_pole11
+    2300008: fence_pole12
+    2300010: fence_pole13
+    2300012: fence_pole14
+    2300014: fence_pole15
+    2300016: fence_pole16
+    2300018: fence_pole17
+    2300020: fence_pole18
+    2300022: fence_pole19
+    2300024: fence_pole2
+    2300026: fence_pole20
+    2300028: fence_pole21
+    2300030: fence_pole22
+    2300032: fence_pole3
+    2300034: fence_pole4
+    2300036: fence_pole5
+    2300038: fence_pole6
+    2300040: fence_pole7
+    2300042: fence_pole8
+    2300044: fence_pole9
+    2300046: fence_sides 1
+    2300048: fence_sides1
+    2300050: fence_sides2
+    2300052: fence_sides3
+    2300054: fence_sides4
+    2300056: fence_sides5
+    2300058: fence_sides6
+    2300060: fence_sides7
+    2300062: fence_sides8
+    2300064: outdoorFloor
+    3300000: fence_pole
+    3300002: fence_pole1
+    3300004: fence_pole10
+    3300006: fence_pole11
+    3300008: fence_pole12
+    3300010: fence_pole13
+    3300012: fence_pole14
+    3300014: fence_pole15
+    3300016: fence_pole16
+    3300018: fence_pole17
+    3300020: fence_pole18
+    3300022: fence_pole19
+    3300024: fence_pole2
+    3300026: fence_pole20
+    3300028: fence_pole21
+    3300030: fence_pole22
+    3300032: fence_pole3
+    3300034: fence_pole4
+    3300036: fence_pole5
+    3300038: fence_pole6
+    3300040: fence_pole7
+    3300042: fence_pole8
+    3300044: fence_pole9
+    3300046: fence_sides 1
+    3300048: fence_sides1
+    3300050: fence_sides2
+    3300052: fence_sides3
+    3300054: fence_sides4
+    3300056: fence_sides5
+    3300058: fence_sides6
+    3300060: fence_sides7
+    3300062: fence_sides8
+    3300064: outdoorFloor
+    4300000: fence_sides
+    4300002: fence_sides1
+    4300004: fence_sides2
+    4300006: fence_sides3
+    4300008: fence_sides4
+    4300010: fence_sides5
+    4300012: fence_sides6
+    4300014: fence_sides7
+    4300016: fence_sides8
+    4300018: fence_pole
+    4300020: fence_pole1
+    4300022: fence_pole2
+    4300024: fence_pole3
+    4300026: fence_pole4
+    4300028: fence_pole5
+    4300030: fence_pole6
+    4300032: fence_pole7
+    4300034: fence_pole8
+    4300036: fence_pole9
+    4300038: fence_pole10
+    4300040: fence_pole11
+    4300042: fence_pole12
+    4300044: fence_pole13
+    4300046: fence_pole14
+    4300048: fence_pole15
+    4300050: fence_pole16
+    4300052: fence_pole17
+    4300054: fence_pole18
+    4300056: fence_pole19
+    4300058: fence_pole20
+    4300060: fence_pole21
+    4300062: fence_pole22
+    4300064: outdoorFloor
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
